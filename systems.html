@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Systems guide — DracusRO</title>
+<meta name="description" content="How DracusRO actually works. Citizenship, multiclassing, city development, sieges, caravans, dungeons, the bestiary and the card album, explained properly.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Spectral:ital,wght@0,300;0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+/* guide-only layout */
+.guide-hero{padding:clamp(2.6rem,6vw,4.4rem) 0 clamp(1.6rem,3vw,2.4rem);position:relative;overflow:hidden}
+.guide-hero::before{content:'';position:absolute;inset:-30% -20% auto -20%;height:130%;
+  background:linear-gradient(180deg,var(--sky-1) 0%,var(--sky-2) 60%,transparent 100%);pointer-events:none}
+.guide-hero>*{position:relative}
+.guide-hero h1{font-family:var(--body);font-weight:700;font-size:clamp(2.1rem,4.6vw,3.4rem);
+  line-height:1.06;letter-spacing:-.02em;margin:.9rem 0 0;max-width:20ch}
+.guide-hero p{max-width:60ch;margin-top:1.1rem;color:#54483A;font-size:1.05rem}
+
+.guide{display:grid;grid-template-columns:210px 1fr;gap:clamp(2rem,5vw,4rem);
+  align-items:start;padding:clamp(2rem,4vw,3rem) 0 5rem}
+.toc{position:sticky;top:86px}
+.toc h4{font-family:var(--mono);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-faint);margin-bottom:.8rem}
+.toc a{display:block;text-decoration:none;color:var(--ink-dim);font-size:.92rem;padding:.34rem 0 .34rem .8rem;
+  border-left:2px solid var(--rule);transition:color .16s,border-color .16s}
+.toc a:hover{color:var(--ink);border-left-color:var(--brass)}
+.toc a.on{color:var(--ink);border-left-color:var(--brass);font-weight:600}
+@media(max-width:900px){.guide{grid-template-columns:1fr}.toc{position:static;margin-bottom:2rem}
+  .toc a{display:inline-block;border-left:0;border-bottom:2px solid var(--rule);padding:.3rem .7rem;margin:0 .2rem .3rem 0}}
+
+.sys-block{padding-bottom:clamp(2.6rem,5vw,4rem);margin-bottom:clamp(2.6rem,5vw,4rem);
+  border-bottom:1px solid var(--rule);scroll-margin-top:90px}
+.sys-block:last-of-type{border-bottom:0}
+.sys-block>.kicker{font-family:var(--mono);font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--brass-ink);font-weight:600}
+.sys-block h2{font-family:var(--body);font-weight:700;font-size:clamp(1.6rem,3vw,2.2rem);
+  letter-spacing:-.015em;margin:.35rem 0 .9rem;line-height:1.12}
+.sys-block p{max-width:66ch;margin-bottom:1rem}
+.sys-block h3{font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-faint);margin:1.9rem 0 .7rem}
+
+.lead{font-size:1.1rem;color:#4A3F32}
+.pull{border-left:3px solid var(--brass);padding:.2rem 0 .2rem 1.2rem;margin:1.4rem 0;max-width:64ch}
+.pull strong{display:block;font-size:1.02rem;margin-bottom:.2rem}
+
+.tbl{width:100%;border-collapse:collapse;border:1px solid var(--rule);background:#fff;
+  border-radius:3px;overflow:hidden;margin:1.2rem 0;font-size:.95rem}
+.tbl th{background:var(--paper-2);font-family:var(--mono);font-size:.64rem;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink-dim);text-align:left;padding:.7rem .9rem;
+  border-bottom:1px solid var(--rule);font-weight:600}
+.tbl td{padding:.7rem .9rem;border-bottom:1px solid rgba(220,207,184,.6);vertical-align:top}
+.tbl tr:last-child td{border-bottom:0}
+.tbl td:first-child{font-weight:600;white-space:nowrap}
+.tbl .mono{font-family:var(--mono);font-size:.85rem}
+
+.stages{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);
+  border-radius:3px;overflow:hidden;margin:1.4rem 0}
+.stage{background:#fff;padding:1.3rem 1.4rem;display:grid;grid-template-columns:auto 1fr;gap:1.2rem;align-items:start}
+.stage .n{font-family:var(--display);font-weight:900;font-size:1.6rem;color:var(--brass);line-height:1}
+.stage h4{font-size:1.06rem;font-weight:700;margin-bottom:.3rem}
+.stage p{margin:0;font-size:.95rem;color:var(--ink-dim);max-width:60ch}
+
+.chips{display:flex;flex-wrap:wrap;gap:.45rem;margin:1rem 0 1.4rem}
+.chip{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;
+  border:1px solid var(--rule);background:#fff;padding:.34rem .7rem;border-radius:2px;color:var(--ink-dim)}
+.chip b{color:var(--ink);font-weight:600}
+
+ul.pts{list-style:none;margin:.4rem 0 1.2rem;max-width:66ch}
+ul.pts li{padding:.34rem 0 .34rem 1.3rem;position:relative;color:var(--ink-dim)}
+ul.pts li::before{content:'';position:absolute;left:0;top:.95em;width:6px;height:1px;background:var(--brass)}
+ul.pts li strong{color:var(--ink)}
+
+.faq{border-top:1px solid var(--rule);margin-top:1.6rem}
+.faq details{border-bottom:1px solid var(--rule)}
+.faq summary{cursor:pointer;padding:.85rem 0;font-weight:600;list-style:none;display:flex;gap:.7rem;align-items:baseline}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:'+';font-family:var(--mono);color:var(--brass-ink);font-weight:600}
+.faq details[open] summary::before{content:'\2212'}
+.faq p{padding:0 0 .9rem 1.4rem;color:var(--ink-dim);margin:0;max-width:64ch}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="shell nav-in">
+    <a class="mark" href="index.html">DRACUS<span>RO</span></a>
+    <div class="nav-links">
+      <a href="index.html#different">The server</a>
+      <a href="index.html#factions">Factions</a>
+      <a href="systems.html">Systems guide</a>
+      <a href="index.html#info">Info</a>
+      <a href="index.html#shop">Shop</a>
+    </div>
+    <a class="btn btn-solid" href="https://discord.gg/YOUR-INVITE-HERE">Join the Discord</a>
+  </div>
+</nav>
+
+<header class="guide-hero">
+  <div class="shell">
+    <p class="eyebrow">Systems guide</p>
+    <h1>The systems, in short.</h1>
+    <p>The short version of every custom system here — enough to know what you are signing up for. The
+      rest is for you to find in the world, which is rather the point.</p>
+  </div>
+</header>
+
+<div class="shell guide">
+
+  <aside class="toc">
+    <h4>Contents</h4>
+    <a href="#citizenship">Citizenship</a>
+    <a href="#cities">Cities</a>
+    <a href="#multiclass">Multiclassing</a>
+    <a href="#collection">Bestiary &amp; album</a>
+    <a href="#dungeons">Dungeons &amp; gear</a>
+    <a href="#bosses">World bosses</a>
+    <a href="#caravans">Caravans</a>
+    <a href="#sieges">Sieges</a>
+  </aside>
+
+  <main>
+
+  <!-- 01 -->
+  <section class="sys-block" id="citizenship">
+    <span class="kicker">01 · Citizenship</span>
+    <h2>You pick a side, and it decides most of your game</h2>
+    <p class="lead">Not a chat channel. Citizenship sets which city your work builds, which dungeons are
+      cheap for you, and who you are at war with on Saturday. Each faction holds one thing the other four
+      need, so nobody can afford to cut anybody off.</p>
+
+    <table class="tbl">
+      <tr><th>Faction</th><th>Holds</th><th>Which means</th></tr>
+      <tr><td>Prontera</td><td>Governance</td><td>Collects double the tax it sets. Hard to invade, easy to invade from.</td></tr>
+      <tr><td>Morroc</td><td>Subterfuge</td><td>Better returns on raided caravans. The black market where stolen cargo sells.</td></tr>
+      <tr><td>Geffen</td><td>Research</td><td>Reaches three tiers past everyone else on every research track.</td></tr>
+      <tr><td>Payon</td><td>Production</td><td>Cheaper crafting and refining, plus recipes nobody else can make.</td></tr>
+      <tr><td>Alberta</td><td>Trade</td><td>Pays nobody's tax. Can field any other faction's siege hardware.</td></tr>
+    </table>
+
+    <p>You can switch factions. Your old city keeps the contribution you gave it, and there is a cooldown
+      before you can move again.</p>
+  </section>
+
+  <!-- 02 -->
+  <section class="sys-block" id="cities">
+    <span class="kicker">02 · Cities</span>
+    <h2>Your city grows because people played in it</h2>
+    <p class="lead">Every kill, every clear, every delivery pays into your city. Cities move through five
+      tiers, and each tier is a physically different map — more buildings, more services, more of a place.</p>
+
+    <table class="tbl">
+      <tr><th>Tier</th><th>Opens</th></tr>
+      <tr><td>Settlement</td><td>Basic shops. Tier 1 dungeon.</td></tr>
+      <tr><td>Village</td><td>Expanded gear, base refining, tier 2 dungeon.</td></tr>
+      <tr><td>Town</td><td>Crafting and enhancing. Tier 3 dungeon.</td></tr>
+      <tr><td>City</td><td>Tier 4 dungeon. World bosses activate.</td></tr>
+      <tr><td>Metropolis</td><td>Tier 5, legendary crafting, god items. Needs a conquest, not just development.</td></tr>
+    </table>
+
+    <div class="pull">
+      <strong>Access never revokes.</strong>
+      Once a dungeon opens for your city it stays open. Fall behind and it costs a fee to keep using it —
+      and that fee goes straight back into your city. Falling behind costs money, never content.
+    </div>
+  </section>
+
+  <!-- 03 -->
+  <section class="sys-block" id="multiclass">
+    <span class="kicker">03 · Multiclassing</span>
+    <h2>One character holds every class</h2>
+    <p class="lead">You do not roll an alt. Earn a job certificate, walk into your faction's major city,
+      and change class. Same character, same name, same collection progress — different job.</p>
+
+    <ul class="pts">
+      <li><strong>Swapping happens in a city</strong>, not mid-fight and not mid-siege.</li>
+      <li><strong>Everything you have earned follows you</strong> into every class you hold.</li>
+      <li><strong>Human classes only</strong>, all the way through 4th job. No Doram, no Baby classes.</li>
+    </ul>
+
+    <div class="pull">
+      <strong>The honest trade-off.</strong>
+      If everyone can be a priest, nobody is the priest. Parties stop hunting for the missing role and
+      start deciding who takes it. We think that is worth it. You might not.
+    </div>
+  </section>
+
+  <!-- 04 -->
+  <section class="sys-block" id="collection">
+    <span class="kicker">04 · Bestiary &amp; card album</span>
+    <h2>Every monster is worth killing. Every card is worth something.</h2>
+    <p class="lead">With no quest chains pointing you anywhere, these are what make one map worth choosing
+      over another. The bestiary tracks kills per species and pays permanent bonuses at milestones. The
+      album registers cards — once each, ever.</p>
+
+    <div class="pull">
+      <strong>One registration per card is what creates the market.</strong>
+      Over a thousand cards, all around 0.01%. Nobody finishes the album. So there is permanent demand for
+      cards nobody wants to equip, and the junk other servers vendor has a buyer here.
+    </div>
+  </section>
+
+  <!-- 05 -->
+  <section class="sys-block" id="dungeons">
+    <span class="kicker">05 · Dungeons &amp; gear</span>
+    <h2>Farm as long as you like. The ceiling is elsewhere.</h2>
+    <p class="lead">Five tiers of instanced dungeon, solo or party. No daily lockout, no weekly lockout, no
+      attunement. Party runs pay better drops and an experience bonus, and have mechanics the solo version
+      does not.</p>
+
+    <p>Gear degrades and breaks. Base gear drops freely and always will — but the materials that repair and
+      upgrade the good stuff come from world bosses and from holding territory.</p>
+
+    <div class="pull">
+      <strong>Materials are the ceiling, not hours played.</strong>
+      What your faction won last week decides what you can wear this week. Refining uses protection ore
+      only — you never lose the item, you lose the ore.
+    </div>
+  </section>
+
+  <!-- 06 -->
+  <section class="sys-block" id="bosses">
+    <span class="kicker">06 · World bosses</span>
+    <h2>The one time nobody is at war</h2>
+    <p class="lead">Strictly PvE. No faction contest, no PvP flag, no fighting each other at the spawn.
+      Everything else here is built to generate friction between factions. This is the release valve.</p>
+
+    <p>Contribution is not just damage — healing, damage taken while holding the boss's attention, and
+      buff uptime all count, so the one fight where tanks and healers matter most actually pays them.</p>
+
+    <div class="pull">
+      <strong>Contribution pools across your party.</strong>
+      Twenty people pooling beats five people pooling. Bringing more players grows the reward instead of
+      splitting it, so there is never a reason to keep the fight small.
+    </div>
+  </section>
+
+  <!-- 07 -->
+  <section class="sys-block" id="caravans">
+    <span class="kicker">07 · Caravans</span>
+    <h2>Grinding builds cities. Trade funds armies.</h2>
+    <p class="lead">Castle-holding guilds buy cargo in one city and move it to another. That cargo costs
+      real money, and delivering it is where almost all siege supply comes from. A guild that never runs a
+      convoy shows up on Saturday with nothing to spend.</p>
+
+    <ul class="pts">
+      <li><strong>Routes are instanced</strong> and the convoy is visible to the whole server. Raiders opt in
+        deliberately — nobody gets dragged into PvP for standing on a road.</li>
+      <li><strong>Longer hauls pay disproportionately more</strong>, and running the same route repeatedly pays
+        less each time.</li>
+      <li><strong>Anyone can raid.</strong> No castle, no guild, no siege obligation. This is the low-stakes way
+        into PvP here.</li>
+    </ul>
+
+    <div class="pull">
+      <strong>Raiding destroys value on purpose.</strong>
+      The owner loses everything, the raider recovers a fraction. Two factions farming each other burn more
+      than they make — so banditry works against a real enemy and fails as a mutual arrangement.
+    </div>
+  </section>
+
+  <!-- 08 -->
+  <section class="sys-block" id="sieges">
+    <span class="kicker">08 · Sieges</span>
+    <h2>Twenty against twenty, across three maps</h2>
+    <p class="lead">Twenty-five castles. Three in each faction's main city, two in its secondary territory.
+      Guilds hold them, citizens vote on whether they deserve to, and everything changes hands by force on
+      a schedule everybody knows.</p>
+
+    <div class="chips">
+      <span class="chip"><b>20</b> vs <b>20</b></span>
+      <span class="chip"><b>25</b> castles</span>
+      <span class="chip">scheduled windows</span>
+      <span class="chip">three stages</span>
+    </div>
+
+    <div class="stages">
+      <div class="stage"><div class="n">1</div><div>
+        <h4>The wall</h4>
+        <p>Three control points. Breach the gate or scale the walls. Holding two of three drains the
+          defender, so lost ground costs them whether or not anyone dies.</p></div></div>
+      <div class="stage"><div class="n">2</div><div>
+        <h4>The courtyard</h4>
+        <p>Open fighting inside the walls, with the points placed so defenders cannot just camp the throne
+          door. Allied guilds who won early can reinforce from here.</p></div></div>
+      <div class="stage"><div class="n">3</div><div>
+        <h4>The throne room</h4>
+        <p>Break the emperium and the castle changes hands. Run out of supplies and it does not.</p></div></div>
+    </div>
+
+    <div class="pull">
+      <strong>The emperium takes area damage.</strong>
+      Everywhere else you defend it by standing on top of it in a pile. Here a defensive ball eats the
+      same attacks it is trying to block, so you have to fight outward and hold the room instead.
+    </div>
+
+    <p>Before the fighting, both sides spend from the guild's war chest on siege hardware. Whatever you do
+      not spend becomes your respawn tickets — every ram is a life you do not have, and you buy blind.
+      The war chest does not refill weekly, either: what you spent last week is still missing this week.</p>
+  </section>
+
+  <p style="color:var(--ink-faint);font-style:italic;max-width:60ch">
+    Everything else is for you to find. There is no wiki page that tells you where the good hunting is.
+  </p>
+
+  </main>
+</div>
+
+<section id="register">
+  <div class="shell">
+    <div class="reg">
+      <p class="eyebrow">Not open yet</p>
+      <h2>The world has no owners. That is the interesting part.</h2>
+      <p>Twenty-five castles, all unclaimed. Five cities, all still settlements. Nothing on this server
+        has happened yet, and when it starts, it starts for everybody at once.</p>
+      <p class="reg-cta">
+        <a class="btn btn-solid" href="https://discord.gg/YOUR-INVITE-HERE">Join the Discord</a>
+        <a class="btn btn-ghost" href="systems.html">Read the systems guide</a>
+      </p>
+      <p class="reg-note">Account registration and the client download open at launch</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="shell foot-in">
+    <a class="mark" href="index.html" style="font-size:.95rem">DRACUS<span>RO</span></a>
+    <a href="index.html#info">Server info</a>
+    <a href="systems.html">Systems guide</a>
+    <a href="index.html#shop">Shop</a>
+    <a href="https://discord.gg/YOUR-INVITE-HERE">Discord</a>
+    <span class="r">Not affiliated with Gravity Co., Ltd.</span>
+  </div>
+</footer>
+
+<script>
+// highlight the section you're reading
+const links = [...document.querySelectorAll('.toc a')];
+const blocks = links.map(a => document.querySelector(a.getAttribute('href')));
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    const i = blocks.indexOf(e.target);
+    links.forEach(l => l.classList.remove('on'));
+    if (i > -1) links[i].classList.add('on');
+  });
+}, { rootMargin: '-90px 0px -70% 0px', threshold: 0 });
+blocks.forEach(b => b && io.observe(b));
+</script>
+</body>
+</html>
