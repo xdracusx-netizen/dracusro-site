@@ -199,3 +199,65 @@ footer{border-top:1px solid var(--rule);padding:2.4rem 0;font-family:var(--mono)
 .cmds tr:last-child td{border-bottom:0}
 .cmds td.c{font-family:var(--mono);font-size:.86rem;color:var(--brass-ink);font-weight:600;white-space:nowrap;width:1%}
 .cmds .dim{font-family:var(--mono);font-size:.82rem;color:var(--ink-faint)}
+
+/* ============================================================
+   Cosmetics catalogue
+   ============================================================ */
+
+/* how it works */
+.pod-how{padding:clamp(2.4rem,5vw,3.4rem) 0 0}
+.pod-how h2{font-family:var(--body);font-weight:700;font-size:clamp(1.5rem,3vw,2rem);
+  letter-spacing:-.015em;margin-bottom:1.6rem}
+.pod-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px;
+  background:var(--rule);border:1px solid var(--rule);border-radius:3px;overflow:hidden}
+.pod-step{background:#fff;padding:1.5rem 1.4rem}
+.pod-step .n{font-family:var(--display);font-weight:900;font-size:1.5rem;color:var(--brass);
+  display:block;line-height:1;margin-bottom:.6rem}
+.pod-step h3{font-size:1.06rem;font-weight:700;margin-bottom:.35rem;color:var(--ink)}
+.pod-step p{font-size:.95rem;color:var(--ink-dim);margin:0}
+.pod-rate{margin-top:1.3rem;padding:1rem 1.2rem;background:#FFF6E0;border:1px solid var(--brass);
+  border-radius:3px;font-size:.99rem;max-width:72ch}
+.pod-rate b{color:var(--brass-ink)}
+
+.shop-sec{padding:clamp(2.6rem,5vw,4rem) 0;border-top:1px solid var(--rule);margin-top:clamp(2.6rem,5vw,4rem)}
+.shop-sec:first-of-type{border-top:0;margin-top:0}
+ul.pts.wide{max-width:78ch}
+
+/* filters */
+.filters{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.6rem}
+.filter{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;
+  background:#fff;border:1px solid var(--rule);color:var(--ink-dim);padding:.45rem .95rem;
+  border-radius:2px;cursor:pointer;transition:all .16s}
+.filter:hover{border-color:var(--ink-faint);color:var(--ink)}
+.filter.on{background:var(--brass);border-color:var(--brass);color:#fff}
+
+/* the grid */
+.wares{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.3rem}
+.ware{border:1px solid var(--rule);background:#fff;border-radius:3px;overflow:hidden;
+  display:flex;flex-direction:column;transition:box-shadow .2s,transform .2s}
+.ware:hover{box-shadow:0 10px 26px rgba(80,60,30,.11);transform:translateY(-2px)}
+.ware-media{aspect-ratio:1/1;background:
+  repeating-linear-gradient(45deg,rgba(0,0,0,.02) 0 10px,transparent 10px 20px),var(--paper-3);
+  border-bottom:1px solid var(--rule);overflow:hidden}
+.ware-media video{width:100%;height:100%;object-fit:cover;display:block}
+.ware-body{padding:1rem 1.1rem 1.15rem;display:flex;flex-direction:column;flex:1}
+.ware-slot{font-family:var(--mono);font-size:.62rem;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink-faint);margin:0 0 .3rem}
+.ware-body h3{font-size:1.05rem;font-weight:700;margin:0 0 .4rem;color:var(--ink)}
+.ware-desc{font-size:.92rem;color:var(--ink-dim);margin:0 0 .9rem}
+.ware-price{margin:auto 0 0;padding-top:.85rem;border-top:1px solid var(--rule);
+  font-family:var(--mono);font-size:.86rem;color:var(--brass-ink);font-weight:600}
+.ware-price span{color:var(--ink-faint);font-weight:400;margin-left:.4rem}
+
+.shop-empty{color:var(--ink-faint);font-style:italic;padding:2.4rem 0;text-align:center;
+  border:1px dashed var(--rule);border-radius:3px;background:rgba(255,255,255,.5)}
+
+
+/* shared page hero, used by the guide and the shop */
+.guide-hero{padding:clamp(2.6rem,6vw,4.4rem) 0 clamp(1.6rem,3vw,2.4rem);position:relative;overflow:hidden}
+.guide-hero::before{content:'';position:absolute;inset:-30% -20% auto -20%;height:130%;
+  background:linear-gradient(180deg,var(--sky-1) 0%,var(--sky-2) 60%,transparent 100%);pointer-events:none}
+.guide-hero>*{position:relative}
+.guide-hero h1{font-family:var(--body);font-weight:700;font-size:clamp(2.1rem,4.6vw,3.4rem);
+  line-height:1.06;letter-spacing:-.02em;margin:.9rem 0 0;max-width:20ch}
+.guide-hero p{max-width:60ch;margin-top:1.1rem;color:#54483A;font-size:1.05rem}
