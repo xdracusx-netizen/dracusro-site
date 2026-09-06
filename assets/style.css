@@ -317,5 +317,5 @@ ul.pts.wide{max-width:78ch}
 .orn-rule{display:flex;align-items:center;color:var(--brass-ink);
   margin:clamp(2.4rem,5vw,3.6rem) 0 0}
 .orn-rule::before,.orn-rule::after{content:'';flex:1;height:1px;background:var(--rule)}
-.orn{width:280px;height:32px;flex:none;opacity:.85}
-@media(max-width:600px){.orn{width:200px;height:24px}}
+.orn{width:min(560px,60%);height:auto;flex:none;opacity:.9;display:block}
+@media(max-width:600px){.orn{width:min(320px,80%)}}
