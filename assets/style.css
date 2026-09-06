@@ -310,3 +310,12 @@ ul.pts.wide{max-width:78ch}
 /* faction crest on the territory board */
 .fac-crest{width:26px;height:26px;object-fit:contain;flex:none;display:block}
 @media(max-width:700px){.fac-crest{width:22px;height:22px}}
+
+/* Draconic ornament. Used once per page, before the closing call to
+   action - the point where the page stops explaining and starts asking.
+   Everywhere else the five-faction bar does the structural work. */
+.orn-rule{display:flex;align-items:center;color:var(--brass-ink);
+  margin:clamp(2.4rem,5vw,3.6rem) 0 0}
+.orn-rule::before,.orn-rule::after{content:'';flex:1;height:1px;background:var(--rule)}
+.orn{width:280px;height:32px;flex:none;opacity:.85}
+@media(max-width:600px){.orn{width:200px;height:24px}}
