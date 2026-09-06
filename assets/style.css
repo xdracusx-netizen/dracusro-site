@@ -90,16 +90,7 @@ nav{position:sticky;top:0;z-index:50;background:rgba(251,246,236,.88);backdrop-f
 }
 
 /* ---------- sections ---------- */
-section{padding:clamp(3.5rem,8vw,6rem) 0;position:relative}
-/* The five factions as a bar. Nobody else's site can look like this,
-   because nobody else has exactly these five. */
-section::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;
-  background:linear-gradient(90deg,
-    var(--prt) 0 20%, var(--moc) 20% 40%, var(--gef) 40% 60%,
-    var(--pay) 60% 80%, var(--alb) 80% 100%);
-  opacity:.7}
-/* the hero is a <header>, so every <section> gets the bar */
-#register::before{opacity:0}
+section{padding:clamp(2.6rem,6vw,4.4rem) 0 clamp(3.5rem,8vw,6rem);position:relative}
 .sec-head{display:flex;align-items:baseline;gap:1rem;margin-bottom:2.4rem;flex-wrap:wrap}
 .sec-head h2{font-family:var(--body);font-weight:700;font-size:clamp(1.7rem,3.4vw,2.5rem);letter-spacing:-.015em;line-height:1.1}
 .sec-head p{color:var(--ink-dim);max-width:54ch;margin-top:.5rem;flex-basis:100%}
@@ -314,8 +305,7 @@ ul.pts.wide{max-width:78ch}
 /* Draconic ornament. Used once per page, before the closing call to
    action - the point where the page stops explaining and starts asking.
    Everywhere else the five-faction bar does the structural work. */
-.orn-rule{display:flex;align-items:center;color:var(--brass-ink);
-  margin:clamp(2.4rem,5vw,3.6rem) 0 0}
+.orn-rule{display:flex;align-items:center;color:var(--brass-ink);margin:0}
 .orn-rule::before,.orn-rule::after{content:'';flex:1;height:1px;background:var(--rule)}
-.orn{width:min(560px,60%);height:auto;flex:none;opacity:.9;display:block}
+.orn{width:min(480px,52%);height:auto;flex:none;opacity:.88;display:block}
 @media(max-width:600px){.orn{width:min(320px,80%)}}
