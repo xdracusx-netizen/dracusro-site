@@ -263,3 +263,19 @@ ul.pts.wide{max-width:78ch}
 .guide-hero h1{font-family:var(--body);font-weight:700;font-size:clamp(2.1rem,4.6vw,3.4rem);
   line-height:1.06;letter-spacing:-.02em;margin:.9rem 0 0;max-width:20ch}
 .guide-hero p{max-width:60ch;margin-top:1.1rem;color:#54483A;font-size:1.05rem}
+
+/* nav call-to-action group */
+.nav-cta{display:flex;gap:.5rem;align-items:center;margin-left:auto;flex:none}
+.nav-cta .btn{white-space:nowrap;padding:.55rem .9rem}
+.nav-links{margin-left:auto}
+.nav-cta + .nav-links{margin-left:0}
+.nav-discord{color:var(--ink-faint)!important}
+.nav-discord:hover{color:var(--ink)!important}
+@media(max-width:1180px){
+  .nav-cta .btn-ghost:first-child{display:none}   /* drop Download first */
+}
+@media(max-width:860px){
+  .nav-cta{gap:.4rem}
+  .nav-cta .btn{padding:.5rem .7rem;font-size:.68rem}
+  .nav-cta .js-login{display:none}                /* then Log in */
+}
