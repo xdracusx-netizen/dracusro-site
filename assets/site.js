@@ -7,11 +7,11 @@
    where ownerName is one of the five faction names, or null for unclaimed. */
 
 const FACTIONS = [
-  { name: 'Prontera', v: '--prt', seat: 'Aldebaran' },
-  { name: 'Morroc',   v: '--moc', seat: 'Comodo' },
-  { name: 'Geffen',   v: '--gef', seat: 'Juno' },
-  { name: 'Payon',    v: '--pay', seat: 'Amatsu' },
-  { name: 'Alberta',  v: '--alb', seat: 'The islands' },
+  { name: 'Prontera', v: '--prt', seat: 'Aldebaran',   slug: 'prontera' },
+  { name: 'Morroc',   v: '--moc', seat: 'Comodo',      slug: 'morroc' },
+  { name: 'Geffen',   v: '--gef', seat: 'Juno',        slug: 'geffen' },
+  { name: 'Payon',    v: '--pay', seat: 'Amatsu',      slug: 'payon' },
+  { name: 'Alberta',  v: '--alb', seat: 'The islands', slug: 'alberta' },
 ];
 
 // null = unclaimed. Season 1 has not started, so every castle is null.
@@ -28,7 +28,8 @@ if (rows) {
 
     const name = document.createElement('div');
     name.className = 'fac';
-    name.innerHTML = `<span class="pip" style="background:var(${f.v})"></span>${f.name}`;
+    name.innerHTML =
+      `<img class="fac-crest" src="assets/img/factions/${f.slug}-512.png" alt="">${f.name}`;
 
     const grid = document.createElement('div');
     grid.className = 'castles';

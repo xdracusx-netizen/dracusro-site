@@ -66,7 +66,7 @@ nav{position:sticky;top:0;z-index:50;background:rgba(251,246,236,.88);backdrop-f
 .rows{padding:.35rem 0}
 .row{display:grid;grid-template-columns:minmax(120px,180px) 1fr minmax(140px,auto);align-items:center;gap:1.4rem;padding:.78rem 1.15rem;border-bottom:1px solid rgba(51,44,64,.5)}
 .row:last-child{border-bottom:0}
-.fac{font-family:var(--display);font-weight:700;font-size:.9rem;letter-spacing:.11em;text-transform:uppercase;display:flex;align-items:center;gap:.6rem}
+.fac{font-family:var(--display);font-weight:700;font-size:.9rem;letter-spacing:.11em;text-transform:uppercase;display:flex;align-items:center;gap:.55rem}
 .pip{width:9px;height:9px;flex:none;transform:rotate(45deg)}
 .castles{display:flex;gap:.42rem;flex-wrap:wrap}
 .castle{width:30px;height:30px;border:1px solid var(--rule);background:var(--paper-3);border-radius:2px;position:relative;
@@ -279,3 +279,25 @@ ul.pts.wide{max-width:78ch}
   .nav-cta .btn{padding:.5rem .7rem;font-size:.68rem}
   .nav-cta .js-login{display:none}                /* then Log in */
 }
+
+/* crest beside the wordmark */
+/* gap would split DRACUS from RO, since they are separate flex children.
+   Margin on the image keeps the wordmark whole. */
+.mark{display:inline-flex;align-items:center}
+.mark-crest{height:1.9em;width:auto;display:block;flex:none;margin-right:.55rem}
+@media(max-width:520px){.mark-crest{height:1.5em;margin-right:.4rem}}
+
+/* faction card emblems */
+.fcard{position:relative;overflow:hidden}
+.fcard-crest{width:52px;height:52px;object-fit:contain;display:block;margin:0 0 .75rem;
+  opacity:.95;transition:transform .25s ease}
+.fcard:hover .fcard-crest{transform:translateY(-2px) scale(1.04)}
+/* big ghosted repeat, so the card has depth without adding noise */
+.fcard::after{content:'';position:absolute;right:-34px;bottom:-34px;
+  width:150px;height:150px;pointer-events:none;
+  background-image:var(--crest);background-size:contain;background-repeat:no-repeat;
+  opacity:.055}
+
+/* faction crest on the territory board */
+.fac-crest{width:26px;height:26px;object-fit:contain;flex:none;display:block}
+@media(max-width:700px){.fac-crest{width:22px;height:22px}}
