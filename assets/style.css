@@ -309,3 +309,75 @@ ul.pts.wide{max-width:78ch}
 .orn-rule::before,.orn-rule::after{content:'';flex:1;height:1px;background:var(--rule)}
 .orn{width:min(480px,52%);height:auto;flex:none;opacity:.88;display:block}
 @media(max-width:600px){.orn{width:min(320px,80%)}}
+
+/* ============================================================
+   Wiki
+   ============================================================ */
+.wiki-shell{display:grid;grid-template-columns:230px 1fr;gap:clamp(2rem,5vw,4rem);
+  align-items:start;padding:clamp(1.6rem,3vw,2.4rem) 0 5rem}
+.wiki-nav{position:sticky;top:86px}
+.wiki-nav h4{font-family:var(--mono);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-faint);margin:0 0 .7rem}
+.wiki-nav h4:not(:first-child){margin-top:1.6rem}
+.wiki-nav a{display:block;text-decoration:none;color:var(--ink-dim);font-size:.93rem;
+  padding:.32rem 0 .32rem .8rem;border-left:2px solid var(--rule);transition:color .16s,border-color .16s}
+.wiki-nav a:hover{color:var(--ink);border-left-color:var(--brass)}
+.wiki-nav a.on{color:var(--ink);border-left-color:var(--brass);font-weight:600}
+@media(max-width:900px){
+  .wiki-shell{grid-template-columns:1fr}
+  .wiki-nav{position:static;margin-bottom:2rem;padding-bottom:1.4rem;border-bottom:1px solid var(--rule)}
+  .wiki-nav a{display:inline-block;border-left:0;border-bottom:2px solid var(--rule);padding:.3rem .7rem;margin:0 .2rem .3rem 0}
+}
+
+.wiki-head{padding:clamp(2rem,5vw,3.2rem) 0 0;position:relative}
+.wiki-head .crumb{font-family:var(--mono);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-faint)}
+.wiki-head .crumb a{color:var(--ink-faint);text-decoration:none}
+.wiki-head .crumb a:hover{color:var(--ink)}
+.wiki-head h1{font-family:var(--body);font-weight:700;font-size:clamp(1.9rem,4.2vw,3rem);
+  letter-spacing:-.02em;line-height:1.08;margin:.7rem 0 0}
+.wiki-head .stand{color:#54483A;font-size:1.05rem;max-width:62ch;margin-top:.9rem}
+
+.wiki-body h2{font-family:var(--body);font-weight:700;font-size:clamp(1.35rem,2.6vw,1.75rem);
+  letter-spacing:-.015em;margin:2.6rem 0 .8rem;scroll-margin-top:92px;position:relative}
+.wiki-body h2:first-child{margin-top:1.4rem}
+.wiki-body h3{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-faint);margin:1.9rem 0 .6rem;scroll-margin-top:92px}
+.wiki-body p{max-width:68ch;margin-bottom:.95rem}
+.wiki-body .lead{font-size:1.08rem;color:#4A3F32}
+
+/* anchor link that appears on hover */
+.wiki-body h2 .anchor{opacity:0;margin-left:.5rem;font-family:var(--mono);font-size:.7em;
+  color:var(--brass-ink);text-decoration:none;transition:opacity .15s}
+.wiki-body h2:hover .anchor{opacity:.6}
+.wiki-body h2 .anchor:hover{opacity:1}
+
+.wtbl{width:100%;border-collapse:collapse;border:1px solid var(--rule);background:#fff;
+  border-radius:3px;overflow:hidden;margin:1.2rem 0;font-size:.95rem}
+.wtbl th{background:var(--paper-2);font-family:var(--mono);font-size:.63rem;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink-dim);text-align:left;padding:.65rem .9rem;
+  border-bottom:1px solid var(--rule);font-weight:600}
+.wtbl td{padding:.65rem .9rem;border-bottom:1px solid rgba(220,207,184,.55);vertical-align:top}
+.wtbl tr:last-child td{border-bottom:0}
+.wtbl td:first-child{font-weight:600}
+
+.note{border-left:3px solid var(--brass);padding:.2rem 0 .2rem 1.2rem;margin:1.4rem 0;max-width:66ch}
+.note strong{display:block;margin-bottom:.2rem}
+
+/* not built yet - marks where in-game instructions will go */
+.pending{border:1px dashed var(--rule);background:rgba(255,255,255,.5);border-radius:3px;
+  padding:1.1rem 1.3rem;margin:1.4rem 0;max-width:66ch}
+.pending .tag{font-family:var(--mono);font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--brass-ink);font-weight:600;display:block;margin-bottom:.35rem}
+.pending p{color:var(--ink-faint);font-style:italic;margin:0}
+
+ul.wl{list-style:none;margin:.3rem 0 1.2rem;max-width:68ch;padding:0}
+ul.wl li{padding:.3rem 0 .3rem 1.3rem;position:relative;color:var(--ink-dim)}
+ul.wl li::before{content:'';position:absolute;left:0;top:.92em;width:6px;height:1px;background:var(--brass)}
+ul.wl li strong{color:var(--ink)}
+
+.stage-row{display:grid;grid-template-columns:auto 1fr;gap:1.1rem;align-items:start;
+  background:#fff;border:1px solid var(--rule);border-radius:3px;padding:1.2rem 1.3rem;margin-bottom:1px}
+.stage-row .n{font-family:var(--display);font-weight:900;font-size:1.5rem;color:var(--brass);line-height:1}
+.stage-row h4{font-size:1.04rem;font-weight:700;margin:0 0 .3rem}
+.stage-row p{margin:0;font-size:.95rem;color:var(--ink-dim)}
