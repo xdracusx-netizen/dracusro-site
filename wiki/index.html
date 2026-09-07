@@ -48,8 +48,8 @@
     <p class="crumb"><a href="../index.html">DracusRO</a> &nbsp;/&nbsp; Wiki</p>
     <h1>The wiki</h1>
     <p class="stand">How every system actually works. This is the reference, not the pitch &mdash;
-      thresholds, rules, edge cases, and what happens when things go wrong. If you want the short
-      version, read the <a href="../systems.html">systems guide</a> instead.</p>
+ thresholds, rules, edge cases, and what happens when things go wrong. If you want the short
+ version, read the <a href="../systems.html">systems guide</a> instead.</p>
   </div>
 </header>
 
@@ -74,8 +74,8 @@
   <main class="wiki-body">
     <div class="note">
       <strong>This is being written as the server is built.</strong>
-      Design rules are documented now. Sections marked <em>not built yet</em> are systems that exist on
-      paper but not in game, and step-by-step instructions arrive as each one goes live.
+ Design rules are documented now. Sections marked <em>not built yet</em> are systems that exist on
+ paper but not in game, and step-by-step instructions arrive as each one goes live.
     </div>
 
     <h2 id="start">Where to start</h2>
@@ -95,30 +95,30 @@
 
     <h2 id="loop">How it fits together</h2>
     <p class="lead">Nothing here is a side system. Every piece feeds the next one, and that is the
-      whole design.</p>
+ whole design.</p>
 
     <ul class="wl">
       <li><strong>You kill things.</strong> Experience goes to you, contribution goes to your city, and
-        the kill counts toward your bestiary.</li>
+ the kill counts toward your bestiary.</li>
       <li><strong>Your city grows</strong> on what its citizens actually played. Each tier opens deeper
-        dungeons, a world boss, and better crafting.</li>
+ dungeons, a world boss, and better crafting.</li>
       <li><strong>Dungeons and bosses drop materials</strong> that the crafting your city unlocked turns
-        into the best gear available.</li>
+ into the best gear available.</li>
       <li><strong>Guilds run caravans</strong> between cities. That trade is where war supply comes from,
-        and anyone can try to take one off the road.</li>
+ and anyone can try to take one off the road.</li>
       <li><strong>Supply funds sieges.</strong> Castles change hands, territory generates income, and the
-        income feeds back into the cities.</li>
+ income feeds back into the cities.</li>
     </ul>
 
     <p>Which means there is no wasted activity. Somebody grinding a field map alone is developing the
-      city that opens the dungeon that arms the guild that takes the castle.</p>
+ city that opens the dungeon that arms the guild that takes the castle.</p>
 
     <h2 id="conventions">Reading these pages</h2>
     <ul class="wl">
       <li><strong>Numbers are not final</strong> until the system is live and tuned. Anything that is
-        still a placeholder says so.</li>
+ still a placeholder says so.</li>
       <li><strong>Every heading is linkable.</strong> Hover a section title and click the # to get a
-        direct link, which is the fastest way to answer a question in Discord.</li>
+ direct link, which is the fastest way to answer a question in Discord.</li>
       <li><strong>Not built yet</strong> means the design is settled but the code is not written.</li>
     </ul>
 
@@ -145,10 +145,10 @@
 <script>
 // give every h2 a hover anchor so sections are linkable
 document.querySelectorAll('.wiki-body h2[id]').forEach(function(h){
-  var a=document.createElement('a');
-  a.className='anchor'; a.href='#'+h.id; a.textContent='#';
-  a.setAttribute('aria-label','Link to this section');
-  h.appendChild(a);
+ var a=document.createElement('a');
+ a.className='anchor'; a.href='#'+h.id; a.textContent='#';
+ a.setAttribute('aria-label','Link to this section');
+ h.appendChild(a);
 });
 </script>
 </body>
