@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Citizenship — DracusRO wiki</title>
-<meta name="description" content="Choosing a faction on DracusRO, what citizenship decides, and what it costs to leave.">
+<meta name="description" content="How factions work on DracusRO: choosing one, contribution, research, guilds, approval ratings and declaring war.">
 	<link rel="canonical" href="https://dracusro.com/wiki/citizenship.html">
 	<meta property="og:type" content="article">
 	<meta property="og:site_name" content="DracusRO">
 	<meta property="og:title" content="Citizenship — DracusRO wiki">
-	<meta property="og:description" content="Choosing a faction on DracusRO, what citizenship decides, and what it costs to leave.">
+	<meta property="og:description" content="How factions work on DracusRO: choosing one, contribution, research, guilds, approval ratings and declaring war.">
 	<meta property="og:image" content="https://dracusro.com/assets/img/og-image.jpg">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="theme-color" content="#FBF6EC">
@@ -47,8 +47,7 @@
   <div class="shell">
     <p class="crumb"><a href="../index.html">DracusRO</a> &nbsp;/&nbsp; <a href="index.html">Wiki</a> &nbsp;/&nbsp; Citizenship</p>
     <h1>Citizenship</h1>
-    <p class="stand">Not a chat channel and not a cosmetic tag. Your faction decides which city your
- work builds, which content is cheap for you, and who you are at war with on Saturday.</p>
+    <p class="stand">Choosing a faction, what it decides, what it costs to leave, and how a faction goes to war.</p>
   </div>
 </header>
 
@@ -59,11 +58,17 @@
     <a href="index.html">Overview</a>
     <a href="citizenship.html" class="on">Citizenship</a>
     <a href="cities.html">Cities</a>
+    <a href="market.html">Markets &amp; trade</a>
     <h4>Your character</h4>
     <a href="multiclass.html">Multiclassing</a>
+    <a href="classes.html">Classes &amp; combat</a>
     <a href="bestiary.html">Bestiary &amp; album</a>
+    <h4>Gear</h4>
+    <a href="crafting.html">Crafting</a>
+    <a href="provisions.html">Provisions</a>
     <h4>Content</h4>
-    <a href="dungeons.html">Dungeons &amp; gear</a>
+    <a href="dungeons.html">Dungeons</a>
+    <a href="encounters.html">Boss encounters</a>
     <a href="bosses.html">World bosses</a>
     <h4>The war</h4>
     <a href="caravans.html">Caravans</a>
@@ -71,68 +76,94 @@
   </aside>
 
   <main class="wiki-body">
-    <h2 id="what">What it decides</h2>
-    <p class="lead">Every faction has its own city to develop, its own dungeons, its own world boss,
- its own gear to farm and its own cosmetics. Picking one is the first real decision you make.</p>
-
+    <div class="note"><strong>Your faction is chosen once and changing it is expensive.</strong> Read this before you pick.</div>
+    <h2 id="choosing">Choosing a faction</h2>
+    <p>Every character belongs to one of five factions. The choice is made at character creation and it decides where you can craft, which auction house you can sell at, which research you benefit from, and who you are at war with.</p>
+    <table class="wtbl">
+      <tr><th>Faction</th><th>Seat</th><th>Secondary</th><th>Identity</th></tr>
+      <tr><td>Prontera</td><td>Prontera</td><td>Aldebaran</td><td>Governance. Collects double the tax it sets, walls are harder, declares war at a lower threshold.</td></tr>
+      <tr><td>Morroc</td><td>Morroc</td><td>Comodo</td><td>Subterfuge. Higher return on intercepted caravans, runs the black market, climbs walls without ladders.</td></tr>
+      <tr><td>Geffen</td><td>Geffen</td><td>Juno</td><td>Research. Three extra ranks on every shared research node. Fields magic artillery.</td></tr>
+      <tr><td>Payon</td><td>Payon</td><td>Amatsu</td><td>Production. Cheaper crafting for everybody who uses their forge, and they take a cut.</td></tr>
+      <tr><td>Alberta</td><td>Alberta</td><td>Louyang</td><td>Free trade. Pays no inter-faction tax anywhere, and reaches every auction house from one place.</td></tr>
+    </table>
+    <h3>National perks are active from the first day</h3>
+    <p>You do not research your way into them. A Payon citizen crafts 20% cheaper from the moment they log in, and research stacks on top of that.</p>
+    <h2 id="leaving">Leaving</h2>
+    <p>You can defect to another faction. It costs progressively more each time.</p>
+    <table class="wtbl">
+      <tr><th>Defection</th><th>Cooldown before you can move again</th></tr>
+      <tr><td>First</td><td>1 month</td></tr>
+      <tr><td>Second</td><td>3 months</td></tr>
+      <tr><td>Third and after</td><td>9 months</td></tr>
+    </table>
     <ul class="wl">
-      <li><strong>Where your contribution goes.</strong> Every kill feeds the city you belong to.</li>
-      <li><strong>What you can reach cheaply.</strong> Your own faction's dungeons cost nothing extra.
- Everyone else's charge an <a href="cities.html#access">access fee</a>.</li>
-      <li><strong>Who you fight.</strong> Sieges are between factions. You cannot fight for one you do
- not belong to.</li>
+      <li><strong>Your contribution stays behind.</strong> Everything you earned for your old city remains theirs.</li>
+      <li><strong>You are removed from your guild</strong> automatically.</li>
+      <li><strong>Your city tier gates it.</strong> You cannot defect out of a faction that is behind.</li>
+      <li><strong>Your character is unchanged.</strong> Levels, gear, bestiary and album all come with you.</li>
     </ul>
-
-    <h2 id="factions">The five factions</h2>
-    <p>Each holds one thing the other four need, which is what makes diplomacy real rather than
- decorative. Cutting anybody off costs you something too.</p>
-
+    <h2 id="contribution">Contribution</h2>
+    <p>Everything you kill pays two currencies to your faction alongside your own experience.</p>
     <table class="wtbl">
-      <tr><th>Faction</th><th>Holds</th><th>What that means in practice</th></tr>
-      <tr><td>Prontera</td><td>Governance</td><td>Collects double the tax it sets. Harder to invade than anyone else, and needs less development than normal before it can declare war.</td></tr>
-      <tr><td>Morroc</td><td>Subterfuge</td><td>Higher return on intercepted caravans, and the black market where stolen cargo finds a buyer. Rich in war supply, slow to build cities.</td></tr>
-      <tr><td>Geffen</td><td>Research</td><td>Reaches three tiers past everyone else on every research track, and converts the same investment into more progress.</td></tr>
-      <tr><td>Payon</td><td>Production</td><td>Reduced material cost on crafting, enhancing and refining, plus recipes nobody else can make. Everybody gears through Payon.</td></tr>
-      <tr><td>Alberta</td><td>Trade</td><td>Pays no inter-faction tax at all, sells into every city, and can field any other faction's siege hardware.</td></tr>
+      <tr><th>Currency</th><th>Where it comes from</th><th>What it pays for</th></tr>
+      <tr><td>Civic</td><td>Almost entirely from killing things</td><td>City development, research, dungeon access, caravan commissioning</td></tr>
+      <tr><td>Military</td><td>A small trickle from kills, and mostly from caravans</td><td>Declaring war, siege equipment, respawn tickets</td></tr>
     </table>
-
-    <h2 id="population">Nobody should join the biggest one</h2>
-    <p class="lead">City development is measured per active citizen, not in raw total.</p>
-
-    <p>A faction that swells far past its share develops more slowly per person. Which means stampeding
- into whoever looks strongest actively makes them weaker, and you are better off somewhere that
- needs you.</p>
-
-    <div class="note">
-      <strong>Why this exists.</strong>
- Without it, the largest faction wins permanently and everyone piles in. Measuring per head turns
- that into a self-correcting problem instead of a death spiral.
-    </div>
-
-    <h2 id="leaving">Leaving is possible, and deliberately slow</h2>
-    <p>You cannot switch until the city you belong to has reached <strong>City</strong> tier. Nobody
- gets to abandon a settlement the moment it looks like hard work.</p>
-
-    <p>After that, every move costs more than the last.</p>
-
+    <p class="lead">Higher level monsters pay more, but not proportionally more. A level 180 monster is worth roughly nine times a level 100 one rather than seventy-eight times, which is deliberate — a faction full of endgame players should be stronger, not the only thing that counts.</p>
+    <div class="note"><strong>You cannot grind your way to a war.</strong> Military points come overwhelmingly from caravans. A faction that never trades can build a Metropolis and still not afford to attack anybody.</div>
+    <h2 id="research">Research</h2>
+    <p>Unlocked when your city reaches City tier. Three trees, each with six nodes everybody can take and one exclusive to your faction.</p>
     <table class="wtbl">
-      <tr><th>Move</th><th>Cooldown before the next one</th></tr>
-      <tr><td>First switch</td><td>1 month</td></tr>
-      <tr><td>Second switch</td><td>3 months</td></tr>
-      <tr><td>Third switch</td><td>9 months</td></tr>
+      <tr><th>Tree</th><th>What it covers</th></tr>
+      <tr><td>Military</td><td>Siege assault and defence, caravan raiding and escort, plunder, logistics</td></tr>
+      <tr><td>Economic</td><td>Field yield, refining, civic works, secondary territory, trade contracts</td></tr>
+      <tr><td>Faction</td><td>Monster slaying, resilience, boss assault, spoils, expedition</td></tr>
     </table>
-
-    <p>Whatever you contributed stays with the city you contributed it to. This exists so a faction
- losing badly can bleed players &mdash; not so you can chase whoever is winning this week.</p>
-
-    <h2 id="discord">Your Discord role is not your citizenship</h2>
-    <p>The faction role on Discord is a colour and a channel. It changes freely and instantly. Your
- actual citizenship lives in game and follows the rules above.</p>
-
+    <h3>Ranks</h3>
+    <p>Every node has five ranks. Each one costs more than the last, so taking one node to rank 5 costs about as much as taking four nodes to rank 2.</p>
+    <p><strong>Geffen reaches rank 8</strong> on shared nodes only. Exclusive nodes cap at rank 5 for everybody including them. Their extra depth costs roughly four and a half times what a normal node does, so they specialise brutally rather than being better at everything.</p>
+    <h3>Where the funding comes from</h3>
+    <table class="wtbl">
+      <tr><th>Source</th><th>Split</th></tr>
+      <tr><td>Citizens</td><td>30% to research, 70% to the city, while research is active</td></tr>
+      <tr><td>Castle-holding guilds</td><td>50% to research, 50% to the city</td></tr>
+    </table>
+    <p>Guild leaders direct research continuously. Citizens nominate a node once a week in a 24 hour window, and the top contributor gets the nomination.</p>
+    <h2 id="guilds">Guilds</h2>
+    <table class="wtbl">
+      <tr><th>Rule</th><th>Detail</th></tr>
+      <tr><td>Maximum size</td><td>20</td></tr>
+      <tr><td>Faction-locked</td><td>A guild belongs to one faction. There are no cross-faction guilds and no alliances between factions.</td></tr>
+      <tr><td>Castles</td><td>Five per faction, one guild each</td></tr>
+      <tr><td>Inactivity</td><td>Leadership transfers automatically after two weeks</td></tr>
+      <tr><td>Disbanding</td><td>The castle reverts to unclaimed. Research ranks stay with the faction.</td></tr>
+    </table>
+    <h2 id="politics">Approval and civil war</h2>
+    <p>Every citizen votes on their castle-holding guilds weekly, not just guild members. Approval ratings are public.</p>
+    <table class="wtbl">
+      <tr><th>Approval</th><th>Status</th></tr>
+      <tr><td>70% or above</td><td>Secure</td></tr>
+      <tr><td>Below 70%</td><td>Vulnerable to challenge</td></tr>
+    </table>
+    <ul class="wl">
+      <li><strong>Only landless guilds may challenge.</strong> A guild that already holds a castle cannot take another by civil war.</li>
+      <li><strong>The challenger is whoever contributed most</strong> in economic and military terms that week.</li>
+      <li><strong>Civil wars are fought in the second hour</strong> of the siege window, alongside rebellions.</li>
+      <li><strong>A successful defence</strong> buys a week of safety and leaves approval unchanged.</li>
+    </ul>
+    <h2 id="war">Declaring war</h2>
+    <p>All five castle-holding guild leaders must vote yes. One refusal and there is no war.</p>
+    <table class="wtbl">
+      <tr><th>Target</th><th>Cost</th></tr>
+      <tr><td>Any standard faction</td><td>260,000 military points</td></tr>
+      <tr><td>Prontera</td><td>460,000 military points</td></tr>
+    </table>
+    <p><strong>A declaration commits every guild in the faction.</strong> All five attack all five of the target's castles in the same hour. There is no partial commitment and no guild held in reserve.</p>
+    <p class="lead">Which means a faction whose five guild leaders cannot agree is a faction that does not go to war. That is not an accident of the design — it is the design.</p>
     <div class="pending">
       <span class="tag">Not built yet</span>
-      <p>Step-by-step: where citizenship is granted, what the faction selection interface looks like,
- and how to check your current standing.</p>
+      <p>In-game interfaces for voting, research direction and the war map.</p>
     </div>
   </main>
 </div>

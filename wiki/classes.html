@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Classes &amp; combat — DracusRO wiki</title>
+<meta name="description" content="Class balance on DracusRO: buff durations, Asura caps, crowd control diminishing returns, Bard and Dancer rework, and animation changes.">
+	<link rel="canonical" href="https://dracusro.com/wiki/classes.html">
+	<meta property="og:type" content="article">
+	<meta property="og:site_name" content="DracusRO">
+	<meta property="og:title" content="Classes &amp; combat — DracusRO wiki">
+	<meta property="og:description" content="Class balance on DracusRO: buff durations, Asura caps, crowd control diminishing returns, Bard and Dancer rework, and animation changes.">
+	<meta property="og:image" content="https://dracusro.com/assets/img/og-image.jpg">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="theme-color" content="#FBF6EC">
+	<link rel="icon" href="../assets/img/favicon.ico" sizes="any">
+	<link rel="icon" type="image/png" href="../assets/img/favicon-32.png" sizes="32x32">
+	<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Spectral:ital,wght@0,300;0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="shell nav-in">
+    <a class="mark" href="../index.html"><img class="mark-crest" src="../assets/img/dro-crest.png" alt="" aria-hidden="true">DRACUS<span>RO</span></a>
+    <div class="nav-links">
+      <a href="../index.html#different">The server</a>
+      <a href="../systems.html">Systems guide</a>
+      <a href="index.html">Wiki</a>
+      <a href="../shop.html">Cosmetics</a>
+      <a class="nav-discord" href="https://discord.gg/XNHBAawCjw" target="_blank" rel="noopener noreferrer">Discord</a>
+    </div>
+    <div class="nav-cta" id="nav-cta"
+         data-register="https://panel.dracusro.com/?module=account&amp;action=create" data-login="https://panel.dracusro.com/?module=account&amp;action=login"
+         data-panel="https://panel.dracusro.com/?module=account&amp;action=view" data-download="https://panel.dracusro.com/?module=pages&amp;action=content&amp;path=downloads">
+      <a class="btn btn-ghost" href="https://panel.dracusro.com/?module=pages&amp;action=content&amp;path=downloads" target="_blank" rel="noopener noreferrer">Download</a>
+      <a class="btn btn-ghost js-login" href="https://panel.dracusro.com/?module=account&amp;action=login" target="_blank" rel="noopener noreferrer">Log in</a>
+      <a class="btn btn-solid js-register" href="https://panel.dracusro.com/?module=account&amp;action=create" target="_blank" rel="noopener noreferrer">Create account</a>
+    </div>
+  </div>
+</nav>
+
+<header class="wiki-head">
+  <div class="shell">
+    <p class="crumb"><a href="../index.html">DracusRO</a> &nbsp;/&nbsp; <a href="index.html">Wiki</a> &nbsp;/&nbsp; Classes &amp; combat</p>
+    <h1>Classes and combat</h1>
+    <p class="stand">What has changed from standard Ragnarok, and the reasoning behind each change.</p>
+  </div>
+</header>
+
+<div class="shell wiki-shell">
+  <aside class="wiki-nav">
+    <h4>Contents</h4>
+    <h4>The world</h4>
+    <a href="index.html">Overview</a>
+    <a href="citizenship.html">Citizenship</a>
+    <a href="cities.html">Cities</a>
+    <a href="market.html">Markets &amp; trade</a>
+    <h4>Your character</h4>
+    <a href="multiclass.html">Multiclassing</a>
+    <a href="classes.html" class="on">Classes &amp; combat</a>
+    <a href="bestiary.html">Bestiary &amp; album</a>
+    <h4>Gear</h4>
+    <a href="crafting.html">Crafting</a>
+    <a href="provisions.html">Provisions</a>
+    <h4>Content</h4>
+    <a href="dungeons.html">Dungeons</a>
+    <a href="encounters.html">Boss encounters</a>
+    <a href="bosses.html">World bosses</a>
+    <h4>The war</h4>
+    <a href="caravans.html">Caravans</a>
+    <a href="sieges.html">Sieges</a>
+  </aside>
+
+  <main class="wiki-body">
+    <p class="lead">What has been changed from standard Ragnarok, and why. If you have played this game before, read this page.</p>
+    <h2 id="philosophy">The approach</h2>
+    <p>Nothing here is a nerf for its own sake. Every change targets a specific pattern that makes fights worse for everybody involved.</p>
+    <table class="wtbl">
+      <tr><th>Pattern</th><th>Treatment</th></tr>
+      <tr><td>No-cooldown mobility</td><td>Cooldowns added, range increased in exchange</td></tr>
+      <tr><td>Uncapped burst</td><td>Capped as a percentage of the target's maximum health</td></tr>
+      <tr><td>Damage that scales off the target</td><td>Removed. Being tanky should not make you easier to kill.</td></tr>
+      <tr><td>Permanent denial</td><td>Duration and cooldown added</td></tr>
+      <tr><td>Maintenance spam</td><td>Long-duration party-wide buffs</td></tr>
+      <tr><td>Dead time</td><td>After-cast delay cut hard, replaced by visible cooldowns</td></tr>
+    </table>
+    <h2 id="buffs">Buffs last thirty minutes</h2>
+    <p>Maintenance buffs are party-wide and last half an hour. Tactical ones stay short.</p>
+    <table class="wtbl">
+      <tr><th>Long — 30 minutes, party-wide</th><th>Still tactical</th></tr>
+      <tr><td>Blessing, Increase AGI, Angelus, Gloria, Magnificat, Impositio</td><td>Kyrie Eleison, Assumptio, Suffragium</td></tr>
+      <tr><td>Aspersio</td><td>Safety Wall, Pneuma</td></tr>
+      <tr><td>Weapon Perfection, Adrenaline Rush, Power Thrust, Over Thrust</td><td>Maximize Power</td></tr>
+      <tr><td>Elemental endows, Chemical Protection</td><td>Defending Aura</td></tr>
+      <tr><td>Auto Guard, Reflect Shield</td><td>—</td></tr>
+    </table>
+    <ul class="wl">
+      <li><strong>Buffs persist through death.</strong> Rebuffing after every death in a siege is exactly the busywork being removed.</li>
+      <li><strong>Lost on class change.</strong></li>
+      <li><strong>Dispel is now a real weapon.</strong> Stripping a thirty minute buff mid-fight is a serious blow.</li>
+      <li><strong>Consumable buffs also persist through death.</strong> They are expensive.</li>
+    </ul>
+    <h2 id="asura">Asura Strike</h2>
+    <p>Capped as a share of the target's maximum health, and the cap depends on what you hit.</p>
+    <table class="wtbl">
+      <tr><th>Target</th><th>Cap</th></tr>
+      <tr><td>Players</td><td>35% of maximum HP</td></tr>
+      <tr><td>Ordinary monsters</td><td>70%, with no damage to anything below 30% health</td></tr>
+      <tr><td>Bosses</td><td>5%, with no floor</td></tr>
+    </table>
+    <h3>Shattered Ki</h3>
+    <p>Asura applies a mark to the target for 20 seconds. Everybody hitting that target deals 25% more damage, including the monk.</p>
+    <ul class="wl">
+      <li><strong>The target cannot be hit by another Asura</strong> while the mark holds.</li>
+      <li><strong>SP cost is much lower</strong> than standard — a monk should manage around ten casts in a long fight.</li>
+      <li><strong>In group content the mark is the point.</strong> Against a boss the monk's job is keeping it applied, which is worth far more than their personal damage.</li>
+    </ul>
+    <h2 id="mobility">Mobility</h2>
+    <table class="wtbl">
+      <tr><th>Skill</th><th>Change</th></tr>
+      <tr><td>Body Relocation</td><td>12 second cooldown. Range increased to 22 cells.</td></tr>
+      <tr><td>Backslide</td><td>12 second cooldown. Range 10 to 12 cells, and you are concealed on use.</td></tr>
+    </table>
+    <p>Backslide's concealment works at your own Cloaking level. A Rogue who never learned Cloaking still gets the reposition, just not the disappearing act.</p>
+    <h2 id="alchemist">Alchemist</h2>
+    <p>Acid Demonstration no longer scales off the target's stats, is capped at 5% of maximum health, and has a 15 second cooldown.</p>
+    <p><strong>It now applies Corroded</strong> — 20 seconds during which the target takes substantially more damage from every Alchemist ability, and Hell Plants hit considerably harder.</p>
+    <p>Which gives the class a rotation for the first time. Acid Demonstration sets up, everything else cashes in, and an alchemist pressing one button is now visibly playing badly.</p>
+    <h2 id="bard">Bard and Dancer</h2>
+    <p>Songs and dances are now <strong>screen-wide auras centred on the performer</strong>, moving with them.</p>
+    <ul class="wl">
+      <li><strong>No positioning requirement.</strong> If you can see them, you have it.</li>
+      <li><strong>One performer is enough.</strong> A second of the same song adds nothing.</li>
+      <li><strong>Still channelled.</strong> They are not attacking or healing while it runs.</li>
+    </ul>
+    <p>The old version was built for a game where fights happened in one spot. Nothing on this server stands still.</p>
+    <h2 id="res">Resurrection</h2>
+    <table class="wtbl">
+      <tr><th></th><th>Value</th></tr>
+      <tr><td>Skill levels</td><td>One. Nothing to rank up.</td></tr>
+      <tr><td>Health restored</td><td>Full</td></tr>
+      <tr><td>Cooldown</td><td>2 minutes</td></tr>
+      <tr><td>Scope</td><td>Per caster</td></tr>
+    </table>
+    <p>Three priests means three resurrections, staggered. The number of priests a raid brings is a real decision.</p>
+    <h2 id="cc">Crowd control</h2>
+    <p>Repeated hard crowd control on the same target loses effect.</p>
+    <table class="wtbl">
+      <tr><th>Application</th><th>Duration</th></tr>
+      <tr><td>First</td><td>100%</td></tr>
+      <tr><td>Second</td><td>50%</td></tr>
+      <tr><td>Third</td><td>25%</td></tr>
+      <tr><td>Fourth</td><td>Immune</td></tr>
+    </table>
+    <ul class="wl">
+      <li><strong>Resets after 20 seconds</strong> without further application.</li>
+      <li><strong>Freeze, stun, sleep and stone curse share one counter.</strong> Rotating between them does not reset it.</li>
+      <li><strong>It is per target, server-wide.</strong> Five players chaining on one person hit the wall as fast as one player would.</li>
+    </ul>
+    <h2 id="misc">Other changes</h2>
+    <table class="wtbl">
+      <tr><th>Skill</th><th>Change</th></tr>
+      <tr><td>Soul Link</td><td>Moved to Priest. Single target, 30 minutes, 15 second cooldown between swaps.</td></tr>
+      <tr><td>Land Protector</td><td>20 second duration, 45 second cooldown. Disables siege emplacements. Never affects spawn protection.</td></tr>
+      <tr><td>Safety Wall, Pneuma</td><td>10 second cooldown per caster</td></tr>
+      <tr><td>Emergency Call</td><td>Disabled on siege maps entirely</td></tr>
+      <tr><td>Devotion</td><td>Unchanged, but cannot target the emperium</td></tr>
+      <tr><td>Healing items in PvP</td><td>5 second shared cooldown. No cooldown in PvE.</td></tr>
+    </table>
+    <h2 id="delay">Animation and delay</h2>
+    <p>Cast time is counterplay and it stays. After-cast delay is not, and it has been cut hard.</p>
+    <ul class="wl">
+      <li><strong>After-cast delay targets roughly half a second</strong> for standard skills.</li>
+      <li><strong>Cooldowns replace long delays</strong> where a skill genuinely needs limiting. A cooldown is visible and plannable.</li>
+      <li><strong>Movement cancels cleanly.</strong> You lose the skill if it has not fired, but you are not stuck.</li>
+      <li><strong>Nothing locks you for longer than its cast time.</strong></li>
+    </ul>
+    <div class="pending">
+      <span class="tag">Not built yet</span>
+      <p>Full skill-by-skill numbers once the server is tuned. Everything above is the design, not the final values.</p>
+    </div>
+  </main>
+</div>
+
+<footer>
+  <div class="shell foot-in">
+    <a class="mark" href="../index.html" style="font-size:.95rem"><img class="mark-crest" src="../assets/img/dro-crest.png" alt="" aria-hidden="true">DRACUS<span>RO</span></a>
+    <a href="../index.html#info">Server info</a>
+    <a href="../systems.html">Systems guide</a>
+    <a href="index.html">Wiki</a>
+    <a href="https://discord.gg/XNHBAawCjw" target="_blank" rel="noopener noreferrer">Discord</a>
+    <a href="https://www.facebook.com/DROServer" target="_blank" rel="noopener noreferrer">Facebook</a>
+    <span class="r">Not affiliated with Gravity Co., Ltd.</span>
+  </div>
+</footer>
+
+<script src="../assets/session.js"></script>
+<script>
+document.querySelectorAll('.wiki-body h2[id]').forEach(function(h){
+ var a=document.createElement('a');
+ a.className='anchor'; a.href='#'+h.id; a.textContent='#';
+ a.setAttribute('aria-label','Link to this section');
+ h.appendChild(a);
+});
+</script>
+</body>
+</html>

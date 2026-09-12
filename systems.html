@@ -134,8 +134,10 @@ ul.pts li strong{color:var(--ink)}
     <a href="#citizenship">Citizenship</a>
     <a href="#cities">Cities</a>
     <a href="#multiclass">Multiclassing</a>
+    <a href="#classes">Classes &amp; combat</a>
     <a href="#collection">Bestiary &amp; album</a>
-    <a href="#dungeons">Dungeons &amp; gear</a>
+    <a href="#dungeons">Dungeons</a>
+    <a href="#crafting">Crafting</a>
     <a href="#bosses">World bosses</a>
     <a href="#caravans">Caravans</a>
     <a href="#sieges">Sieges</a>
@@ -144,230 +146,217 @@ ul.pts li strong{color:var(--ink)}
   <main>
 
   <!-- 01 -->
-  <section class="sys-block" id="citizenship">
+    <!-- section -->
+<section class="sys-block" id="citizenship">
     <span class="kicker">01 · Citizenship</span>
     <h2>You pick a side, and it decides most of your game</h2>
-    <p class="lead">Not a chat channel. Your faction has its own city to build, its own dungeons, its own
-      world boss, its own gear to farm and its own cosmetics. It also decides who you are at war with on
-      Saturday. Each faction holds one thing the other four need, so nobody can afford to cut anybody off.</p>
-
+    <p class="lead">Not a chat channel. Your faction has its own city to build, its own dungeons, its own gear to farm and its own cosmetics. It also decides who you are at war with on Saturday.</p>
+    <p>Each faction holds one thing the other four need, and that is enforced rather than encouraged. Crush a faction and you lose whatever they were supplying — including services you were relying on.</p>
     <table class="tbl">
       <tr><th>Faction</th><th>Holds</th><th>Which means</th></tr>
-      <tr><td>Prontera</td><td>Governance</td><td>Collects double the tax it sets. Hard to invade, easy to invade from.</td></tr>
-      <tr><td>Morroc</td><td>Subterfuge</td><td>Better returns on raided caravans. The black market where stolen cargo sells.</td></tr>
-      <tr><td>Geffen</td><td>Research</td><td>Reaches three tiers past everyone else on every research track.</td></tr>
-      <tr><td>Payon</td><td>Production</td><td>Cheaper crafting and refining, plus recipes nobody else can make.</td></tr>
-      <tr><td>Alberta</td><td>Trade</td><td>Pays nobody's tax. Can field any other faction's siege hardware.</td></tr>
+      <tr><td>Prontera</td><td>Governance</td><td>Collects double the tax it sets. Hardest walls on the server, and declares war at a lower threshold than anybody else.</td></tr>
+      <tr><td>Morroc</td><td>Subterfuge</td><td>Better returns on raided caravans. Runs the black market, the only place stolen cargo can be sold.</td></tr>
+      <tr><td>Geffen</td><td>Research</td><td>Three extra ranks on every shared research node, and converts one faction's crafting materials into another's.</td></tr>
+      <tr><td>Payon</td><td>Production</td><td>A 44% material discount at their forge — available to anybody who travels there and pays the tax. They also sell the server's food and potions.</td></tr>
+      <tr><td>Alberta</td><td>Trade</td><td>Pays nobody's tax, anywhere. Their auction house shows every listing on the server in one place.</td></tr>
     </table>
-
+    <h3>National perks work from your first day</h3>
+    <p>You do not research your way into them. A Payon citizen crafts cheaper the moment they log in, and research stacks on top of that.</p>
     <h3>Leaving is possible, and deliberately slow</h3>
-    <p>You cannot switch until the city you belong to has reached <strong>City</strong> tier. Nobody gets to
-      abandon a settlement the moment it looks like hard work.</p>
-    <p>After that, every move costs more than the last.</p>
-
+    <p>Your city tier gates it, and every move costs more than the last.</p>
     <table class="tbl">
       <tr><th>Move</th><th>Cooldown before the next one</th></tr>
       <tr><td>First switch</td><td>1 month</td></tr>
       <tr><td>Second switch</td><td>3 months</td></tr>
       <tr><td>Third switch</td><td>9 months</td></tr>
     </table>
-
-    <p>Whatever you contributed stays with the city you contributed it to. This exists so a faction losing
-      badly can bleed players &mdash; not so you can chase whoever is winning this week.</p>
+    <p>Whatever you contributed stays with the city you contributed it to.</p>
   </section>
 
-  <!-- 02 -->
   <div class="shell"><div class="orn-rule">
     <img class="orn" src="assets/img/divider.png" alt="" aria-hidden="true">
   </div></div>
-
+  <!-- section -->
 <section class="sys-block" id="cities">
     <span class="kicker">02 · Cities</span>
     <h2>Your city grows because people played in it</h2>
-    <p class="lead">Every kill, every clear, every delivery pays into your city. Cities move through five
-      tiers, and each tier is a physically different map — more buildings, more services, more of a place.</p>
-
+    <p class="lead">Every kill, every clear, every delivery pays into your city. Cities move through five tiers, and each tier is a physically different map — more buildings, more services, more of a place.</p>
     <table class="tbl">
       <tr><th>Tier</th><th>Opens</th></tr>
-      <tr><td>Settlement</td><td>Basic shops. Tier 1 dungeon.</td></tr>
-      <tr><td>Village</td><td>Expanded gear, base refining, tier 2 dungeon.</td></tr>
-      <tr><td>Town</td><td>Crafting and enhancing. Tier 3 dungeon.</td></tr>
-      <tr><td>City</td><td>Tier 4 dungeon. World bosses activate.</td></tr>
-      <tr><td>Metropolis</td><td>Tier 5, legendary crafting, god items. Needs a conquest, not just development.</td></tr>
+      <tr><td>Settlement</td><td>Basic shops and crafting. Tier 1 dungeon. Food levels 1 and 2.</td></tr>
+      <tr><td>Village</td><td>Tier 2 dungeon. Better recipes. Food levels 3 to 5.</td></tr>
+      <tr><td>Town</td><td>Tier 3 dungeon. Food levels 6 to 8. <strong>Permanent floor — you cannot fall below it.</strong></td></tr>
+      <tr><td>City</td><td>Tier 4 dungeon. Research unlocks. Your world boss starts spawning. Almighty and the top potions.</td></tr>
+      <tr><td>Metropolis</td><td>Tier 5 access, the highest food tier, and convoys that can carry tier 5 cargo. Needs a conquest, not just development.</td></tr>
     </table>
-
-    <div class="pull">
-      <strong>Access never revokes.</strong>
-      Once a dungeon opens for your city it stays open. Fall behind and it costs a fee to keep using it —
-      and that fee goes straight back into your city. Falling behind costs money, never content.
-    </div>
+    <p><strong>Access never revokes.</strong> Once a dungeon opens for your city it stays open. Fall behind and it costs a fee to keep using it — falling behind costs money, never content.</p>
+    <h3>City and Metropolis need maintaining</h3>
+    <p>Both have a daily civic requirement. Fall short for seven days running and the tier drops. An active faction never notices; a faction that has stopped playing loses Metropolis in a week.</p>
   </section>
 
-  <!-- 03 -->
   <div class="shell"><div class="orn-rule">
     <img class="orn" src="assets/img/divider.png" alt="" aria-hidden="true">
   </div></div>
-
+  <!-- section -->
 <section class="sys-block" id="multiclass">
     <span class="kicker">03 · Multiclassing</span>
     <h2>One character holds every class</h2>
-    <p class="lead">You do not roll an alt. Unlock a class once and it stays unlocked &mdash; then walk
-      into your faction city and change into it whenever you want. Same character, same name, same
-      collection progress, different job.</p>
-
-    <ul class="pts">
-      <li><strong>Swapping happens at an NPC in your faction city</strong>, not mid-fight and not mid-siege.</li>
-      <li><strong>Everything you have earned follows you</strong> into every class you hold.</li>
-      <li><strong>Human classes only</strong>, all the way through 4th job. No Doram, no Baby classes.</li>
-    </ul>
-
-    <div class="pull">
-      <strong>What this changes.</strong>
-      A party that needs a healer stops looking for one and just decides who becomes one. Grouping gets
-      much easier. The flip side is that your class stops being your identity &mdash; nobody is
-      <em>the</em> priest any more, because anyone can be. We think that trade is worth making.
-    </div>
+    <p class="lead">You do not roll an alt. Unlock a class once and it stays unlocked — then walk into your faction city and change into it whenever you want. Same character, same name, same collection progress, different job.</p>
+    <p><strong>Nothing has been added.</strong> There are no custom classes. Some have been reworked and the expanded ones — Ninja, Gunslinger, Taekwon, Star Gladiator, Soul Linker, Super Novice — have been removed.</p>
+    <h3>Mastering a class pays forever</h3>
+    <p>Reach maximum job level in a class and one stat rises permanently, for that character, in every class they play.</p>
+    <table class="tbl">
+      <tr><th>Job tier mastered</th><th>Bonus</th></tr>
+      <tr><td>First job</td><td>+2</td></tr>
+      <tr><td>Second job</td><td>+4</td></tr>
+      <tr><td>Third job</td><td>+6</td></tr>
+      <tr><td>Fourth job</td><td>+8</td></tr>
+    </table>
+    <p>Twelve job lines across six stats. Sixteen per stat at full mastery, ninety-six in total — and it applies in PvP.</p>
+    <h3>Your gear comes with you</h3>
+    <p>Reforging converts an item into a different template within the same tier, keeping its refine level, its modifiers and its set membership. Thirty-two saved loadouts per character, applied in a single action.</p>
+    <p>Each class has a fixed loadout shape. Monks and Assassins never carry a shield; Crusaders always do. Without that, reforging would let anybody bolt a shield onto anything and class identity would last a fortnight.</p>
   </section>
 
-  <!-- 04 -->
   <div class="shell"><div class="orn-rule">
     <img class="orn" src="assets/img/divider.png" alt="" aria-hidden="true">
   </div></div>
+  <!-- section -->
+<section class="sys-block" id="classes">
+    <span class="kicker">04 · Classes &amp; combat</span>
+    <h2>If you have played this game before, read this</h2>
+    <p class="lead">Nothing here is a nerf for its own sake. Every change targets a pattern that makes fights worse for everybody involved.</p>
+    <table class="tbl">
+      <tr><th></th><th>On this server</th></tr>
+      <tr><td>Buffs</td><td>Thirty minutes, party-wide, and they survive death. Rebuffing after every death was never the interesting part.</td></tr>
+      <tr><td>Asura Strike</td><td>Capped as a share of the target's health — 35% in PvP, 5% against bosses. It applies a mark instead, and everybody hitting that target does 25% more damage.</td></tr>
+      <tr><td>Crowd control</td><td>Diminishing returns. Four applications and the target is immune for twenty seconds. Freeze, stun, sleep and stone share one counter.</td></tr>
+      <tr><td>Bard and Dancer</td><td>Screen-wide auras that follow the performer. One is enough; a second adds nothing.</td></tr>
+      <tr><td>Resurrection</td><td>One rank, full health, two minute cooldown, per caster.</td></tr>
+      <tr><td>After-cast delay</td><td>Cut hard. Cast time is counterplay and stays — dead time is not and goes.</td></tr>
+      <tr><td>Level cap</td><td>275 base, 60 job.</td></tr>
+    </table>
+    <p>Full detail on the <a href="wiki/classes.html">classes and combat</a> wiki page.</p>
+  </section>
 
+  <div class="shell"><div class="orn-rule">
+    <img class="orn" src="assets/img/divider.png" alt="" aria-hidden="true">
+  </div></div>
+  <!-- section -->
 <section class="sys-block" id="collection">
-    <span class="kicker">04 · Bestiary &amp; card album</span>
-    <h2>Every monster is worth killing. Every card is worth something.</h2>
-    <p class="lead">With no quest chains pointing you anywhere, these are what make one map worth choosing
-      over another. The bestiary tracks kills per species and pays permanent bonuses at milestones. The
-      album registers cards — once each, ever.</p>
-
-    <div class="pull">
-      <strong>One registration per card is what creates the market.</strong>
-      Over a thousand cards, all around 0.01%. Nobody finishes the album. So there is permanent demand for
-      cards nobody wants to equip, and the junk other servers vendor has a buyer here.
-    </div>
+    <span class="kicker">05 · Bestiary &amp; album</span>
+    <h2>You have it from your first login</h2>
+    <p class="lead">No quest, no unlock, no NPC. Your character wakes up with it. Every kill is recorded, every milestone pays, and it follows you into every class you play.</p>
+    <table class="tbl">
+      <tr><th></th><th>Detail</th></tr>
+      <tr><td>Bestiary</td><td>1,142 species, seven milestones each. Experience for the first five, permanent stat and health bonuses for the last two.</td></tr>
+      <tr><td>Card album</td><td>1,023 cards. Registering one grants a permanent bonus — and you can take it back out whenever you like.</td></tr>
+      <tr><td>Bound to</td><td>The character, not the account. With multiclassing, your main is your alt.</td></tr>
+    </table>
+    <p><strong>Nobody will finish either.</strong> Full completion is about 10.2 million kills. The server is balanced around a quarter of that.</p>
+    <p>Registering a card does not consume it. Which is what keeps the card market alive — putting a valuable card in the album is a decision, not a sacrifice.</p>
   </section>
 
-  <!-- 05 -->
   <div class="shell"><div class="orn-rule">
     <img class="orn" src="assets/img/divider.png" alt="" aria-hidden="true">
   </div></div>
-
+  <!-- section -->
 <section class="sys-block" id="dungeons">
-    <span class="kicker">05 · Dungeons &amp; gear</span>
-    <h2>Farm as long as you like. The ceiling is elsewhere.</h2>
-    <p class="lead">Five tiers of instanced dungeon, solo or party. No daily lockout, no weekly lockout, no
-      attunement. Party runs pay better drops and an experience bonus, and have mechanics the solo version
-      does not.</p>
-
-    <p>Base gear drops freely and always will. The materials that upgrade the good stuff come from world
-      bosses and from holding territory — things that happen on a schedule and cannot be ground out.</p>
-
-    <div class="pull">
-      <strong>Materials are the ceiling, not hours played.</strong>
-      What your faction won last week decides what you can wear this week. Refining uses protection ore
-      only — you never destroy the item, you spend the ore.
-    </div>
+    <span class="kicker">06 · Dungeons</span>
+    <h2>Twenty-one instances, no lockouts anywhere</h2>
+    <p class="lead">Four dungeons per faction across four tiers, plus Glast Heim shared between everybody. No keys, no attunement, no daily reset.</p>
+    <table class="tbl">
+      <tr><th>Tier</th><th>Opens at</th><th>Group</th><th>Boss</th></tr>
+      <tr><td>1</td><td>Settlement</td><td>1 to 5</td><td>One mechanic</td></tr>
+      <tr><td>2</td><td>Village</td><td>1 to 5</td><td>Two mechanics</td></tr>
+      <tr><td>3</td><td>Town</td><td>1 to 5</td><td>Three mechanics</td></tr>
+      <tr><td>4</td><td>City</td><td>5</td><td>Three plus a puzzle</td></tr>
+      <tr><td>5</td><td>Metropolis + conquest</td><td>20</td><td>Five wings and a throne room</td></tr>
+    </table>
+    <p><strong>No queue.</strong> Every dungeon sits where it has always sat, with a guard at the entrance who takes the fee and opens the warp. A queue makes a dungeon a button.</p>
+    <p><strong>No boss mods.</strong> Bosses telegraph with emotes one to two seconds before they act, consistently across all twenty-six encounters. A fight that needs an addon to read is a fight we failed to communicate.</p>
+    <p>Wipe and you resume from the chamber you reached. Tier 5 instances persist for seven days, so a raid can come back across several evenings.</p>
   </section>
 
-  <!-- 06 -->
   <div class="shell"><div class="orn-rule">
     <img class="orn" src="assets/img/divider.png" alt="" aria-hidden="true">
   </div></div>
+  <!-- section -->
+<section class="sys-block" id="crafting">
+    <span class="kicker">07 · Crafting</span>
+    <h2>Nothing is rolled. You choose.</h2>
+    <p class="lead">No RNG anywhere in the chain. You select your modifiers, materials always drop, and every item can be reforged into something else.</p>
+    <table class="tbl">
+      <tr><th></th><th>Detail</th></tr>
+      <tr><td>Modifiers</td><td>Selected, never rolled. A tier 5 piece carries five, and you decide which effect sits on which rung.</td></tr>
+      <tr><td>Materials</td><td>100% drop rate. Farming costs time, never luck.</td></tr>
+      <tr><td>Card slots</td><td>Every crafted weapon has four. Every crafted armour has one.</td></tr>
+      <tr><td>Set bonuses</td><td>At two, four and five pieces. They survive reforging, which is what makes multiclassing affordable.</td></tr>
+      <tr><td>Accessories</td><td>A separate set from world bosses, carrying utility rather than damage — movement speed, cooldown reduction, cast delay.</td></tr>
+    </table>
+    <p><strong>You need every faction's dungeon.</strong> Crafting a tier 4 piece takes materials from all five factions' tier 4 dungeons. Nobody gears up inside their own borders, which is why the auction house matters.</p>
+    <p>Crafted gear is soulbound. Materials are not. The restriction exists so nobody can buy their way past the crafting system — not to shut down trade.</p>
+  </section>
 
+  <div class="shell"><div class="orn-rule">
+    <img class="orn" src="assets/img/divider.png" alt="" aria-hidden="true">
+  </div></div>
+  <!-- section -->
 <section class="sys-block" id="bosses">
-    <span class="kicker">06 · World bosses</span>
-    <h2>The one time nobody is at war</h2>
-    <p class="lead">Strictly PvE. No faction contest, no PvP flag, no fighting each other at the spawn.
-      Everything else here is built to generate friction between factions. This is the release valve.</p>
-
-    <p>Contribution is not just damage — healing, damage taken while holding the boss's attention, and
-      buff uptime all count, so the one fight where tanks and healers matter most actually pays them.</p>
-
-    <div class="pull">
-      <strong>Contribution pools across your party.</strong>
-      Twenty people pooling beats five people pooling. Bringing more players grows the reward instead of
-      splitting it, so there is never a reason to keep the fight small.
-    </div>
+    <span class="kicker">08 · World bosses</span>
+    <h2>Nobody owns these, and nobody fights over them</h2>
+    <p class="lead">Six server-wide PvE events. Everybody turns up and kills them together, including people who fought each other on Saturday. PvP is disabled on these maps entirely.</p>
+    <table class="tbl">
+      <tr><th></th><th>Detail</th></tr>
+      <tr><td>Five faction bosses</td><td>Spawn every 24 hours. A faction reaching City tier is what puts theirs on the schedule — it does not make the boss theirs.</td></tr>
+      <tr><td>The One</td><td>Weekly, and only if all five faction bosses died that week. Level 290, and the only monster above the level cap.</td></tr>
+      <tr><td>Loot</td><td>By contribution, to everybody who fought. Nothing to tag, nothing to snipe.</td></tr>
+      <tr><td>Accessories</td><td>Need materials from all five faction bosses. The Apex version needs The One as well.</td></tr>
+    </table>
+    <p><strong>Which creates a dependency nobody can solve alone.</strong> If a faction falls below City tier their boss stops spawning, and nobody on the server can finish an accessory — including whoever kept them down there.</p>
+    <p>Built for three organised guilds with the rest of the server assisting. The One needs seven tanks, which is not a number one guild fields.</p>
   </section>
 
-  <!-- 07 -->
   <div class="shell"><div class="orn-rule">
     <img class="orn" src="assets/img/divider.png" alt="" aria-hidden="true">
   </div></div>
-
+  <!-- section -->
 <section class="sys-block" id="caravans">
-    <span class="kicker">07 · Caravans</span>
-    <h2>Grinding builds cities. Trade funds armies.</h2>
-    <p class="lead">Castle-holding guilds buy cargo in one city and move it to another. That cargo costs
-      real money, and delivering it is where almost all siege supply comes from. A guild that never runs a
-      convoy shows up on Saturday with nothing to spend.</p>
-
-    <ul class="pts">
-      <li><strong>Routes are instanced</strong> and the convoy is visible to the whole server. Raiders opt in
-        deliberately — nobody gets dragged into PvP for standing on a road.</li>
-      <li><strong>Longer hauls pay disproportionately more</strong>, and running the same route repeatedly pays
-        less each time.</li>
-      <li><strong>Anyone can raid.</strong> No castle, no guild, no siege obligation. This is the low-stakes way
-        into PvP here.</li>
-    </ul>
-
-    <div class="pull">
-      <strong>Raiding destroys value on purpose.</strong>
-      The owner loses everything, the raider recovers a fraction. Two factions farming each other burn more
-      than they make — so banditry works against a real enemy and fails as a mutual arrangement.
-    </div>
+    <span class="kicker">09 · Caravans</span>
+    <h2>Where the zeny comes from</h2>
+    <p class="lead">Your city pays for a convoy out of its own contribution. You escort it and get paid personally — or you rob somebody else's and get paid personally.</p>
+    <table class="tbl">
+      <tr><th>Who</th><th>Pays</th><th>Earns</th></tr>
+      <tr><td>The faction</td><td>Civic contribution from the treasury</td><td>Military points, which fund wars</td></tr>
+      <tr><td>The escort</td><td>Nothing but time and risk</td><td><strong>Zeny</strong>, plus military for the faction</td></tr>
+      <tr><td>The raider</td><td>Nothing at all</td><td><strong>Zeny</strong></td></tr>
+    </table>
+    <p><strong>Escorting is the best zeny per hour in the game, at any level.</strong> A party of two at level 90 earns roughly what a fully geared endgame farmer makes grinding. It is how a player who is not yet strong enough to farm efficiently makes real money.</p>
+    <p>You cannot raid your own faction. Raiders lose nothing when they fail — no zeny, no points, no equipment, only time.</p>
+    <p>A convoy that arrives costs the city almost nothing. One that is lost hands most of its value to the faction that took it.</p>
   </section>
 
-  <!-- 08 -->
   <div class="shell"><div class="orn-rule">
     <img class="orn" src="assets/img/divider.png" alt="" aria-hidden="true">
   </div></div>
-
+  <!-- section -->
 <section class="sys-block" id="sieges">
-    <span class="kicker">08 · Sieges</span>
-    <h2>Twenty against twenty, across three maps</h2>
-    <p class="lead">Twenty-five castles. Three in each faction's main city, two in its secondary territory.
-      Guilds hold them, citizens vote on whether they deserve to, and everything changes hands by force on
-      a schedule everybody knows.</p>
-
-    <div class="chips">
-      <span class="chip"><b>20</b> vs <b>20</b></span>
-      <span class="chip"><b>25</b> castles</span>
-      <span class="chip">scheduled windows</span>
-      <span class="chip">three stages</span>
-    </div>
-
-    <div class="stages">
-      <div class="stage"><div class="n">1</div><div>
-        <h4>The wall</h4>
-        <p>Three control points. Breach the gate or scale the walls. Holding two of three drains the
-          defender, so lost ground costs them whether or not anyone dies.</p></div></div>
-      <div class="stage"><div class="n">2</div><div>
-        <h4>The courtyard</h4>
-        <p>Open fighting inside the walls, with the points placed so defenders cannot just camp the throne
-          door. Allied guilds who won early can reinforce from here.</p></div></div>
-      <div class="stage"><div class="n">3</div><div>
-        <h4>The throne room</h4>
-        <p>Break the emperium and the castle changes hands. Run out of supplies and it does not.</p></div></div>
-    </div>
-
-    <div class="pull">
-      <strong>The emperium takes area damage.</strong>
-      Everywhere else you defend it by standing on top of it in a pile. Here a defensive ball eats the
-      same attacks it is trying to block, so you have to fight outward and hold the room instead.
-    </div>
-
-    <p>Before the fighting, both sides spend from the guild's war chest on siege hardware. Whatever you do
-      not spend becomes your respawn tickets — every ram is a life you do not have, and you buy blind.
-      The war chest does not refill weekly, either: what you spent last week is still missing this week.</p>
+    <span class="kicker">10 · Sieges</span>
+    <h2>Saturday afternoon, all of it at once</h2>
+    <p class="lead">Three stages on separate maps, a supply economy behind them, and territory that stays taken. This is not War of Emperium.</p>
+    <table class="tbl">
+      <tr><th></th><th>Detail</th></tr>
+      <tr><td>When</td><td>Saturday afternoon, Pacific. Two hours — standard wars first, rebellions and civil wars second.</td></tr>
+      <tr><td>Size</td><td>Twenty against twenty, per castle</td></tr>
+      <tr><td>Stages</td><td>The wall, the courtyard, the throne room</td></tr>
+      <tr><td>Supply</td><td>Military points, spent on emplacements, siege hardware and respawn tickets. Purchases are blind.</td></tr>
+    </table>
+    <p><strong>A faction attacks with all five guilds or it does not attack.</strong> One declaration commits everybody, and it needs all five guild leaders to agree. Five guilds who cannot get along do not go to war.</p>
+    <p>Every siege on the server runs at the same time, so a guild can only be in one place. Every declaration is also a decision about what you are leaving undefended.</p>
+    <p><strong>The supply pool does not refill.</strong> A faction that fights a brutal defence is genuinely poor afterwards — which is why the faction quietly trading while everybody else fought takes a castle next week.</p>
   </section>
 
-  <p style="color:var(--ink-faint);font-style:italic;max-width:60ch">
-    Everything else is for you to find. There is no wiki page that tells you where the good hunting is.
-  </p>
-
-  </main>
+</main>
 </div>
 
 <div class="shell"><div class="orn-rule">

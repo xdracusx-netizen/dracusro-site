@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Caravans — DracusRO wiki</title>
-<meta name="description" content="Trade routes on DracusRO, how raiding works, and where war supply comes from.">
+<meta name="description" content="Caravans on DracusRO: running convoys, raiding, the capture mechanic, payouts and what a lost convoy costs your faction.">
 	<link rel="canonical" href="https://dracusro.com/wiki/caravans.html">
 	<meta property="og:type" content="article">
 	<meta property="og:site_name" content="DracusRO">
 	<meta property="og:title" content="Caravans — DracusRO wiki">
-	<meta property="og:description" content="Trade routes on DracusRO, how raiding works, and where war supply comes from.">
+	<meta property="og:description" content="Caravans on DracusRO: running convoys, raiding, the capture mechanic, payouts and what a lost convoy costs your faction.">
 	<meta property="og:image" content="https://dracusro.com/assets/img/og-image.jpg">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="theme-color" content="#FBF6EC">
@@ -47,8 +47,7 @@
   <div class="shell">
     <p class="crumb"><a href="../index.html">DracusRO</a> &nbsp;/&nbsp; <a href="index.html">Wiki</a> &nbsp;/&nbsp; Caravans</p>
     <h1>Caravans</h1>
-    <p class="stand">Grinding builds cities. Trade funds armies. A guild that never runs a convoy
- arrives at Saturday's siege with nothing to spend.</p>
+    <p class="stand">Trade routes, banditry, and the best zeny in the game for anybody willing to fight over it.</p>
   </div>
 </header>
 
@@ -59,11 +58,17 @@
     <a href="index.html">Overview</a>
     <a href="citizenship.html">Citizenship</a>
     <a href="cities.html">Cities</a>
+    <a href="market.html">Markets &amp; trade</a>
     <h4>Your character</h4>
     <a href="multiclass.html">Multiclassing</a>
+    <a href="classes.html">Classes &amp; combat</a>
     <a href="bestiary.html">Bestiary &amp; album</a>
+    <h4>Gear</h4>
+    <a href="crafting.html">Crafting</a>
+    <a href="provisions.html">Provisions</a>
     <h4>Content</h4>
-    <a href="dungeons.html">Dungeons &amp; gear</a>
+    <a href="dungeons.html">Dungeons</a>
+    <a href="encounters.html">Boss encounters</a>
     <a href="bosses.html">World bosses</a>
     <h4>The war</h4>
     <a href="caravans.html" class="on">Caravans</a>
@@ -71,64 +76,106 @@
   </aside>
 
   <main class="wiki-body">
-    <h2 id="how">How a run works</h2>
-    <p class="lead">A castle-holding guild buys cargo in one city and moves it to another. That cargo is
- real capital out of the war chest, and delivering it is where almost all war supply comes from.</p>
-
-    <ul class="wl">
-      <li><strong>You buy the cargo.</strong> Capital at risk, not a free timer.</li>
-      <li><strong>Routes are instanced.</strong> Raiders opt in deliberately. Nobody gets dragged into
- PvP for standing on a road.</li>
-      <li><strong>The convoy is visible to the whole server.</strong> Everyone knows a loaded caravan is
- crossing the desert. The only question is who can get there.</li>
-      <li><strong>Longer hauls pay disproportionately more.</strong> A two-leg run beats two single
- runs, and a round trip beats both.</li>
-      <li><strong>Running the same route repeatedly pays less each time</strong>, down to a floor.
- Variety is enforced by the wallet.</li>
-    </ul>
-
-    <h2 id="raiding">Raiding</h2>
-    <p class="lead">Any citizen can raid. No castle, no guild, no siege obligation.</p>
-
-    <p>This is the low-stakes entry point to PvP on this server &mdash; a small party, a road, and
- somebody else's money. Raiders are capped per convoy and it is one party at a time, so an
- interception is a fight rather than a mob.</p>
-
-    <p>The road is built for it. Bends, elevation and cover along its length, because a straight
- corridor means the escort sees you coming from the map edge and the ambush never happens.</p>
-
-    <h2 id="economics">Raiding destroys value on purpose</h2>
-    <div class="note">
-      <strong>The owner loses everything. The raider recovers only a fraction.</strong>
- Two factions farming each other's convoys burn more than they make. Banditry works against a real
- enemy and fails as a mutual arrangement.
-    </div>
-
-    <p>Morroc is built not to care &mdash; it takes a higher cut on interceptions and runs the black
- market where the stolen goods sell.</p>
-
-    <h3>Why the cargo has to be bought</h3>
-    <p>If generating a caravan were free, one person with two accounts would run convoys on one and
- intercept them on the other. With mandatory purchase, the runner spends everything and the raider
- recovers a fraction &mdash; feeding yourself burns capital.</p>
-
-    <h2 id="results">What happens at the end</h2>
+    <p class="lead">The zeny economy. Cities pay for convoys, escorts and bandits earn from them, and guilds fund their wars on the proceeds.</p>
+    <h2 id="why">Who gets what</h2>
     <table class="wtbl">
-      <tr><th>Successful delivery</th><td>The guild receives war supply on the leg curve. The destination city receives civic contribution.</td></tr>
-      <tr><th>Interception</th><td>The raider's faction receives a fraction of the cargo value, plus the physical goods. The owner loses everything.</td></tr>
-      <tr><th>Successful defence</th><td>If there was a real interception attempt and the escort repelled it, escorts are paid directly.</td></tr>
-      <tr><th>Timeout</th><td>The caravan is lost. The owner does not recover the capital.</td></tr>
+      <tr><th>Who</th><th>Pays</th><th>Earns</th></tr>
+      <tr><td>The faction</td><td>Civic contribution from the city treasury</td><td>Military points for the faction pool</td></tr>
+      <tr><td>The escort</td><td>Nothing. Their time and their risk.</td><td><strong>Zeny, personally</strong></td></tr>
+      <tr><td>The raider</td><td>Nothing at all</td><td><strong>Zeny, personally</strong></td></tr>
+      <tr><td>Grinders who never escort</td><td>Nothing</td><td>Their contribution is what pays for the convoys</td></tr>
     </table>
-
-    <h2 id="contraband">Contraband</h2>
-    <p>A guild that lost its castle keeps trade rights while it holds the right to take it back. Those
- runs are contraband &mdash; hunted by their own faction, because their own faction is currently
- occupied by somebody else.</p>
-
+    <div class="note"><strong>Escorting is the best zeny per hour in the game, at any level.</strong> A party of two at level 90 earns roughly what a fully geared endgame farmer makes grinding. This is how a player who is not yet strong enough to farm efficiently makes real money.</div>
+    <h2 id="running">Running one</h2>
+    <p>Speak to the caravan quartermaster in any faction city. The city funds the cargo — you pay nothing.</p>
+    <table class="wtbl">
+      <tr><th>Escorts present</th><th>Convoy</th><th>Raider cap</th></tr>
+      <tr><td>2</td><td>Small</td><td>2</td></tr>
+      <tr><td>3</td><td>Medium</td><td>3</td></tr>
+      <tr><td>5</td><td>Large</td><td>5</td></tr>
+    </table>
+    <p><strong>Convoy size is your party size.</strong> Three people cannot run a large convoy — the quartermaster will not dispatch one.</p>
+    <h3>Routes</h3>
+    <table class="wtbl">
+      <tr><th>Route</th><th>Legs</th><th>Duration</th><th>Relative payout</th></tr>
+      <tr><td>One way</td><td>1</td><td>10 minutes</td><td>Base</td></tr>
+      <tr><td>Round trip</td><td>2</td><td>20 minutes</td><td>2.4x</td></tr>
+      <tr><td>Two-jump, one way</td><td>2</td><td>20 minutes</td><td>2.6x</td></tr>
+      <tr><td>Two-jump, round trip</td><td>4</td><td>30 minutes</td><td>6x</td></tr>
+    </table>
+    <p>Longer routes pay disproportionately. Four legs pays six times one leg, which is the reward for staying exposed.</p>
+    <p><strong>Consecutive runs must differ.</strong> No repeating a route, no two short runs in sequence, and the destination must change.</p>
+    <h2 id="road">On the road</h2>
+    <ul class="wl">
+      <li><strong>Convoys never wait for raiders.</strong> They leave the moment they are dispatched, at any hour.</li>
+      <li><strong>No fly wings on route maps.</strong> Mounts work, and mounts work everywhere else too.</li>
+      <li><strong>The caravan moves slowly</strong> and never repairs. Damage taken early is still there at the end.</li>
+      <li><strong>If nobody is hunting, NPC bandits are.</strong> Plus a miniboss on the last map before the city.</li>
+    </ul>
+    <h2 id="raiding">Raiding</h2>
+    <p>Any citizen can raid. No castle, no guild, no obligation. Queue, get dropped into a convoy already on the road, and go.</p>
+    <table class="wtbl">
+      <tr><th>Rule</th><th>Detail</th></tr>
+      <tr><td>You cannot raid your own faction</td><td>A hard rule, not a filter</td></tr>
+      <tr><td>Late cutoff</td><td>Convoys close to their destination are removed from the queue. Nobody is dropped into a chase they cannot win.</td></tr>
+      <tr><td>Losing costs nothing</td><td>Not zeny, not points, not equipment. Only time.</td></tr>
+    </table>
+    <h2 id="capture">Taking a convoy</h2>
+    <p>The caravan has a control bar. Every raider present drains one second of it per second.</p>
+    <table class="wtbl">
+      <tr><th>Phase</th><th>What happens</th></tr>
+      <tr><td>Drain</td><td>Reduce the defenders' 30 second control</td></tr>
+      <tr><td>Neutral</td><td>5 seconds, fixed, cannot be shortened</td></tr>
+      <tr><td>Capture</td><td>Build your own 30 seconds</td></tr>
+      <tr><td>Seized</td><td>Destroy the caravan and run the cargo to the bandit camp</td></tr>
+    </table>
+    <table class="wtbl">
+      <tr><th>Raiders</th><th>Total uninterrupted time needed</th></tr>
+      <tr><td>5</td><td>17 seconds</td></tr>
+      <tr><td>3</td><td>25 seconds</td></tr>
+      <tr><td>2</td><td>35 seconds</td></tr>
+    </table>
+    <p><strong>One living defender in the circle halts everything.</strong> Not slows it — stops it. A surviving escort does not have to win, they have to stand there and be alive.</p>
+    <h3>Killing raiders speeds the caravan up</h3>
+    <p>Every raider killed while you still hold control adds 10% caravan speed, stacking to 50% for the rest of the leg.</p>
+    <p>Which means a wipe after killing three is not the same as a wipe after killing none. You pushed the caravan a third further down the road, and the raiders have less distance and less time to work with.</p>
+    <h3>Getting it back</h3>
+    <table class="wtbl">
+      <tr><th>Situation</th><th>Outcome</th></tr>
+      <tr><td>You interrupt before capture completes</td><td>Nothing is lost. The caravan resumes.</td></tr>
+      <tr><td>You kill them after seizure, before the camp</td><td>Partial cargo recovered.</td></tr>
+      <tr><td>They reach the bandit camp</td><td>Gone.</td></tr>
+    </table>
+    <h2 id="respawn">Dying</h2>
+    <table class="wtbl">
+      <tr><th>Death</th><th>Delay</th></tr>
+      <tr><td>1st</td><td>15 seconds</td></tr>
+      <tr><td>2nd</td><td>30 seconds</td></tr>
+      <tr><td>3rd</td><td>60 seconds</td></tr>
+      <tr><td>4th and after</td><td>2 minutes</td></tr>
+    </table>
+    <p>Applies to both sides. A party that keeps throwing itself at a superior opponent spends more of the run dead, and eventually the convoy simply arrives.</p>
+    <h2 id="economy">What it does to your faction</h2>
+    <table class="wtbl">
+      <tr><th>Outcome</th><th>Effect on your city</th></tr>
+      <tr><td>Delivered</td><td>105% of the civic outlay comes back. Military points to the faction pool.</td></tr>
+      <tr><td>Lost</td><td>The entire outlay is gone, and 60% of it becomes civic for the raiders' faction.</td></tr>
+    </table>
+    <p><strong>A convoy that arrives costs the city essentially nothing.</strong> Losing one costs twenty times what winning returns, and hands most of it to a rival.</p>
+    <p>Which is why escorting matters. A faction that defends its trade runs it almost for free. A faction that keeps losing convoys is funding its rivals' cities with its own contribution.</p>
+    <div class="note"><strong>A faction cannot commission convoys if it would drop below its city upkeep.</strong> Which means a losing faction is forced back to grinding rather than watching its city collapse.</div>
+    <h2 id="t5">Tier 5 cargo</h2>
+    <p>Only a Metropolis faction's convoys carry it, and even then rarely.</p>
+    <table class="wtbl">
+      <tr><th>Convoy intercepted</th><th>Tier 5 material</th><th>Tier 5 gear</th></tr>
+      <tr><td>Large</td><td>5%</td><td>1%</td></tr>
+      <tr><td>Medium</td><td>5%</td><td>Never</td></tr>
+      <tr><td>Small</td><td>5%</td><td>Never</td></tr>
+    </table>
+    <p>The piece that eventually surfaces on Morroc's black market came off a serious convoy that a serious party took down. It is a story, not a supply line.</p>
     <div class="pending">
       <span class="tag">Not built yet</span>
-      <p>Step-by-step: how a guild initiates a caravan, where the cargo is purchased, how to join a run
- as an escort or a raider, and the route map.</p>
+      <p>The quartermaster interface, the raider queue, and route markers on the world map.</p>
     </div>
   </main>
 </div>

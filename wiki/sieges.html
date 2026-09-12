@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sieges — DracusRO wiki</title>
-<meta name="description" content="How DracusRO sieges work: three stages, supply economy, control points, and how castles change hands.">
+<meta name="description" content="Sieges on DracusRO: the Saturday window, supply, respawn tickets, the drain, emplacements, and how castles change hands.">
 	<link rel="canonical" href="https://dracusro.com/wiki/sieges.html">
 	<meta property="og:type" content="article">
 	<meta property="og:site_name" content="DracusRO">
 	<meta property="og:title" content="Sieges — DracusRO wiki">
-	<meta property="og:description" content="How DracusRO sieges work: three stages, supply economy, control points, and how castles change hands.">
+	<meta property="og:description" content="Sieges on DracusRO: the Saturday window, supply, respawn tickets, the drain, emplacements, and how castles change hands.">
 	<meta property="og:image" content="https://dracusro.com/assets/img/og-image.jpg">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="theme-color" content="#FBF6EC">
@@ -47,8 +47,7 @@
   <div class="shell">
     <p class="crumb"><a href="../index.html">DracusRO</a> &nbsp;/&nbsp; <a href="index.html">Wiki</a> &nbsp;/&nbsp; Sieges</p>
     <h1>Sieges</h1>
-    <p class="stand">Not WoE. Twenty against twenty across three maps, with a supply economy, control
- points, and territory that stays taken.</p>
+    <p class="stand">Three stages, blind supply commitment, and castles that stay taken.</p>
   </div>
 </header>
 
@@ -59,11 +58,17 @@
     <a href="index.html">Overview</a>
     <a href="citizenship.html">Citizenship</a>
     <a href="cities.html">Cities</a>
+    <a href="market.html">Markets &amp; trade</a>
     <h4>Your character</h4>
     <a href="multiclass.html">Multiclassing</a>
+    <a href="classes.html">Classes &amp; combat</a>
     <a href="bestiary.html">Bestiary &amp; album</a>
+    <h4>Gear</h4>
+    <a href="crafting.html">Crafting</a>
+    <a href="provisions.html">Provisions</a>
     <h4>Content</h4>
-    <a href="dungeons.html">Dungeons &amp; gear</a>
+    <a href="dungeons.html">Dungeons</a>
+    <a href="encounters.html">Boss encounters</a>
     <a href="bosses.html">World bosses</a>
     <h4>The war</h4>
     <a href="caravans.html">Caravans</a>
@@ -71,118 +76,139 @@
   </aside>
 
   <main class="wiki-body">
-    <h2 id="shape">The shape of it</h2>
-    <p class="lead">Twenty-five castles exist. Three sit in each faction's main city and two in its
- secondary territory. Guilds hold them, citizens vote on whether they deserve to, and everything
- changes hands by force on a schedule everybody knows.</p>
-
+    <p class="lead">Three stages, a supply economy, and territory that stays taken. This is not War of Emperium.</p>
+    <h2 id="window">When</h2>
     <table class="wtbl">
-      <tr><th>Guild size</th><td>20</td></tr>
-      <tr><th>Engagement</th><td>20 vs 20</td></tr>
-      <tr><th>Castles</th><td>25 &mdash; five per faction</td></tr>
-      <tr><th>Schedule</th><td>Fixed windows, announced in advance</td></tr>
-      <tr><th>Stages</th><td>Three, fought in sequence on separate maps</td></tr>
+      <tr><th></th><th>Detail</th></tr>
+      <tr><td>Day</td><td>Saturday</td></tr>
+      <tr><td>Time</td><td>Early afternoon, Pacific</td></tr>
+      <tr><td>Frequency</td><td>Weekly</td></tr>
+      <tr><td>Length</td><td>Two hours, in two blocks</td></tr>
     </table>
-
-    <h2 id="supply">Before anyone fights</h2>
-    <p class="lead">Every siege starts with a spending decision, and it is the most important one you
- will make that night.</p>
-
-    <p>Both sides commit from the guild's war chest. That commitment splits between <strong>siege
- hardware</strong> and <strong>respawn tickets</strong> &mdash; whatever you do not spend on
- equipment becomes the lives you have.</p>
-
-    <p>Every ram is a life you do not have. Every ladder is a body that will not come back.</p>
-
-    <p>Purchases are simultaneous and blind. You do not see what the other side bought until you are
- already fighting, which makes it a read on your opponent rather than a solved shopping list. Buy
- all rams against a reinforced gate and you have burned supply for nothing. Buy ladders against a
- defender who massed on the gate and you walk in.</p>
-
-    <h3>The catalogue depends on the city</h3>
-    <p>What you can buy is set by the development tier of the castle's city, not by your guild. A
- Village-tier city fields basic rams. A Metropolis fields artillery and reinforced gates. Which
- means the people grinding to develop the city are directly arming the guilds that defend it.</p>
-
-    <h3>The war chest does not refill</h3>
-    <p>It is a running balance, not a weekly allowance. What you spent last week is still missing this
- week. Grind through a brutal defence and you are genuinely poor afterwards &mdash; which means the
- guild that has been quietly banking is the one that takes your castle next cycle.</p>
-
-    <p>Where does supply come from? Almost entirely from <a href="caravans.html">trade</a>.</p>
-
+    <table class="wtbl">
+      <tr><th>Hour</th><th>What is fought</th></tr>
+      <tr><td>First</td><td>Standard wars. One faction attacking another.</td></tr>
+      <tr><td>Second</td><td>Rebellions and civil wars. Occupied factions liberating their castles, and landless guilds challenging their own.</td></tr>
+    </table>
+    <p><strong>Every siege on the server happens at once.</strong> Declaring during the week queues you for the next window.</p>
+    <h2 id="commitment">All five guilds, or nobody</h2>
+    <div class="note"><strong>A faction attacks with everything or it does not attack.</strong> A declaration commits all five guilds against all five of the target's castles. There is no partial commitment and no guild held in reserve.</div>
+    <p>Which means a faction is either attacking or defending in a given hour, never both. And five guilds who cannot agree do not go to war — not because a rule forbids it, but because a war needs all five of them pointed at the same castle on the same afternoon.</p>
+    <p class="lead">Everything else in this design — approval ratings, civil war, research funding, the shared military pool — exists to make that agreement something guilds have to work at.</p>
+    <h3>What that looks like</h3>
+    <p>Say Prontera has subjugated Geffen, and Morroc has declared on Prontera.</p>
+    <table class="wtbl">
+      <tr><th>Hour</th><th>Prontera</th><th>Morroc</th><th>Geffen</th></tr>
+      <tr><td>First</td><td>Defending their own five castles</td><td>Attacking with all five guilds</td><td>Not involved</td></tr>
+      <tr><td>Second</td><td>Defending the five Geffen castles they hold</td><td>Not involved</td><td>Rebelling with all five guilds</td></tr>
+    </table>
+    <p>Prontera fights twice with the same twenty people per castle, back to back, out of one supply pool. <strong>A faction that has conquered and is also being invaded is in the worst position in the game, and it got there by winning.</strong></p>
+    <h2 id="supply">Supply</h2>
+    <p>Both sides commit military points from the faction pool before the first stage opens. That commitment splits between equipment and respawn tickets — whatever you do not spend on hardware becomes lives.</p>
+    <div class="note"><strong>Purchases are blind.</strong> Neither side sees what the other bought until they are already fighting.</div>
+    <p><strong>The pool does not refill.</strong> Points spent are gone. A faction that fights a brutal defence is genuinely poor afterwards, which is why the faction that quietly traded while everybody else fought takes a castle next week.</p>
+    <h2 id="tickets">Respawn tickets</h2>
+    <table class="wtbl">
+      <tr><th></th><th>Attackers</th><th>Defenders</th></tr>
+      <tr><td>Maximum pool</td><td>450</td><td>450</td></tr>
+      <tr><td>How it is held</td><td>One pool across all three stages</td><td>Split evenly — 150 per stage</td></tr>
+      <tr><td>Carries between stages</td><td>Yes</td><td>No</td></tr>
+    </table>
+    <p>An attacker who breaches cheaply arrives at the throne room rich. A defender is fighting three separate holding actions and starts each with the same number of bodies.</p>
+    <p><strong>A faction that could not afford the full pool feels it immediately.</strong> Three hundred tickets is a hundred per stage across twenty players — five deaths each before the stage is lost.</p>
+    <h2 id="drain">The drain</h2>
+    <p>Defenders lose tickets to deaths <em>and</em> to conceding ground. Attackers only lose them to deaths.</p>
+    <table class="wtbl">
+      <tr><th>Attacker control</th><th>Tickets drained per minute</th></tr>
+      <tr><td>Below the stage threshold</td><td>None</td></tr>
+      <tr><td>One point above</td><td>9</td></tr>
+      <tr><td>Two points</td><td>18</td></tr>
+      <tr><td>Three points</td><td>27</td></tr>
+    </table>
+    <p>A defender holding nothing loses their stage allocation in under six minutes. <strong>Retaking a single point cuts the bleeding by a third immediately</strong>, which is the window a counterattack lives in.</p>
+    <p>So a defence that turtles the throne door does not survive — it haemorrhages. The drain is what forces defenders out into open ground.</p>
     <h2 id="stages">The three stages</h2>
-
-    <div class="stage-row"><div class="n">1</div><div>
-      <h4>The wall</h4>
-      <p>Three control points &mdash; the gate at the centre and a turret at each corner. Attackers get
- in by breaching the gate with a ram or scaling the walls with ladders. Holding two of the three
- starts draining the defender's supplies, so ground lost costs them whether or not anyone dies.
- Retake a point and the drain stops, which is the window a counterattack lives in.</p></div></div>
-
-    <div class="stage-row"><div class="n">2</div><div>
-      <h4>The courtyard</h4>
-      <p>Open fighting inside the walls. Three more control points, two of them positioned nearer the
- attacker's approach so defenders have to push out rather than camp the throne door. Tolerance
- here is zero &mdash; the attacker holding any single point starts the drain. Allied guilds who
- finished their own siege early can send reinforcements from this stage onward.</p></div></div>
-
-    <div class="stage-row"><div class="n">3</div><div>
-      <h4>The throne room</h4>
-      <p>One objective. Break the emperium and the castle changes hands immediately. Run the attacker
- out of supplies and it does not.</p></div></div>
-
-    <h3>The drain only ever runs one way</h3>
-    <p>It always runs against the <strong>defender</strong>. Attackers spend supplies on respawns and
- hardware and are on a clock, but holding ground never costs them anything. That is what forces
- defenders to contest points instead of massing on one and waiting.</p>
-
-    <h2 id="emperium">The emperium</h2>
-    <p class="lead">On most servers, defending the emperium means standing on top of it in a pile and
- letting bodies absorb everything. That does not work here.</p>
-
-    <div class="note">
-      <strong>The emperium takes area damage.</strong>
- A defensive ball stacked on it eats the same area attacks it is trying to block. Clumping stops
- being a strategy, and defenders have to fight outward and hold the room instead.
-    </div>
-
-    <p>Defender respawn is inside the throne room, with brief invulnerability and a radius attackers
- cannot enter. Spawn camping is prevented by the shape of the room rather than by a rule somebody
- has to enforce.</p>
-
-    <p>There are multiple entrances, placed so the defender cannot cover them all from the emperium
- itself.</p>
-
-    <h2 id="holding">Holding a castle</h2>
-
-    <ul class="wl">
-      <li><strong>Castles start unclaimed and MVP-guarded.</strong> First claim is by emperium break,
- same as everyone else.</li>
-      <li><strong>All citizens vote, not just guilds.</strong> A guild that holds a castle badly can be
- voted out by the people living under it.</li>
-      <li><strong>A deposed guild gets the right to take it back.</strong> They also get trade rights
- while they do &mdash; contraband runs, hunted by their own faction, because their own faction is
- currently occupied.</li>
-      <li><strong>Holding more castles makes you poorer at each one.</strong> Every castle past your home
- cuts how efficiently you convert income. Empires are expensive on purpose.</li>
-    </ul>
-
-    <h2 id="after">After it ends</h2>
-
     <table class="wtbl">
-      <tr><th>Attacker wins</th><td>The castle changes hands. A grace period stops it being immediately
- re-taken. The evicted guild gets first refusal on liberating it. Tribute starts flowing to the
- conquering faction straight away.</td></tr>
-      <tr><th>Defender wins</th><td>Nothing changes hands. The attacker loses everything they spent.
- There is no consolation payout &mdash; a siege never generates war supply, it only consumes
- it.</td></tr>
+      <tr><th>Stage</th><th>Control points</th><th>Emplacements</th><th>Drain begins when</th></tr>
+      <tr><td>The wall</td><td>Three — the gate and two turrets</td><td>4 slots</td><td>Attackers hold two of three</td></tr>
+      <tr><td>The courtyard</td><td>Three, two nearer the attackers</td><td>4 slots</td><td>Attackers hold any single point</td></tr>
+      <tr><td>The throne room</td><td>The emperium</td><td>2 slots</td><td>—</td></tr>
     </table>
-
+    <p>The courtyard's point placement forces defenders out. Two of the three sit closer to where the attackers came in, so camping the throne door concedes the drain immediately.</p>
+    <h2 id="emplacements">Emplacements</h2>
+    <p><strong>The slots are fixed. What goes in them is not.</strong> Every castle has the same positions; you decide what each one holds, fresh before every siege.</p>
+    <table class="wtbl">
+      <tr><th>Emplacement</th><th>Effect</th></tr>
+      <tr><td>Arrow tower</td><td>Sustained damage in range</td></tr>
+      <tr><td>Slowing tower</td><td>Reduced movement speed</td></tr>
+      <tr><td>Sundering tower</td><td>Reduced armour and damage reduction</td></tr>
+      <tr><td>Dampening tower</td><td>Reduced damage dealt</td></tr>
+      <tr><td>Blight tower</td><td>Reduced healing received</td></tr>
+      <tr><td>Barricade</td><td>Blocks one approach until destroyed</td></tr>
+      <tr><td>Reinforced gate</td><td>Substantially more damage to breach</td></tr>
+    </table>
+    <p><strong>None of these kill anybody.</strong> They make attackers slower, softer, weaker and harder to heal. A tower that killed people would just be a twenty-first defender.</p>
+    <p>Four slots is enough for two pairings, which is the decision. A defender covering every angle weakly is easier to break than one covering two angles properly.</p>
+    <h2 id="hardware">Attacker hardware</h2>
+    <table class="wtbl">
+      <tr><th>Item</th><th>What it does</th></tr>
+      <tr><td>Battering ram</td><td>Heavy damage to the gate. Slow, and needs protecting.</td></tr>
+      <tr><td>Ladder</td><td>Scales the wall at a fixed point, one person at a time, exposed.</td></tr>
+      <tr><td>Sapper charge</td><td>Destroys one emplacement outright. Single use, melee range.</td></tr>
+      <tr><td>Siege shield</td><td>Blocks line of sight and tower fire for a time.</td></tr>
+      <tr><td>Artillery</td><td>Structural damage from outside tower range. Fragile and slow.</td></tr>
+    </table>
+    <p>Artillery outranges every tower by double, which makes it the only thing that dismantles a fortified wall without anybody walking into it. It is also fragile enough that a defender sortieing out of the gate to kill it is a real play.</p>
+    <h3>Faction hardware</h3>
+    <table class="wtbl">
+      <tr><th>Faction</th><th>Item</th><th>Effect</th></tr>
+      <tr><td>Prontera</td><td>Bulwark</td><td>Gate and wall hit points beyond the shared ceiling</td></tr>
+      <tr><td>Morroc</td><td>Infiltration Hook</td><td>Over the wall in three seconds, from anywhere, fully exposed</td></tr>
+      <tr><td>Geffen</td><td>Arcane Battery</td><td>Outranges conventional artillery and ignores structure resistance</td></tr>
+      <tr><td>Payon</td><td>Elevated Fire</td><td>Archery emplacements firing over walls at unbreached attackers</td></tr>
+      <tr><td>Alberta</td><td>Mercenary Contracts</td><td>Field up to four items of anybody else's hardware</td></tr>
+    </table>
+    <p>Morroc's hook is the one that changes defensive behaviour most. The counter is watching the whole wall rather than massing on the gate, which is exactly what the control point layout is already trying to force.</p>
+    <h2 id="emperium">The emperium</h2>
+    <div class="note"><strong>It takes area damage.</strong> Standing on it in a pile means your own bodies absorb everything aimed at it. Clumping is actively harmful.</div>
+    <ul class="wl">
+      <li><strong>Devotion cannot target it.</strong> Nor can any damage-redirection effect.</li>
+      <li><strong>Defenders respawn inside the room</strong>, with brief invulnerability and a radius attackers cannot enter.</li>
+      <li><strong>Multiple entrances</strong>, placed so no single position covers them all.</li>
+    </ul>
+    <h2 id="ending">How a siege ends</h2>
+    <table class="wtbl">
+      <tr><th>Condition</th><th>Result</th></tr>
+      <tr><td>The emperium is broken</td><td>The castle changes hands. This is the only way a castle is taken.</td></tr>
+      <tr><td>Attacker pool reaches zero</td><td>Attackers are routed. The castle holds.</td></tr>
+      <tr><td>Defender pool reaches zero</td><td>Defenders cannot respawn. The attackers walk in and break it unopposed.</td></tr>
+      <tr><td>One hour elapses</td><td>The defenders win.</td></tr>
+    </table>
+    <p>An attacker who spent days of trading and could not break through in an hour has failed. The defender held, which was the only thing they were asked to do.</p>
+    <h2 id="reinforce">Reinforcement</h2>
+    <p>A guild whose own siege resolves early may reinforce another still fighting, from any stage.</p>
+    <ul class="wl">
+      <li><strong>Reinforcements fill the existing twenty slots</strong> as replacements. A siege never becomes forty against twenty.</li>
+      <li><strong>They can take over an assault</strong> using their own pool if the original guild runs dry.</li>
+      <li><strong>Attackers are only routed</strong> when every attacking guild present has exhausted its pool.</li>
+    </ul>
+    <p><strong>Which rewards winning fast rather than just winning.</strong> A guild that grinds out a victory at fifty-eight minutes helped nobody. One that clears in twenty has forty minutes to spend somewhere it matters.</p>
+    <h2 id="after">Holding what you took</h2>
+    <table class="wtbl">
+      <tr><th>Weeks held</th><th>Income efficiency</th></tr>
+      <tr><td>On capture</td><td>50%</td></tr>
+      <tr><td>After one week</td><td>75%</td></tr>
+      <tr><td>After two weeks</td><td>100%</td></tr>
+    </table>
+    <ul class="wl">
+      <li><strong>No grace period.</strong> A castle can be attacked again the following week by anybody who can fund it.</li>
+      <li><strong>The evicted guild gets first refusal</strong> on liberating it, in the second hour.</li>
+      <li><strong>Approval is voted weekly</strong> by all citizens. Below 70% and a landless guild can challenge you.</li>
+    </ul>
+    <p><strong>Holding ten castles means ten defences across two hours, out of one pool.</strong> A faction that has not out-traded its own ambition ends up defending everything thinly, and loses castles every week until it is back to what it can afford.</p>
     <div class="pending">
       <span class="tag">Not built yet</span>
-      <p>Step-by-step: how a guild registers for a siege window, where the commitment interface is, what
- the hardware catalogue looks like, and how the stage transitions play out.</p>
+      <p>The commitment interface, the public war map, and live siege displays.</p>
     </div>
   </main>
 </div>
@@ -201,7 +227,6 @@
 
 <script src="../assets/session.js"></script>
 <script>
-// give every h2 a hover anchor so sections are linkable
 document.querySelectorAll('.wiki-body h2[id]').forEach(function(h){
  var a=document.createElement('a');
  a.className='anchor'; a.href='#'+h.id; a.textContent='#';

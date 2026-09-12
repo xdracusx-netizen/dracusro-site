@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cities — DracusRO wiki</title>
-<meta name="description" content="How DracusRO cities develop through five tiers, what each tier opens, and why access never revokes.">
+<meta name="description" content="How city development works on DracusRO: the five tiers, thresholds, upkeep, dungeon access and Metropolis.">
 	<link rel="canonical" href="https://dracusro.com/wiki/cities.html">
 	<meta property="og:type" content="article">
 	<meta property="og:site_name" content="DracusRO">
 	<meta property="og:title" content="Cities — DracusRO wiki">
-	<meta property="og:description" content="How DracusRO cities develop through five tiers, what each tier opens, and why access never revokes.">
+	<meta property="og:description" content="How city development works on DracusRO: the five tiers, thresholds, upkeep, dungeon access and Metropolis.">
 	<meta property="og:image" content="https://dracusro.com/assets/img/og-image.jpg">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="theme-color" content="#FBF6EC">
@@ -47,8 +47,7 @@
   <div class="shell">
     <p class="crumb"><a href="../index.html">DracusRO</a> &nbsp;/&nbsp; <a href="index.html">Wiki</a> &nbsp;/&nbsp; Cities</p>
     <h1>Cities</h1>
-    <p class="stand">Your city grows because the people living in it played. Five tiers, each a
- physically different map, each opening content that was not there before.</p>
+    <p class="stand">Five development tiers, what each one opens, upkeep, and what conquest actually gets you.</p>
   </div>
 </header>
 
@@ -59,11 +58,17 @@
     <a href="index.html">Overview</a>
     <a href="citizenship.html">Citizenship</a>
     <a href="cities.html" class="on">Cities</a>
+    <a href="market.html">Markets &amp; trade</a>
     <h4>Your character</h4>
     <a href="multiclass.html">Multiclassing</a>
+    <a href="classes.html">Classes &amp; combat</a>
     <a href="bestiary.html">Bestiary &amp; album</a>
+    <h4>Gear</h4>
+    <a href="crafting.html">Crafting</a>
+    <a href="provisions.html">Provisions</a>
     <h4>Content</h4>
-    <a href="dungeons.html">Dungeons &amp; gear</a>
+    <a href="dungeons.html">Dungeons</a>
+    <a href="encounters.html">Boss encounters</a>
     <a href="bosses.html">World bosses</a>
     <h4>The war</h4>
     <a href="caravans.html">Caravans</a>
@@ -71,89 +76,68 @@
   </aside>
 
   <main class="wiki-body">
-    <h2 id="how">How development works</h2>
-    <p class="lead">Every monster killed, every dungeon cleared, every caravan delivered pays civic
- contribution into your city. When the total crosses a threshold, the city advances a tier and the
- map is replaced with a larger one.</p>
-
-    <p>Contribution is measured per citizen, not in raw total. A faction with three hundred people does
- not automatically outgrow one with fifty &mdash; it has to keep three hundred people
-      <em>playing</em>. A large, idle population develops more slowly than a small, active one.</p>
-
-    <div class="note">
-      <strong>Why per-capita.</strong>
- If growth were raw total, the largest faction would win permanently and everyone would stampede
- into it. Measuring per active citizen means joining the biggest faction makes it grow more
- slowly, which is the brake on that.
-    </div>
-
+    <p class="lead">Your city is the sum of what its citizens actually played. It is not bought, it is not gifted, and it cannot be rushed by a handful of people.</p>
     <h2 id="tiers">The five tiers</h2>
-
     <table class="wtbl">
-      <tr><th>Tier</th><th>The place</th><th>What opens</th></tr>
-      <tr><td>Settlement</td><td>Tents and a few buildings. No wall. People arrived recently and have not finished.</td><td>Basic shops. Tier 1 dungeon.</td></tr>
-      <tr><td>Village</td><td>A wall appears. First amenities &mdash; an inn, a tavern.</td><td>Expanded gear, base refining, Tier 2 dungeon.</td></tr>
-      <tr><td>Town</td><td>Industry starts. Makeshift premises for each trade. A church going up.</td><td>Crafting and enhancing. Tier 3 dungeon.</td></tr>
-      <tr><td>City</td><td>The city you would recognise.</td><td>Tier 4 dungeon. World boss activates. Expanded recipes.</td></tr>
-      <tr><td>Metropolis</td><td>Districts, wealth, excess. A wealthy quarter, a presentable one, and an underbelly.</td><td>Tier 5 access, legendary crafting, god items.</td></tr>
+      <tr><th>Tier</th><th>Cumulative civic</th><th>What it opens</th></tr>
+      <tr><td>Settlement</td><td>—</td><td>Tier 1 dungeon. Basic crafting. Food levels 1 and 2.</td></tr>
+      <tr><td>Village</td><td>6,000,000</td><td>Tier 2 dungeon. Better recipes. Food levels 3 to 5.</td></tr>
+      <tr><td>Town</td><td>15,000,000</td><td>Tier 3 dungeon. Food levels 6 to 8. <strong>Permanent floor.</strong></td></tr>
+      <tr><td>City</td><td>65,000,000</td><td>Tier 4 dungeon. Research unlocks. Food levels 9 and 10, and Almighty.</td></tr>
+      <tr><td>Metropolis</td><td>400,000,000</td><td>Tier 5 access, the +20 food line, and the ability to carry tier 5 cargo.</td></tr>
     </table>
-
-    <p>The wall appearing at Village is the clearest visual marker. A settlement is open ground; a
- village is defended. You can tell what tier a city is at a glance.</p>
-
-    <h3>Metropolis is different</h3>
-    <p>Every other tier is reached by development alone. Metropolis additionally requires a
-      <strong>conquest</strong> &mdash; the faction must be holding territory it took from someone else.
- You cannot grind your way to the top tier while staying out of the war.</p>
-
-    <h2 id="thresholds">Thresholds</h2>
-    <p>Each tier needs a cumulative contribution total. The gaps widen sharply, so Settlement to Village
- happens in days and City to Metropolis is a project.</p>
-
-    <div class="pending">
-      <span class="tag">Not final</span>
-      <p>Threshold numbers are set but not published, because they are tuned against measured play rates
- rather than guessed. They will be listed here once the first season has produced real data.</p>
-    </div>
-
-    <h2 id="floor">Cities do not collapse</h2>
-    <p class="lead">Once a city reaches <strong>Town</strong>, it cannot fall below it. That is a
- permanent floor.</p>
-
-    <p>Above Town, a city can lose tiers if contribution dries up &mdash; but the floor means a faction
- that has a bad month does not get sent back to tents. Metropolis is exempt from the floor, because
- it is conquest-gated and losing the conquest should mean losing the tier.</p>
-
-    <h2 id="access">Access never revokes</h2>
-    <p class="lead">This is the rule that matters most, and it is deliberate.</p>
-
-    <p>Once a dungeon opens for your city, it never closes again. If your city drops below the tier that
- unlocked it, you keep access &mdash; you just pay a fee to use it.</p>
-
-    <p>The fee is zeny plus civic contribution. The zeny is destroyed. The contribution goes straight
- back into your own city's development, which means the act of paying to stay in content also helps
- the city climb back up.</p>
-
-    <div class="note">
-      <strong>Why it works this way.</strong>
- A hundred casual players should never lose access to their content because ten organised ones lost
- a fight on Saturday. Punish the wallet, not the schedule.
-    </div>
-
-    <h3>Using another faction's content</h3>
-    <p>The same fee applies if you want to use a dungeon belonging to a faction that is not yours. Their
- city receives the contribution. You get the dungeon, they get paid, and now you have a concrete
- reason to resent them.</p>
-
-    <h2 id="checking">Checking your city</h2>
-    <p>In game, <code>@contrib</code> shows your faction's civic total and your own character's
- contribution. <code>@factioninfo &lt;id&gt;</code> shows standings for any faction, so you can see
- exactly how far ahead or behind you are.</p>
-
+    <div class="note"><strong>Town is a floor you cannot fall below.</strong> Whatever happens in a war, your faction keeps its tier 3 dungeon and everything under it.</div>
+    <h3>How long it takes</h3>
+    <p>Modelled against twenty active players per faction. More people is faster; fewer is slower.</p>
+    <table class="wtbl">
+      <tr><th>Tier</th><th>Casual pace</th><th>Committed pace</th></tr>
+      <tr><td>Village</td><td>About 2 weeks</td><td>About 5 days</td></tr>
+      <tr><td>Town</td><td>2 weeks after that</td><td>About a week</td></tr>
+      <tr><td>City</td><td>7 weeks after that</td><td>3 weeks</td></tr>
+      <tr><td>Metropolis</td><td>15 weeks after that</td><td>6 weeks</td></tr>
+    </table>
+    <p>The curve accounts for players levelling as the city does. Early on a faction is killing level 60 monsters; by City tier they are on level 130 ones, which pay considerably more.</p>
+    <h2 id="upkeep">Upkeep</h2>
+    <p>City and Metropolis require maintenance. Nothing below Town does.</p>
+    <table class="wtbl">
+      <tr><th>Tier</th><th>Daily requirement</th><th>Activity that needs</th></tr>
+      <tr><td>Town and below</td><td>None</td><td>—</td></tr>
+      <tr><td>City</td><td>400,000 civic per day</td><td>About 28% of normal activity</td></tr>
+      <tr><td>Metropolis</td><td>2,000,000 civic per day</td><td>About 41%</td></tr>
+    </table>
+    <p><strong>Fall short for seven consecutive days and the tier drops.</strong> An active faction never notices this. A faction that has stopped playing loses Metropolis in a week rather than a season.</p>
+    <h2 id="metropolis">Metropolis</h2>
+    <p>The only tier that cannot be reached by contribution alone. You also have to take all five castles of another faction.</p>
+    <ul class="wl">
+      <li><strong>Tier 5 content opens</strong> — Glast Heim, and the best gear in the game.</li>
+      <li><strong>Free access for the conquering faction</strong>, and for any other faction that also reaches Metropolis.</li>
+      <li><strong>Everybody else pays</strong> a substantial entry fee, which goes to the Metropolis factions.</li>
+      <li><strong>Your caravans can carry tier 5 cargo</strong>, which makes you a target worth robbing.</li>
+      <li><strong>Lose the conquest and free access ends.</strong> The content stays open; it stops being yours.</li>
+    </ul>
+    <h2 id="access">Dungeon access</h2>
+    <p>Your own faction's dungeons are free at or below your city tier. Everything else costs.</p>
+    <table class="wtbl">
+      <tr><th>Situation</th><th>Cost</th></tr>
+      <tr><td>Your faction, at or below your tier</td><td>Free</td></tr>
+      <tr><td>Your faction, above your current tier</td><td>A fee per player, in zeny and civic</td></tr>
+      <tr><td>Another faction's dungeon</td><td>A fee per player, paid to that faction</td></tr>
+    </table>
+    <p><strong>Access never revokes.</strong> Once a dungeon has opened for your city it stays open. Falling below the tier that unlocked it means paying to enter, not being locked out — because a hundred casual players should not lose the dungeon they run every evening because ten organised ones lost a fight on Saturday.</p>
+    <h3>Tier 4 and 5 are the only ones that can be lost</h3>
+    <p>Town is a permanent floor, so a faction can never be below tier 3. Below-tier fees only exist for the two tiers that can actually go away.</p>
+    <h2 id="conquest">Holding somebody else's cities</h2>
+    <p>Conquest transfers their military and faction research to you, up to whatever they had researched. Their economic research does not transfer.</p>
+    <table class="wtbl">
+      <tr><th>Castles held</th><th>Income efficiency</th></tr>
+      <tr><td>On capture</td><td>50%</td></tr>
+      <tr><td>After one week</td><td>75%</td></tr>
+      <tr><td>After two weeks</td><td>100%</td></tr>
+    </table>
+    <p>Which means territory taken and immediately contested is worth very little to anybody. A guild that takes a castle and loses it three days later gained almost nothing.</p>
     <div class="pending">
       <span class="tag">Not built yet</span>
-      <p>Step-by-step: where the development board stands in each city, how to read the tier progress,
- and what the advancement announcement looks like.</p>
+      <p>City development displays, research interfaces, and the public war map.</p>
     </div>
   </main>
 </div>
@@ -172,7 +156,6 @@
 
 <script src="../assets/session.js"></script>
 <script>
-// give every h2 a hover anchor so sections are linkable
 document.querySelectorAll('.wiki-body h2[id]').forEach(function(h){
  var a=document.createElement('a');
  a.className='anchor'; a.href='#'+h.id; a.textContent='#';

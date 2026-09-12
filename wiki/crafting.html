@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crafting — DracusRO wiki</title>
+<meta name="description" content="How crafting works on DracusRO: modifier selection, set bonuses, card slots, materials from all five factions, and reforging.">
+	<link rel="canonical" href="https://dracusro.com/wiki/crafting.html">
+	<meta property="og:type" content="article">
+	<meta property="og:site_name" content="DracusRO">
+	<meta property="og:title" content="Crafting — DracusRO wiki">
+	<meta property="og:description" content="How crafting works on DracusRO: modifier selection, set bonuses, card slots, materials from all five factions, and reforging.">
+	<meta property="og:image" content="https://dracusro.com/assets/img/og-image.jpg">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="theme-color" content="#FBF6EC">
+	<link rel="icon" href="../assets/img/favicon.ico" sizes="any">
+	<link rel="icon" type="image/png" href="../assets/img/favicon-32.png" sizes="32x32">
+	<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Spectral:ital,wght@0,300;0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="shell nav-in">
+    <a class="mark" href="../index.html"><img class="mark-crest" src="../assets/img/dro-crest.png" alt="" aria-hidden="true">DRACUS<span>RO</span></a>
+    <div class="nav-links">
+      <a href="../index.html#different">The server</a>
+      <a href="../systems.html">Systems guide</a>
+      <a href="index.html">Wiki</a>
+      <a href="../shop.html">Cosmetics</a>
+      <a class="nav-discord" href="https://discord.gg/XNHBAawCjw" target="_blank" rel="noopener noreferrer">Discord</a>
+    </div>
+    <div class="nav-cta" id="nav-cta"
+         data-register="https://panel.dracusro.com/?module=account&amp;action=create" data-login="https://panel.dracusro.com/?module=account&amp;action=login"
+         data-panel="https://panel.dracusro.com/?module=account&amp;action=view" data-download="https://panel.dracusro.com/?module=pages&amp;action=content&amp;path=downloads">
+      <a class="btn btn-ghost" href="https://panel.dracusro.com/?module=pages&amp;action=content&amp;path=downloads" target="_blank" rel="noopener noreferrer">Download</a>
+      <a class="btn btn-ghost js-login" href="https://panel.dracusro.com/?module=account&amp;action=login" target="_blank" rel="noopener noreferrer">Log in</a>
+      <a class="btn btn-solid js-register" href="https://panel.dracusro.com/?module=account&amp;action=create" target="_blank" rel="noopener noreferrer">Create account</a>
+    </div>
+  </div>
+</nav>
+
+<header class="wiki-head">
+  <div class="shell">
+    <p class="crumb"><a href="../index.html">DracusRO</a> &nbsp;/&nbsp; <a href="index.html">Wiki</a> &nbsp;/&nbsp; Crafting</p>
+    <h1>Crafting</h1>
+    <p class="stand">Selected modifiers, guaranteed materials, and gear that follows you across every class.</p>
+  </div>
+</header>
+
+<div class="shell wiki-shell">
+  <aside class="wiki-nav">
+    <h4>Contents</h4>
+    <h4>The world</h4>
+    <a href="index.html">Overview</a>
+    <a href="citizenship.html">Citizenship</a>
+    <a href="cities.html">Cities</a>
+    <a href="market.html">Markets &amp; trade</a>
+    <h4>Your character</h4>
+    <a href="multiclass.html">Multiclassing</a>
+    <a href="classes.html">Classes &amp; combat</a>
+    <a href="bestiary.html">Bestiary &amp; album</a>
+    <h4>Gear</h4>
+    <a href="crafting.html" class="on">Crafting</a>
+    <a href="provisions.html">Provisions</a>
+    <h4>Content</h4>
+    <a href="dungeons.html">Dungeons</a>
+    <a href="encounters.html">Boss encounters</a>
+    <a href="bosses.html">World bosses</a>
+    <h4>The war</h4>
+    <a href="caravans.html">Caravans</a>
+    <a href="sieges.html">Sieges</a>
+  </aside>
+
+  <main class="wiki-body">
+    <p class="lead">Nothing is rolled. Modifiers are selected, materials always drop, and every item can be reforged into something else.</p>
+    <h2 id="principles">The rules everything follows from</h2>
+    <ul class="wl">
+      <li><strong>Nothing is random.</strong> You choose your modifiers. No rerolling, no salvaging a bad outcome.</li>
+      <li><strong>Materials always drop.</strong> 100% from the dungeon that produces them. Farming costs time, never luck.</li>
+      <li><strong>Everything is reforgeable.</strong> A katar drop becomes a staff for whoever needs one.</li>
+      <li><strong>Refining is unchanged.</strong> The existing in-game system stands as it is.</li>
+      <li><strong>No faction makes anything exclusive.</strong> Factions differ in what it costs them, never in what exists.</li>
+    </ul>
+    <h2 id="slots">Equipment and sets</h2>
+    <table class="wtbl">
+      <tr><th>Slot</th><th>Counts as</th></tr>
+      <tr><td>Helm, armour, garment, shoes</td><td>1 piece each</td></tr>
+      <tr><td>Two-handed weapon</td><td>1 piece</td></tr>
+      <tr><td>One-handed weapon</td><td>Half a piece</td></tr>
+      <tr><td>Shield</td><td>Half a piece</td></tr>
+    </table>
+    <p>Five pieces either way. Four armour plus a two-hander is five; four armour plus a one-hander and shield is also five. A class that cannot use shields is not locked out of its set bonus.</p>
+    <h3>Set bonuses</h3>
+    <table class="wtbl">
+      <tr><th>Pieces</th><th>Bonus</th></tr>
+      <tr><td>2</td><td>Small</td></tr>
+      <tr><td>4</td><td>Substantial</td></tr>
+      <tr><td>5</td><td>Full</td></tr>
+    </table>
+    <p>The gap between four and five is the largest. Four pieces is all your armour and no weapon, which a lot of players will settle for. The fifth is what separates finishing a tier from getting most of the way.</p>
+    <h2 id="modifiers">Modifiers</h2>
+    <p>Every crafted piece carries modifiers. How many and what they are worth is fixed by tier; which ones go where is your choice.</p>
+    <table class="wtbl">
+      <tr><th>Tier</th><th>Slots</th><th>Values</th></tr>
+      <tr><td>1</td><td>1</td><td>3%</td></tr>
+      <tr><td>2</td><td>2</td><td>4% / 2%</td></tr>
+      <tr><td>3</td><td>3</td><td>7% / 4% / 1%</td></tr>
+      <tr><td>4</td><td>4</td><td>10% / 7% / 4% / 2%</td></tr>
+      <tr><td>5</td><td>5</td><td>15% / 13% / 10% / 7% / 4%</td></tr>
+    </table>
+    <h3>What you can put in them</h3>
+    <table class="wtbl">
+      <tr><th>Category</th><th>Types</th></tr>
+      <tr><td>Damage</td><td>Physical, magic, skill damage, healing done</td></tr>
+      <tr><td>Defence</td><td>Physical reduction, magic reduction, skill reduction</td></tr>
+      <tr><td>Elements</td><td>Fire, water, wind, earth, holy, shadow damage</td></tr>
+      <tr><td>Stats</td><td>STR, AGI, VIT, INT, DEX, LUK — same number, so +15 instead of +15%</td></tr>
+    </table>
+    <p>Nineteen types across five slots. You are choosing what to leave out, not just how to rank them.</p>
+    <div class="note"><strong>Damage reduction can only sit on the lower rungs.</strong> The top two are offensive or healing only. Without that rule, six tier 5 slots of maximum reduction reaches effective immunity once the album and research are added, and sieges stop resolving.</div>
+    <h3>Slot typing</h3>
+    <table class="wtbl">
+      <tr><th>Slot</th><th>What it carries</th></tr>
+      <tr><td>Weapons</td><td>Damage and healing only. No reduction.</td></tr>
+      <tr><td>Shield, armour, helm, garment, shoes</td><td>Any combat type</td></tr>
+      <tr><td>Accessories</td><td><strong>Utility only.</strong> No combat modifiers at all.</td></tr>
+    </table>
+    <h2 id="accessories">Accessories</h2>
+    <p>A separate set, crafted from world boss materials. Two slots, and they carry a completely different list.</p>
+    <table class="wtbl">
+      <tr><th>Utility type</th><th>Effect</th></tr>
+      <tr><td>Movement speed</td><td>Faster movement</td></tr>
+      <tr><td>Cooldown reduction</td><td>Skills come back sooner</td></tr>
+      <tr><td>After-cast delay</td><td>Less dead time after a skill</td></tr>
+      <tr><td>Variable cast time</td><td>Faster casting, casters only</td></tr>
+      <tr><td>HP and SP regeneration</td><td>Sustain</td></tr>
+      <tr><td>SP cost reduction</td><td>Cheaper skills</td></tr>
+      <tr><td>Status resistance</td><td>Shorter stun, freeze, sleep and stone</td></tr>
+      <tr><td>Healing received</td><td>More from your healers</td></tr>
+      <tr><td>Knockback resistance</td><td>Stay where you are</td></tr>
+    </table>
+    <table class="wtbl">
+      <tr><th>Slots filled</th><th>Bonus</th></tr>
+      <tr><td>1</td><td>Every bonus except the highest</td></tr>
+      <tr><td>2</td><td>Everything</td></tr>
+    </table>
+    <p>Ten types across two accessories means everybody ends up with all of them. What differs is which sits at 15% and which at 4%, and two identically geared characters can play very differently.</p>
+    <h2 id="cards">Card slots</h2>
+    <p>Every crafted item carries the maximum slots for its type. No hunting for a four-slot drop.</p>
+    <table class="wtbl">
+      <tr><th>Item</th><th>Slots</th></tr>
+      <tr><td>All weapons</td><td>4</td></tr>
+      <tr><td>Shield</td><td>1</td></tr>
+      <tr><td>Helm</td><td>1</td></tr>
+      <tr><td>Armour</td><td>1</td></tr>
+      <tr><td>Garment</td><td>1</td></tr>
+      <tr><td>Shoes</td><td>1</td></tr>
+      <tr><td>Accessories</td><td>1 each</td></tr>
+    </table>
+    <p><strong>Four weapon slots is the largest driver of card demand in the game.</strong> Every character wants four in their weapon and five across their armour, and every card they want is also a card the album wants. Doing both properly means multiple copies of the same card against a 0.01% drop rate.</p>
+    <h2 id="materials">Materials</h2>
+    <p><strong>You need every faction's dungeon.</strong> Crafting a tier N piece requires materials from all five factions' tier N dungeons.</p>
+    <table class="wtbl">
+      <tr><th>Tier</th><th>Per faction</th><th>Total per piece</th></tr>
+      <tr><td>1</td><td>1</td><td>5</td></tr>
+      <tr><td>2</td><td>2</td><td>10</td></tr>
+      <tr><td>3</td><td>3</td><td>15</td></tr>
+      <tr><td>4</td><td>4</td><td>20</td></tr>
+      <tr><td>5</td><td>5</td><td>25</td></tr>
+    </table>
+    <p>Which means nobody gears up inside their own borders. Either you run four other factions' dungeons and pay the access fee, or you buy the materials from somebody who did. Every crafted item on the server represents materials from five factions changing hands.</p>
+    <h3>Accessories need every world boss</h3>
+    <p>Same rule. World bosses are open to everybody, so this is an invitation rather than a lockout — the materials are the reason to travel.</p>
+    <h3>Complete items</h3>
+    <p>Dungeons occasionally drop a finished piece instead of materials. It is random in slot and type, and because everything is reforgeable, it is never useless — it becomes whatever you need, or it gets sold to somebody who needs it.</p>
+    <h2 id="trading">What can be traded</h2>
+    <table class="wtbl">
+      <tr><th></th><th>Tradeable?</th></tr>
+      <tr><td>Crafting materials, tiers 1 to 4</td><td>Yes</td></tr>
+      <tr><td>Crafted gear</td><td>No. Soulbound when made.</td></tr>
+      <tr><td>Complete item drops</td><td>No. Soulbound on pickup.</td></tr>
+      <tr><td>Everything tier 5</td><td>No. Gear and materials both.</td></tr>
+    </table>
+    <p>A tradeable gear market would turn crafting into shopping. Materials trading gives the economy everything it needs without letting anybody buy a finished set.</p>
+    <h2 id="t5">Tier 5</h2>
+    <table class="wtbl">
+      <tr><th></th><th>Tier 5</th></tr>
+      <tr><td>Materials per piece</td><td>25 — five from each Glast Heim wing</td></tr>
+      <tr><td>Drop rate</td><td>100%, like every tier</td></tr>
+      <tr><td>Trading</td><td>None. Entirely soulbound.</td></tr>
+      <tr><td>Salvage</td><td>Destroy a piece for 50% of its materials back, rounded up</td></tr>
+    </table>
+    <p>Salvage is how a raid turns a piece nobody needed into progress toward one somebody does. Without it, a drop for a slot you already have is wasted permanently.</p>
+    <h3>The one exception</h3>
+    <p>Tier 5 taken off an <strong>intercepted Metropolis caravan</strong> is not soulbound — it was freight, not anybody's equipment. It can only be sold at Morroc's black market, by anybody, and that is the only route to tier 5 gear that does not involve clearing Glast Heim.</p>
+    <h2 id="factions">Faction advantages</h2>
+    <table class="wtbl">
+      <tr><th>Faction</th><th>What they bring</th></tr>
+      <tr><td>Payon</td><td>A 44% material discount at their forge, available to anybody who travels there and pays the tax. Alberta pays no tax.</td></tr>
+      <tr><td>Geffen</td><td>Transmutation. Converts one faction's materials into another's at the same tier, down to 2:1 at full research.</td></tr>
+      <tr><td>Morroc</td><td>The only outlet for stolen tier 5.</td></tr>
+      <tr><td>Alberta</td><td>No inter-faction tax anywhere, on anything.</td></tr>
+    </table>
+    <p><strong>Payon makes nothing exclusive.</strong> Exclusive recipes were considered and rejected — they would make Payon citizenship mandatory for crafters, and strand every faction relying on them if Payon fell behind.</p>
+    <p><strong>Transmutation matters most when factions are out of step.</strong> If you have reached tier 4 and your neighbour is still on tier 3, their tier 4 materials do not exist yet. Geffen is the only route.</p>
+    <div class="pending">
+      <span class="tag">Not built yet</span>
+      <p>The crafting interface, the reforging screen, and the loadout manager.</p>
+    </div>
+  </main>
+</div>
+
+<footer>
+  <div class="shell foot-in">
+    <a class="mark" href="../index.html" style="font-size:.95rem"><img class="mark-crest" src="../assets/img/dro-crest.png" alt="" aria-hidden="true">DRACUS<span>RO</span></a>
+    <a href="../index.html#info">Server info</a>
+    <a href="../systems.html">Systems guide</a>
+    <a href="index.html">Wiki</a>
+    <a href="https://discord.gg/XNHBAawCjw" target="_blank" rel="noopener noreferrer">Discord</a>
+    <a href="https://www.facebook.com/DROServer" target="_blank" rel="noopener noreferrer">Facebook</a>
+    <span class="r">Not affiliated with Gravity Co., Ltd.</span>
+  </div>
+</footer>
+
+<script src="../assets/session.js"></script>
+<script>
+document.querySelectorAll('.wiki-body h2[id]').forEach(function(h){
+ var a=document.createElement('a');
+ a.className='anchor'; a.href='#'+h.id; a.textContent='#';
+ a.setAttribute('aria-label','Link to this section');
+ h.appendChild(a);
+});
+</script>
+</body>
+</html>
