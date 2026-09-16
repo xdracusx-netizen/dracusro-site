@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Classes &amp; combat — DracusRO wiki</title>
-<meta name="description" content="Class balance on DracusRO: buff durations, Asura caps, crowd control diminishing returns, Bard and Dancer rework, and animation changes.">
+<meta name="description" content="Class balance on DracusRO: buff tiers, kill refunds, Asura caps, crowd control diminishing returns, summons and walls.">
 	<link rel="canonical" href="https://dracusro.com/wiki/classes.html">
 	<meta property="og:type" content="article">
 	<meta property="og:site_name" content="DracusRO">
 	<meta property="og:title" content="Classes &amp; combat — DracusRO wiki">
-	<meta property="og:description" content="Class balance on DracusRO: buff durations, Asura caps, crowd control diminishing returns, Bard and Dancer rework, and animation changes.">
+	<meta property="og:description" content="Class balance on DracusRO: buff tiers, kill refunds, Asura caps, crowd control diminishing returns, summons and walls.">
 	<meta property="og:image" content="https://dracusro.com/assets/img/og-image.jpg">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="theme-color" content="#FBF6EC">
@@ -77,79 +77,90 @@
 
   <main class="wiki-body">
     <p class="lead">What has been changed from standard Ragnarok, and why. If you have played this game before, read this page.</p>
+    <div class="note"><strong>Third job is the ceiling.</strong> Fourth job is not on this server. Level cap is 200 base, 70 job.</div>
     <h2 id="philosophy">The approach</h2>
     <p>Nothing here is a nerf for its own sake. Every change targets a specific pattern that makes fights worse for everybody involved.</p>
     <table class="wtbl">
       <tr><th>Pattern</th><th>Treatment</th></tr>
       <tr><td>No-cooldown mobility</td><td>Cooldowns added, range increased in exchange</td></tr>
       <tr><td>Uncapped burst</td><td>Capped as a percentage of the target's maximum health</td></tr>
-      <tr><td>Damage that scales off the target</td><td>Removed. Being tanky should not make you easier to kill.</td></tr>
-      <tr><td>Permanent denial</td><td>Duration and cooldown added</td></tr>
+      <tr><td>Damage that scales off your own HP</td><td>Removed everywhere. A tank should not also nuke.</td></tr>
+      <tr><td>Permanent denial</td><td>Duration and cooldown added. A cooldown must always outlast the effect it creates.</td></tr>
       <tr><td>Maintenance spam</td><td>Long-duration party-wide buffs</td></tr>
-      <tr><td>Dead time</td><td>After-cast delay cut hard, replaced by visible cooldowns</td></tr>
+      <tr><td>Dead time</td><td>After-cast delay cut to about half a second, replaced by visible cooldowns</td></tr>
     </table>
-    <h2 id="buffs">Buffs last thirty minutes</h2>
-    <p>Maintenance buffs are party-wide and last half an hour. Tactical ones stay short.</p>
+    <p class="lead"><strong>Rules differ by class on purpose.</strong> Each one is balanced on its own terms. They are not meant to play the same.</p>
+    <h2 id="cooldowns">How cooldowns work here</h2>
+    <ul class="wl">
+      <li><strong>Big area damage gets a long cooldown</strong> and hits proportionally harder. Landing one is a decision.</li>
+      <li><strong>Single-target skills with real cast time keep their stock cooldowns.</strong> The cast is the limiter.</li>
+      <li><strong>Every build has a low-cooldown filler</strong>, so long cooldowns never leave you standing there. Bread-and-butter skills sit at one to two seconds.</li>
+      <li><strong>Cooldown reduction is a real build stat</strong>, and most of its value lands on the long ones.</li>
+      <li><strong>Instant cast is achievable but hard.</strong> Fixed-cast reductions do not stack — the highest single source wins.</li>
+    </ul>
+    <h2 id="refunds">Kill refunds</h2>
+    <p><strong>Landing a killing blow returns 30% of that skill's cooldown.</strong> Players, monsters, adds, MVPs, summons, structures — anything killable, in PvP and PvE alike.</p>
     <table class="wtbl">
-      <tr><th>Long — 30 minutes, party-wide</th><th>Still tactical</th></tr>
-      <tr><td>Blessing, Increase AGI, Angelus, Gloria, Magnificat, Impositio</td><td>Kyrie Eleison, Assumptio, Suffragium</td></tr>
-      <tr><td>Aspersio</td><td>Safety Wall, Pneuma</td></tr>
-      <tr><td>Weapon Perfection, Adrenaline Rush, Power Thrust, Over Thrust</td><td>Maximize Power</td></tr>
-      <tr><td>Elemental endows, Chemical Protection</td><td>Defending Aura</td></tr>
-      <tr><td>Auto Guard, Reflect Shield</td><td>—</td></tr>
+      <tr><th>Applies to</th><th>Never applies to</th></tr>
+      <tr><td>Finishers, damage skills, area damage</td><td>Crowd control</td></tr>
+      <tr><td>Pops — EDP, Unlimit, Inspiration, Telekinesis Intense</td><td>Heals and defensive skills</td></tr>
+      <tr><td>—</td><td>Buffs, mobility, Resurrection, Dispel</td></tr>
+    </table>
+    <p><strong>Which punishes clumping hard.</strong> A caster who kills four people with one area skill has it back immediately. Groups have to answer strikers by spreading out, not by stacking.</p>
+    <ul class="wl">
+      <li><strong>No cap and no floor.</strong> Chain kills, chain refunds.</li>
+      <li><strong>Dying costs nothing extra.</strong> Your timers keep running.</li>
+      <li><strong>Supports rarely benefit.</strong> Arch Bishops, Royal Guards and performers seldom land killing blows, which is consistent with their job.</li>
+      <li><strong>Summons and structures are refund fodder</strong> for the enemy. Spreading them out is not optional.</li>
+    </ul>
+    <h2 id="buffs">Buffs</h2>
+    <p>Four tiers, and which one a buff sits in decides everything about it.</p>
+    <table class="wtbl">
+      <tr><th>Tier</th><th>Duration</th><th>On death</th><th>Dispel</th><th>Examples</th></tr>
+      <tr><td>Maintenance</td><td>30 minutes, party-wide</td><td>Persists</td><td>Removed</td><td>Blessing, Increase AGI, Angelus, Impositio, Gloria, Magnificat, Aspersio, endows, Adrenaline Rush, Weapon Perfection, Over Thrust, Auto Guard, Reflect Shield, Chemical Protection</td></tr>
+      <tr><td>Tactical</td><td>Short</td><td>Removed</td><td>Removed</td><td>Kyrie, Assumptio, Suffragium, Praefatio, Offertorium, King's Grace</td></tr>
+      <tr><td>Pop</td><td>Short window, long cooldown</td><td>Removed</td><td><strong>Immune</strong></td><td>EDP, Unlimit, Inspiration, Telekinesis Intense</td></tr>
+      <tr><td>Performance</td><td>Up to 30 minutes</td><td>Ends</td><td>Dispelling the performer ends it</td><td>Minstrel and Wanderer songs and dances</td></tr>
     </table>
     <ul class="wl">
-      <li><strong>Buffs persist through death.</strong> Rebuffing after every death in a siege is exactly the busywork being removed.</li>
-      <li><strong>Lost on class change.</strong></li>
-      <li><strong>Dispel is now a real weapon.</strong> Stripping a thirty minute buff mid-fight is a serious blow.</li>
-      <li><strong>Consumable buffs also persist through death.</strong> They are expensive.</li>
+      <li><strong>Maintenance buffs persist through death.</strong> Rebuffing after every death in a siege is exactly the busywork being removed.</li>
+      <li><strong>All buffs are lost on class change.</strong></li>
+      <li><strong>Pops cannot be dispelled.</strong> They are short and expensive; stripping them would make them pointless.</li>
+      <li><strong>Performance auras end when the performer dies</strong>, or when somebody dispels them.</li>
+      <li><strong>Self-buffs that gate a class cast fast</strong>, so rebuilding them never breaks combat.</li>
     </ul>
-    <h2 id="asura">Asura Strike</h2>
-    <p>Capped as a share of the target's maximum health, and the cap depends on what you hit.</p>
+    <p><strong>Dispel and Clearance reach 5 cells.</strong> Stripping buffs means walking into the enemy team, which is the cost of doing it.</p>
+    <h2 id="marks">Marks</h2>
     <table class="wtbl">
-      <tr><th>Target</th><th>Cap</th></tr>
-      <tr><td>Players</td><td>35% of maximum HP</td></tr>
-      <tr><td>Open world &mdash; monsters, minibosses and MVPs</td><td>70%, with no damage to anything below 30% health</td></tr>
-      <tr><td>Scripted encounters &mdash; dungeon and world bosses</td><td>5%, with no floor</td></tr>
+      <tr><th>Rule</th><th>Detail</th></tr>
+      <tr><td>The same mark never stacks</td><td>Two Shattered Kis are not +50%. A second Sura on a marked target is a wasted Sura.</td></tr>
+      <tr><td>Different classes' marks coexist</td><td>Dark Claw and Shattered Ki can both sit on one target.</td></tr>
+    </table>
+    <p>Which means stacking a class is fine if you spread it and wasteful if you concentrate it. Two Suras belong on two objectives, not on one emperium.</p>
+    <h2 id="asura">Asura Strike</h2>
+    <p>Rebuilt on ATK. No sphere cost, no HP or SP scaling, 20 second cooldown. Fury still required.</p>
+    <table class="wtbl">
+      <tr><th>Context</th><th>Cap</th></tr>
+      <tr><td>Open world — monsters, minibosses and MVPs</td><td>70% of maximum HP, with no damage below 30% target health</td></tr>
+      <tr><td>PvP</td><td>35% of maximum HP</td></tr>
+      <tr><td>Scripted encounters — dungeon and world bosses</td><td>5%, with no floor</td></tr>
     </table>
     <h3>Shattered Ki</h3>
-    <p>Asura applies a mark to the target for 20 seconds. Everybody hitting that target deals 25% more damage, including the monk.</p>
-    <ul class="wl">
-      <li><strong>The target cannot be hit by another Asura</strong> while the mark holds.</li>
-      <li><strong>SP cost is much lower</strong> than standard — a monk should manage around ten casts in a long fight.</li>
-      <li><strong>Open world MVPs keep the 70% cap.</strong> A monk stays a genuine menace to anything roaming a field map — and since everybody can be a monk, that is not an exclusive advantage.</li>
-      <li><strong>In scripted encounters the mark is the point.</strong> Against a dungeon or world boss the monk's job is keeping it applied, which is worth far more than their personal damage.</li>
-    </ul>
-    <h2 id="mobility">Mobility</h2>
+    <p>Asura marks the target for 20 seconds.</p>
     <table class="wtbl">
-      <tr><th>Skill</th><th>Change</th></tr>
-      <tr><td>Body Relocation</td><td>12 second cooldown. Range increased to 22 cells.</td></tr>
-      <tr><td>Backslide</td><td>12 second cooldown. Range 10 to 12 cells, and you are concealed on use.</td></tr>
+      <tr><th>Effect</th><th>Value</th></tr>
+      <tr><td>Damage from all sources</td><td>+25%</td></tr>
+      <tr><td>Tiger Cannon and Gate of Hell against the marked target</td><td><strong>Double damage</strong></td></tr>
+      <tr><td>Further Asura</td><td>The target is immune while the mark holds, from anybody</td></tr>
+      <tr><td>Removal</td><td><strong>Cannot be dispelled or cleansed.</strong> Nothing removes it.</td></tr>
     </table>
-    <p>Backslide's concealment works at your own Cloaking level. A Rogue who never learned Cloaking still gets the reposition, just not the disappearing act.</p>
-    <h2 id="alchemist">Alchemist</h2>
-    <p>Acid Demonstration no longer scales off the target's stats, is capped at 5% of maximum health, and has a 15 second cooldown.</p>
-    <p><strong>It now applies Corroded</strong> — 20 seconds during which the target takes substantially more damage from every Alchemist ability, and Hell Plants hit considerably harder.</p>
-    <p>Which gives the class a rotation for the first time. Acid Demonstration sets up, everything else cashes in, and an alchemist pressing one button is now visibly playing badly.</p>
-    <h2 id="bard">Bard and Dancer</h2>
-    <p>Songs and dances are now <strong>screen-wide auras centred on the performer</strong>, moving with them.</p>
-    <ul class="wl">
-      <li><strong>No positioning requirement.</strong> If you can see them, you have it.</li>
-      <li><strong>One performer is enough.</strong> A second of the same song adds nothing.</li>
-      <li><strong>Still channelled.</strong> They are not attacking or healing while it runs.</li>
-    </ul>
-    <p>The old version was built for a game where fights happened in one spot. Nothing on this server stands still.</p>
-    <h2 id="res">Resurrection</h2>
-    <table class="wtbl">
-      <tr><th></th><th>Value</th></tr>
-      <tr><td>Skill levels</td><td>One. Nothing to rank up.</td></tr>
-      <tr><td>Health restored</td><td>Full</td></tr>
-      <tr><td>Cooldown</td><td>2 minutes</td></tr>
-      <tr><td>Scope</td><td>Per caster</td></tr>
-    </table>
-    <p>Three priests means three resurrections, staggered. The number of priests a raid brings is a real decision.</p>
+    <p><strong>Which is the Sura's actual job.</strong> Asura is not the kill — it is the setup. The kill is Gate of Hell or Tiger Cannon landing inside the window, and everybody else hitting that target harder while it holds.</p>
+    <p>Open world MVPs keep the 70% cap, so a Sura stays a genuine menace to anything roaming a field map. Everybody can be a Sura, so that is not an exclusive advantage.</p>
+    <h2 id="hp">Damage never scales off your own health</h2>
+    <p>A tank that also nukes is removed everywhere. Dragon Breath, Death Bound, Martyr's Reckoning, Rage Burst, Self-Destruction, Gate of Hell and Asura are all rebuilt on attack power instead.</p>
+    <p><strong>Scaling off the target's health is fine</strong>, and deliberately kept — it is the anti-tank tool that keeps pace with card album health. Poison Smoke, Crescent Elbow, the Gate of Hell execute and Acid Demonstration's cap all work this way.</p>
     <h2 id="cc">Crowd control</h2>
-    <p>Repeated hard crowd control on the same target loses effect.</p>
+    <p>Repeated crowd control on the same target loses effect, and almost everything shares one counter.</p>
     <table class="wtbl">
       <tr><th>Application</th><th>Duration</th></tr>
       <tr><td>First</td><td>100%</td></tr>
@@ -157,32 +168,68 @@
       <tr><td>Third</td><td>25%</td></tr>
       <tr><td>Fourth</td><td>Immune</td></tr>
     </table>
+    <p>Resets after about 20 seconds without a new application. Per target, server-wide — five players chaining hit the wall as fast as one.</p>
+    <table class="wtbl">
+      <tr><th>In the shared counter</th><th>Separate counter</th><th>Not crowd control</th></tr>
+      <tr><td>Stun, freeze, sleep, stone, Crystallize, Fear, every root, every hold, every silence, charm and confusion</td><td>Strip and Disable — 5s, then 2.5s, then 1.25s, then immune. Kept separate so Rogues keep their edge.</td><td>Slow, blind, curse, Burning, Freezing, hit and flee debuffs, the soft poisons, performance debuffs</td></tr>
+    </table>
     <ul class="wl">
-      <li><strong>Resets after 20 seconds</strong> without further application.</li>
-      <li><strong>Freeze, stun, sleep and stone curse share one counter.</strong> Rotating between them does not reset it.</li>
-      <li><strong>It is per target, server-wide.</strong> Five players chaining on one person hit the wall as fast as one player would.</li>
+      <li><strong>Nothing locks a player for more than six seconds.</strong> Crowd control creates an opening; it is never an I-win button.</li>
+      <li><strong>Fear is a 2 second root plus reduced hit and flee.</strong> It does not block attacks or skills.</li>
+      <li><strong>Divest All counts as one application</strong>, not several.</li>
+    </ul>
+    <h3>Players never break equipment</h3>
+    <p>Every player-caused break — Meltdown, Acid Terror, Acid Demonstration, Weapon Crush, card procs — becomes <strong>Disable</strong> instead. The item stays equipped, its stats and requirements switch off for 5 seconds, then it works again. It counts toward the strip counter.</p>
+    <p>Self-break chances on Crush Strike and Maximum Over Thrust are removed entirely. <strong>Monsters keep real breaks</strong>, so repair skills stay useful — but no dungeon or world boss encounter is given one.</p>
+    <h2 id="walls">Walls and zones</h2>
+    <table class="wtbl">
+      <tr><th>Skill</th><th>Blocks</th><th>Duration and cooldown</th></tr>
+      <tr><td>Safety Wall</td><td>Melee physical</td><td>10 seconds, 60 second cooldown per caster</td></tr>
+      <tr><td>Pneuma</td><td>Ranged physical</td><td>10 seconds, 60 second cooldown per caster</td></tr>
+      <tr><td>Land Protector</td><td>Ground skills</td><td>20 seconds, 45 second cooldown</td></tr>
+    </table>
+    <p><strong>Neither wall blocks magic.</strong> The answers to magic area damage are Land Protector, silences, Spell Breaker, dispelling the caster's buffs, and spreading out.</p>
+    <p>Everything that makes defending easy gets a short window. Otherwise sieges always favour the defender.</p>
+    <h2 id="summons">Summons, structures and traps</h2>
+    <p><strong>Summons are an extension of the player, not a replacement.</strong></p>
+    <table class="wtbl">
+      <tr><th></th><th>Behaviour</th><th>Cap</th></tr>
+      <tr><td>Mobile summons</td><td>Attack only what their owner is attacking. Leashed.</td><td>2 Flora, 2 Marine Sphere, 1 spirit</td></tr>
+      <tr><td>Structures</td><td>Fire at the Mechanic's target when in range</td><td>2 Silver Sniper, 2 Magic Decoy</td></tr>
+      <tr><td>Homunculus</td><td>Autonomous, as always</td><td>1</td></tr>
+      <tr><td>Ranger traps</td><td>—</td><td>3 at a time. Placing a fourth destroys the oldest.</td></tr>
+    </table>
+    <ul class="wl">
+      <li><strong>All summons combined sit at 50–60% of what the caster does alone.</strong> A full set supplements you; it does not replace you.</li>
+      <li><strong>Mechanic structures reach 80–100%</strong>, because they are stationary and the Mechanic is built around them.</li>
+      <li><strong>Summon stats scale off caster attack power</strong>, never off health.</li>
+      <li><strong>An idle player's summons do nothing.</strong> No target, no action.</li>
     </ul>
     <h2 id="misc">Other changes</h2>
     <table class="wtbl">
-      <tr><th>Skill</th><th>Change</th></tr>
-      <tr><td>Soul Link</td><td>Moved to Priest. Single target, 30 minutes, 15 second cooldown between swaps.</td></tr>
-      <tr><td>Land Protector</td><td>20 second duration, 45 second cooldown. Disables siege emplacements. Never affects spawn protection.</td></tr>
-      <tr><td>Safety Wall, Pneuma</td><td>10 second cooldown per caster</td></tr>
-      <tr><td>Emergency Call</td><td>Disabled on siege maps entirely</td></tr>
+      <tr><th></th><th>Change</th></tr>
+      <tr><td>Body Relocation</td><td>12 second cooldown, 22 cell range</td></tr>
+      <tr><td>Backslide</td><td>12 second cooldown, 10–12 cells, conceals at your own Cloaking level. Thief line only.</td></tr>
+      <tr><td>Acid Demonstration</td><td>No target-stat scaling, capped on maximum HP, 15 second cooldown. Applies <strong>Corroded</strong> — 20 seconds of increased damage from every Alchemist ability, and Hell Plants hit considerably harder.</td></tr>
+      <tr><td>Bard and Dancer</td><td>Screen-wide auras centred on the performer, moving with them. One is enough; a second adds nothing.</td></tr>
+      <tr><td>Resurrection</td><td>One rank, full health, 2 minute cooldown, per caster</td></tr>
+      <tr><td>Soul Link</td><td>Moved to Priest. Single target, 30 minutes, 15 second cooldown between swaps</td></tr>
+      <tr><td>Emergency Call</td><td>Disabled on siege maps</td></tr>
       <tr><td>Devotion</td><td>Unchanged, but cannot target the emperium</td></tr>
-      <tr><td>Healing items in PvP</td><td>5 second shared cooldown. No cooldown in PvE.</td></tr>
+      <tr><td>Healing items</td><td>5 second shared cooldown in PvP, none in PvE</td></tr>
+      <tr><td>Frenzy</td><td>Removed from the Rune Knight tree</td></tr>
+      <tr><td>Sling Item, Make Bomb</td><td>Stay removed, as in stock</td></tr>
     </table>
-    <h2 id="delay">Animation and delay</h2>
-    <p>Cast time is counterplay and it stays. After-cast delay is not, and it has been cut hard.</p>
+    <h2 id="rules">Rules that catch people out</h2>
     <ul class="wl">
-      <li><strong>After-cast delay targets roughly half a second</strong> for standard skills.</li>
-      <li><strong>Cooldowns replace long delays</strong> where a skill genuinely needs limiting. A cooldown is visible and plannable.</li>
-      <li><strong>Movement cancels cleanly.</strong> You lose the skill if it has not fired, but you are not stuck.</li>
-      <li><strong>Nothing locks you for longer than its cast time.</strong></li>
+      <li><strong>No gear swapping in instanced PvP.</strong> Your loadout locks when you enter a siege or a caravan. Ammunition swaps freely, and anything stripped off you can be re-equipped.</li>
+      <li><strong>Autoloot is off by default</strong>, and it never picks up cards or anything under a 1% drop rate.</li>
+      <li><strong>MVP credit is by damage contribution.</strong> No first-hit tag, no last-hit snipe. Everybody who contributed gets something and the top contributors get more.</li>
+      <li><strong>Consumables are a cost, not a limiter.</strong> The cooldown is the limiter — buying a thousand bottles gives the same uptime as buying thirty.</li>
     </ul>
     <div class="pending">
       <span class="tag">Not built yet</span>
-      <p>Full skill-by-skill numbers once the server is tuned. Everything above is the design, not the final values.</p>
+      <p>Per-skill numbers as the server is tuned. Everything above is the design; the values move during testing.</p>
     </div>
   </main>
 </div>
