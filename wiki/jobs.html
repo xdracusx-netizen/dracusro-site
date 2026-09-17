@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The twelve classes — DracusRO wiki</title>
-<meta name="description" content="The twelve third job classes on DracusRO: identity, group role, weaknesses and what changed for each.">
+<meta name="description" content="The twelve third job classes on DracusRO: identity, group role, and a before-and-after of every changed skill.">
 	<link rel="canonical" href="https://dracusro.com/wiki/jobs.html">
 	<meta property="og:type" content="article">
 	<meta property="og:site_name" content="DracusRO">
 	<meta property="og:title" content="The twelve classes — DracusRO wiki">
-	<meta property="og:description" content="The twelve third job classes on DracusRO: identity, group role, weaknesses and what changed for each.">
+	<meta property="og:description" content="The twelve third job classes on DracusRO: identity, group role, and a before-and-after of every changed skill.">
 	<meta property="og:image" content="https://dracusro.com/assets/img/og-image.jpg">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="theme-color" content="#FBF6EC">
@@ -47,7 +47,7 @@
   <div class="shell">
     <p class="crumb"><a href="../index.html">DracusRO</a> &nbsp;/&nbsp; <a href="index.html">Wiki</a> &nbsp;/&nbsp; The twelve classes</p>
     <h1>The twelve classes</h1>
-    <p class="stand">What each class is for, how it wins, and what kills it.</p>
+    <p class="stand">What each class is for, and exactly what changed from stock Ragnarok to get it there.</p>
   </div>
 </header>
 
@@ -77,143 +77,245 @@
   </aside>
 
   <main class="wiki-body">
-    <p class="lead">What each class is for, how it wins, and what kills it. Third job is the ceiling on this server, so these twelve are the final forms.</p>
-    <div class="note"><strong>This is a preview and all of it is subject to change.</strong> These are design targets, not shipped values. Numbers move during testing and some of these classes will play differently by launch. What should not change is the identity &mdash; what each class is <em>for</em>.</div>
-    <h2 id="principle">The rule behind all of it</h2>
-    <p>Every class has something it does for the group that nobody else does. That is deliberate, and it is the thing being protected when numbers get tuned.</p>
-    <p class="lead"><strong>Rules differ by class on purpose.</strong> Each one is balanced on its own terms. They are not meant to play the same, and a change that makes sense for one is often wrong for another.</p>
+    <p class="lead">What each class is for, and exactly what changed from stock Ragnarok to get it there.</p>
+    <div class="note"><strong>This is a preview and all of it is subject to change.</strong> These are design targets, not shipped values &mdash; numbers move during testing. What should not change is the identity: what each class is <em>for</em>.</div>
+    <h2 id="reading">How to read the tables</h2>
+    <p><strong>Stock</strong> is what the skill does in standard Ragnarok. <strong>Here</strong> is what it does on this server. Only changed rows are listed &mdash; anything not mentioned is untouched.</p>
+    <table class="wtbl">
+      <tr><th>Pattern</th><th>Why it keeps showing up</th></tr>
+      <tr><td>A cooldown appearing where there was none</td><td>Instant-cast skills with no cooldown are button-mashing. Everything near-instant gets a short one.</td></tr>
+      <tr><td>Big area skills getting much longer cooldowns</td><td>And hitting proportionally harder. Landing one becomes a decision rather than a rotation.</td></tr>
+      <tr><td>Crowd control durations dropping hard</td><td>Nothing on this server locks a player for more than six seconds. Crowd control opens a window; it is not a win button.</td></tr>
+      <tr><td>Damage formulas losing their HP or SP term</td><td><strong>Damage never scales off your own health.</strong> A tank that also nukes is removed everywhere.</td></tr>
+      <tr><td>Buffs going to 30 minutes</td><td>Maintenance buffs stop being busywork. Tactical ones stay short.</td></tr>
+      <tr><td>Crafting material counts falling</td><td>Twenty toad skins per poison was tedium, not cost. The cooldown is the limiter; the material is only a price.</td></tr>
+    </table>
     <h2 id="frontline">Frontline</h2>
-    <h3>Rune Knight — the bruiser</h3>
-    <p><strong>Two weapon identities, and they play differently.</strong> Spear is the diver: go in, hit the main target, weave debuffs and Dragon Breath. Sword is the auto-attacker: Giant Growth, Enchant Blade and Two-Hand Quicken drive the damage, with area skills on cooldown.</p>
+    <h3>Rune Knight &mdash; the bruiser</h3>
+    <p><strong>Two weapon identities.</strong> Spear is the diver: go in, hit the main target, weave debuffs and Dragon Breath. Sword is the auto-attacker: Giant Growth, Enchant Blade and Two-Hand Quicken drive the damage, with area skills on cooldown.</p>
     <table class="wtbl">
-      <tr><th></th><th>Detail</th></tr>
-      <tr><td>Wins by</td><td>Getting on top of somebody and staying there</td></tr>
-      <tr><td>Group hook</td><td>Holds the middle and protects flanks so squishier classes can work</td></tr>
-      <tr><td>Dies to</td><td>Kiting, and anything that holds it still away from the fight</td></tr>
-      <tr><td>Notable</td><td>Dragon Breath is rebuilt on attack power — no more health scaling. Death Bound becomes a real counter-window rather than a reflect.</td></tr>
+      <tr><th>Skill</th><th>Stock</th><th>Here</th></tr>
+      <tr><td><strong>Dragon Breath</strong> (fire and water)</td><td>No cooldown. Damage = (current HP ÷ 50 + max SP ÷ 4) × level</td><td><strong>20s shared cooldown. Rebuilt on attack power</strong> — the HP and SP terms are gone entirely</td></tr>
+      <tr><td><strong>Death Bound</strong></td><td>3s cooldown, reflects 10.5× the incoming hit, and you take 4.5× it yourself</td><td>30s cooldown. A real counter-window — a frontal hit during it deals your attack power back. No reflect multiplier, no self-damage quirk</td></tr>
+      <tr><td>Ignition Break</td><td>2s cooldown</td><td>8s, and hits four times as hard</td></tr>
+      <tr><td>Hundred Spear</td><td>3s</td><td>2s — bread and butter</td></tr>
+      <tr><td>Wind Cutter</td><td>0.3s</td><td>2s, four times the damage</td></tr>
+      <tr><td>Sonic Wave</td><td>1.75s</td><td>15s. Hits hard, so a melee class stays melee</td></tr>
+      <tr><td>Phantom Thrust</td><td>No cooldown</td><td>15s</td></tr>
+      <tr><td>Dragon Howling</td><td>10s cooldown, 15s Fear</td><td>30s cooldown, 10s Fear</td></tr>
+      <tr><td>Storm Blast</td><td>1s reuse</td><td>15s. Runestones cost 100z, so supply never limited it</td></tr>
+      <tr><td>Lux Anima</td><td>5s</td><td>60s</td></tr>
+      <tr><td>Crush Strike</td><td>20% chance to break your own weapon</td><td>Self-break removed</td></tr>
     </table>
-    <p>The Rune Knight tree drops most of its old Knight and Lord Knight damage skills. A character still levelling Knight keeps everything; the trimming applies once they graduate.</p>
-    <h3>Royal Guard — the wall</h3>
-    <p><strong>Chooses who cannot die, and pays for it.</strong> Devotion works out the damage against the protected ally's defence and hands it straight to the Royal Guard, skipping their own armour, Auto Guard and Reflect Shield. Protecting a squishy means eating squishy-sized hits.</p>
+    <p><strong>The tree is trimmed.</strong> Rune Knight drops Bash, Pierce, Bowling Bash, Spear Boomerang, Spiral Pierce, Frenzy and the rest of the old Knight damage list. Buffs and passives stay &mdash; Endure, Concentration, Aura Blade, Parry, the masteries. A character still levelling Knight keeps everything; the trimming applies once they graduate.</p>
+    <p><strong>Runes get cheaper.</strong> Most recipes lose a monster part: Nauthiz drops Destroyed Armor, Thurisaz drops Claw of Desert Wolf, Hagalaz drops Round Shell, Lux Anima needs two Gold instead of three.</p>
+    <h3>Royal Guard &mdash; the wall</h3>
+    <p><strong>Chooses who cannot die, and pays for it.</strong> Devotion works the damage out against the protected ally's defence and hands it straight to the Royal Guard &mdash; skipping their own armour, Auto Guard and Reflect Shield. Protecting a squishy means eating squishy-sized hits.</p>
     <table class="wtbl">
-      <tr><th></th><th>Detail</th></tr>
-      <tr><td>Wins by</td><td>Keeping somebody else alive through something that should have killed them</td></tr>
-      <tr><td>Group hook</td><td>Picks who is untouchable, and holds the rhythm of a push</td></tr>
-      <tr><td>Dies to</td><td>Being stripped. Every shield buff needs the shield equipped.</td></tr>
-      <tr><td>Notable</td><td>Banding caps at five, so it rewards a squad rather than a wall of twenty guards.</td></tr>
+      <tr><th>Skill</th><th>Stock</th><th>Here</th></tr>
+      <tr><td><strong>Martyr's Reckoning</strong></td><td>9% of your own max HP per hit</td><td><strong>Rebuilt on attack power.</strong> No HP scaling</td></tr>
+      <tr><td><strong>Rage Burst</strong></td><td>Scales with your missing HP</td><td>Rebuilt on attack power</td></tr>
+      <tr><td><strong>Banding</strong></td><td>Scales with every Royal Guard in range</td><td><strong>Capped at five.</strong> Promotes a squad, not a wall of twenty guards</td></tr>
+      <tr><td>Inspiration</td><td>180s duration, 180s cooldown</td><td>15s duration, same cooldown — a pop, not a state</td></tr>
+      <tr><td>Prestige</td><td>90s</td><td>30s</td></tr>
+      <tr><td>Overbrand</td><td>0.3s cooldown</td><td>6s</td></tr>
+      <tr><td>Ray of Genesis</td><td>2s</td><td>12s</td></tr>
+      <tr><td>Earth Drive, Cannon Spear, Moon Slasher</td><td>2.5s / 1.7s / 2s</td><td>8s each</td></tr>
+      <tr><td>Vanishing Point</td><td>No cooldown</td><td>2s — bread and butter for spear</td></tr>
+      <tr><td>Shield Charge</td><td>Stun, no cooldown</td><td>8s</td></tr>
+      <tr><td>Reflect Shield, Auto Guard, Defender, Spear Quicken, Providence</td><td>Short</td><td>30 minutes</td></tr>
     </table>
-    <p><strong>Royal Guard sits outside the damage bands on purpose</strong>, which is exactly why strip, dispel, Dark Claw and Poison Smoke exist. Every one of them is an answer to this class.</p>
-    <h3>Genetic — the duelist</h3>
-    <p>The crafter, and a sustained frontliner. Picks a target and dismantles it with plants, debuffs and acid. <strong>Hell's Plant on this server is an aura around the Genetic</strong>, not something parked in a doorway — it is a push tool.</p>
+    <p><strong>Royal Guard sits outside the damage bands on purpose</strong>, which is why so many answers exist. Shadow Chaser strips weapon and shield straight through Chemical Protection, and every shield buff ends the moment the shield is gone. Dark Claw stops melee reflect entirely. Reflect Shield only ever reflected melee anyway. And Leech End ignores both reduction and reflect.</p>
+    <h3>Genetic &mdash; the duelist</h3>
+    <p>The crafter, and a sustained frontliner. <strong>Its old win buttons were all uptime problems</strong> &mdash; Cart Cannon with no cooldown, Mandragora permanently up, a plant parked in a choke point, and uncapped acid. All four now have windows.</p>
     <table class="wtbl">
-      <tr><th></th><th>Detail</th></tr>
-      <tr><td>Wins by</td><td>Marking one target and grinding it down</td></tr>
-      <tr><td>Group hook</td><td><strong>Corroded</strong> — the mark that makes everything the Genetic brings hit harder</td></tr>
-      <tr><td>Dies to</td><td>Being forced off its target, or killed before the setup lands</td></tr>
-      <tr><td>Notable</td><td>Acid Demonstration is capped on the target's health and no longer scales off their stats.</td></tr>
+      <tr><th>Skill</th><th>Stock</th><th>Here</th></tr>
+      <tr><td><strong>Acid Demonstration</strong></td><td>10 hits on a 150ms cooldown, scales off the target's stats</td><td><strong>15s cooldown.</strong> Capped at 15% of max HP against players and MVPs, 5% against dungeon and world bosses. No target-stat scaling. Applies <strong>Corroded</strong></td></tr>
+      <tr><td>Fire Expansion – Acid</td><td>Acid Demonstration on everyone in the fire</td><td>Shares Acid Demonstration's cap and cooldown — no using one then the other</td></tr>
+      <tr><td><strong>Hell's Plant</strong></td><td>180s, no cooldown, parked wherever you like</td><td><strong>A self aura</strong> — a 5×5 hit every third of a second around you. 20s duration, 60s cooldown. A push tool, not a doorway</td></tr>
+      <tr><td>Mandragora Howling</td><td>30s duration, 10s cooldown</td><td>10s duration, 45s cooldown</td></tr>
+      <tr><td>Cart Cannon</td><td>No cooldown</td><td>2.5s</td></tr>
+      <tr><td>Cart Tornado</td><td>2s</td><td>8s</td></tr>
+      <tr><td>Spore Explosion</td><td>5s</td><td>12s</td></tr>
+      <tr><td>Crazy Weed</td><td>5s</td><td>10s. Still destroys traps, walls and ground skills</td></tr>
+      <tr><td>Thorn Trap</td><td>Root, three active, no cooldown</td><td>4s root, 8s cooldown, one active</td></tr>
+      <tr><td><strong>Illusion Doping</strong></td><td>Full screen, 1s cooldown</td><td>9×9, 30s cooldown. It was an AFK farming tool</td></tr>
+      <tr><td>Summon Flora / Marine Sphere</td><td>5 and 3 active, autonomous</td><td>2 and 2, and they attack only what you are attacking</td></tr>
+      <tr><td>Chemical Protection, Full Protection, Cart Boost</td><td>600s / 90s</td><td>30 minutes</td></tr>
     </table>
-    <p>Its old win buttons all had no cooldown — Cart Cannon, Mandragora, a plant in a choke point, uncapped acid. All four now have windows.</p>
+    <p><strong>Crafting costs fall sharply.</strong> Seed of Thorny Plant goes from 10 Prickly Fruit to 3. Bloodsuck Plant Seed from 10 Maneater Root to 3. Bomb Mushroom Spore from 10+2+5 to 3+1+1. Alcohol drops to one Poison Spore and one Stem. And Mandragora Flowerpot, Oil Bottle and the Fire Expansion powders &mdash; which normally only drop from monsters &mdash; go on the class vendor outright.</p>
     <h2 id="strikers">Strikers</h2>
-    <h3>Sura — the initiator</h3>
-    <p><strong>Bruce Lee burst.</strong> Marks a target with Asura, combos in, finishes, and resets out with Body Relocation and Lightning Walk. Two routes: delete one target, or chunk a clump with Tiger Cannon.</p>
+    <h3>Sura &mdash; the initiator</h3>
+    <p><strong>Bruce Lee burst.</strong> Marks a target with Asura, combos in, finishes, and resets out with Body Relocation and Lightning Walk. Two routes: delete one target, or chunk a clump with Tiger Cannon. No protection on a ranged build.</p>
     <table class="wtbl">
-      <tr><th></th><th>Detail</th></tr>
-      <tr><td>Wins by</td><td>Landing a finisher inside its own 20 second window</td></tr>
-      <tr><td>Group hook</td><td><strong>Shattered Ki</strong> — everybody hitting the marked target does 25% more damage</td></tr>
-      <tr><td>Dies to</td><td>Anything that survives the window. No protection on a ranged build.</td></tr>
-      <tr><td>Notable</td><td>Asura is rebuilt on attack power and no longer drains all your SP. It is the setup, not the kill.</td></tr>
+      <tr><th>Skill</th><th>Stock</th><th>Here</th></tr>
+      <tr><td><strong>Asura Strike</strong></td><td>Consumes all your SP, needs 5 spheres, no cooldown</td><td><strong>Rebuilt on attack power.</strong> No sphere cost, no SP drain, 20s cooldown. Applies <strong>Shattered Ki</strong></td></tr>
+      <tr><td><strong>Gate of Hell</strong></td><td>No cooldown. Adds your missing HP and SP to the damage</td><td><strong>Combo-only, 15s cooldown.</strong> Executes on the <em>target's</em> missing health instead</td></tr>
+      <tr><td><strong>Tiger Cannon</strong></td><td>3s cooldown, usable standalone</td><td>Combo-only (Dragon Combo → Fallen Empire), 12s cooldown</td></tr>
+      <tr><td>Knuckle Arrow</td><td>No cooldown</td><td>8s</td></tr>
+      <tr><td>Ride in Lightning</td><td>0.5s</td><td>2s</td></tr>
+      <tr><td>Lightning Walk</td><td>5s cooldown</td><td>12s — matches Body Relocation so they chain</td></tr>
+      <tr><td>Crescent Elbow</td><td>5s</td><td>20s. Scales off the attacker's HP — the anti-tank tool, kept</td></tr>
+      <tr><td>Gentle Touch – Quiet</td><td>13s silence</td><td>3s, 15s cooldown</td></tr>
+      <tr><td>Cursed Circle</td><td>7s hold</td><td>3s, 20s cooldown</td></tr>
+      <tr><td>Tiger Knuckle Fist</td><td>10s root</td><td>3s</td></tr>
+      <tr><td>Ki Explosion</td><td>Area stun, no cooldown</td><td>15s</td></tr>
+      <tr><td>Howling of Lion</td><td>10s cooldown</td><td>30s</td></tr>
     </table>
-    <p>Against a marked target, Tiger Cannon and Gate of Hell hit for <strong>double</strong>. The mark cannot be dispelled by anything, and no second Asura can land while it holds.</p>
-    <h3>Guillotine Cross — the executioner</h3>
-    <p><strong>One squishy target, from nowhere, then out before being pinned.</strong> Area and counter builds are kept for dungeons, but in PvP this class exists to remove a specific person.</p>
+    <h3>What Shattered Ki does</h3>
     <table class="wtbl">
-      <tr><th></th><th>Detail</th></tr>
-      <tr><td>Wins by</td><td>Reaching the person the group thought was safe</td></tr>
-      <tr><td>Group hook</td><td>Takes the healer or the caster nobody else can get to</td></tr>
-      <tr><td>Dies to</td><td>Anything that holds it still. It has no answer to being caught.</td></tr>
-      <tr><td>Notable</td><td>Katar or dual daggers, never a shield. Dark Claw opens a damage window and stops the target reflecting melee.</td></tr>
+      <tr><th>Effect</th><th>Value</th></tr>
+      <tr><td>Damage from all sources</td><td><strong>+25%</strong></td></tr>
+      <tr><td>Your own Tiger Cannon and Gate of Hell</td><td><strong>Double damage</strong></td></tr>
+      <tr><td>Duration</td><td>20 seconds</td></tr>
+      <tr><td>Further Asura</td><td>The target is immune while it holds, from anybody</td></tr>
+      <tr><td>Removal</td><td><strong>Cannot be dispelled or cleansed by anything</strong></td></tr>
     </table>
-    <p>The poison line is the anti-tank toolkit — Leech End ignores defence and reflect entirely, and Death Hurt is the natural counter to a healer who will not die.</p>
-    <h3>Shadow Chaser — the saboteur</h3>
-    <p>Stripper, copycat and trapper. <strong>The strip is the hardest Royal Guard answer in the game</strong> and stays strong — but it buys a kill window rather than a shutdown.</p>
+    <p><strong>Asura is the setup, not the kill.</strong> A marked target takes 35% from the Asura itself, then a doubled Gate of Hell finishes it while everybody else on your team is also hitting it 25% harder. Inside one 20 second mark you get two Tiger Cannons and two Gates of Hell.</p>
+    <p>Open world MVPs keep the 70% cap, so a Sura stays a genuine menace to anything roaming a field map. Everybody can be a Sura, so that is not an exclusive advantage.</p>
+    <h3>Guillotine Cross &mdash; the executioner</h3>
+    <p><strong>One squishy target from nowhere, then out before being pinned.</strong> Dies to anything that holds it. Area and counter builds are kept for dungeons.</p>
     <table class="wtbl">
-      <tr><th></th><th>Detail</th></tr>
-      <tr><td>Wins by</td><td>Removing what the enemy was relying on at the moment they need it</td></tr>
-      <tr><td>Group hook</td><td>Turns off the thing your team cannot fight through</td></tr>
-      <tr><td>Dies to</td><td>Being ignored — it contributes little damage of its own</td></tr>
-      <tr><td>Notable</td><td>Strip runs on its own diminishing counter so Rogues keep their edge. Reproduce copies enemy skills, which keep our cooldowns automatically.</td></tr>
+      <tr><th>Skill</th><th>Stock</th><th>Here</th></tr>
+      <tr><td>Weapons</td><td>Two-handed only</td><td><strong>Katar, or two one-handed daggers.</strong> Never a shield</td></tr>
+      <tr><td><strong>EDP</strong></td><td>120s duration, 2s cooldown</td><td>30s duration, 120s cooldown. The ×4 multiplier is untouched</td></tr>
+      <tr><td>Cross Impact</td><td>0.35s</td><td>2s — bread and butter</td></tr>
+      <tr><td>Dark Illusion</td><td>No cooldown</td><td>15s</td></tr>
+      <tr><td>Hallucination Walk</td><td>50s duration, 300s cooldown</td><td>10s duration, 180s cooldown</td></tr>
+      <tr><td>Weapon Crush</td><td>Breaks the weapon</td><td><strong>Disables it for 5s instead.</strong> Players never break equipment</td></tr>
+      <tr><td>Create Deadly Poison</td><td>20&ndash;25 monster parts per poison</td><td>4&ndash;6. Poison Bottle drops its Karvodailnirol</td></tr>
     </table>
-    <p>Strips no longer last minutes. They are a five second lockout on a cooldown — long enough to kill through, not long enough to remove somebody from the fight.</p>
+    <p><strong>Dark Claw is untouched</strong> and it is the reason the class works &mdash; the damage window between EDPs, and it stops the target reflecting melee at all.</p>
+    <p>The poison line is the anti-tank toolkit. Leech End deals the victim's VIT and a percentage of their max health per second, ignoring defence and reflect entirely. Death Hurt cuts healing by 20%, which is the natural answer to a priest who will not die.</p>
+    <h3>Shadow Chaser &mdash; the saboteur</h3>
+    <p>Stripper, copycat and trapper. <strong>The strip is the hardest Royal Guard answer in the game and stays strong</strong> &mdash; but it buys a kill window rather than a shutdown.</p>
+    <table class="wtbl">
+      <tr><th>Skill</th><th>Stock</th><th>Here</th></tr>
+      <tr><td><strong>Masquerade – Weakness</strong></td><td>20s weapon and shield strip, 2s cooldown</td><td><strong>5s lockout, 15s cooldown.</strong> Still bypasses Chemical Protection</td></tr>
+      <tr><td><strong>Divest Weapon / Shield / Armor / Helm</strong></td><td>135 seconds, no cooldown</td><td>5s lockout, 15s cooldown</td></tr>
+      <tr><td>Divest All</td><td>135s, no cooldown</td><td>5s lockout, 20s cooldown. Counts as one application</td></tr>
+      <tr><td>Strip Accessory</td><td>100s</td><td>5s lockout, 15s cooldown</td></tr>
+      <tr><td>Masquerade – Ignorance</td><td>20s silence, 2s cooldown</td><td>5s, 20s cooldown</td></tr>
+      <tr><td>Manhole</td><td>15s, three active, no cooldown</td><td>5s, 20s cooldown, one active</td></tr>
+      <tr><td>Close Confine</td><td>10s hold, no cooldown</td><td>5s, 20s cooldown</td></tr>
+      <tr><td>Chaos Panic</td><td>15s</td><td>5s, 20s cooldown</td></tr>
+      <tr><td><strong>Auto Shadow Spell</strong></td><td>15% per auto-attack, ignores cooldowns, full damage</td><td><strong>2s internal cooldown</strong>, and autocasts deal stock damage — no area multiplier. Hard-casting stays the strong play</td></tr>
+      <tr><td>Triangle Shot</td><td>0.2s</td><td>1s — bread and butter</td></tr>
+      <tr><td>Fatal Menace</td><td>No cooldown</td><td>8s</td></tr>
+      <tr><td>Maelstrom</td><td>21s, no cooldown</td><td>10s, 30s cooldown</td></tr>
+      <tr><td>Emergency Escape</td><td>2s cooldown, costs a trap item</td><td>12s, and the item cost is gone</td></tr>
+      <tr><td>Snatch</td><td>No cooldown</td><td>20s</td></tr>
+    </table>
+    <p><strong>Strip runs on its own diminishing counter</strong> &mdash; 5s, then 2.5s, then 1.25s, then immune &mdash; kept separate from everything else so Rogues keep their edge.</p>
+    <p>Copied skills automatically inherit our cooldowns. Copied Asura, Tiger Cannon, Gate of Hell and Tetra Vortex are unusable, since they need Fury, a combo or spheres.</p>
     <h2 id="range">Range</h2>
-    <h3>Warlock — the artillery</h3>
+    <h3>Warlock &mdash; the artillery</h3>
     <p><strong>Pokes with cast-time spells, commits big area damage at the right moment, and pops Telekinesis Intense to go all in.</strong> Keeps every Mage and Wizard spell.</p>
+    <p>Single-target spells are untouched. Bolts, Jupitel Thunder, Soul Expansion and Chain Lightning still have no cooldown &mdash; <strong>the cast time is the limiter</strong>, and that is enough.</p>
     <table class="wtbl">
-      <tr><th></th><th>Detail</th></tr>
-      <tr><td>Wins by</td><td>Landing one enormous area skill on a group that clumped</td></tr>
-      <tr><td>Group hook</td><td>Nobody else clears a stack</td></tr>
-      <tr><td>Dies to</td><td>Anything that reaches it. Highest ceiling, thinnest margin.</td></tr>
-      <tr><td>Notable</td><td>Single-target spells keep their stock cooldowns — the cast time is the limiter. Area skills get long separate cooldowns and hit proportionally harder.</td></tr>
+      <tr><th>Area skill</th><th>Stock</th><th>Here</th><th>Damage</th></tr>
+      <tr><td>Comet</td><td>20s</td><td><strong>45s</strong></td><td>×2.1</td></tr>
+      <tr><td>Tetra Vortex</td><td>15s</td><td>30s</td><td>×1.9</td></tr>
+      <tr><td>Gravitation Field</td><td>5s</td><td><strong>30s</strong></td><td>×5</td></tr>
+      <tr><td>Storm Gust</td><td>6s</td><td>20s</td><td>×2.9</td></tr>
+      <tr><td>Meteor Storm</td><td>7s</td><td>15s</td><td>×1.9</td></tr>
+      <tr><td>Lord of Vermilion</td><td>5s</td><td>15s</td><td>×2.5</td></tr>
+      <tr><td>Frost Misty</td><td>8s</td><td>15s</td><td>×1.8</td></tr>
+      <tr><td>Crimson Rock</td><td>5s</td><td>12s</td><td>×2.2</td></tr>
+      <tr><td>Earth Strain</td><td>7s</td><td>12s</td><td>×1.6</td></tr>
+      <tr><td>Jack Frost</td><td>4s</td><td>10s</td><td>×2.2</td></tr>
+      <tr><td>Heaven's Drive</td><td>1s</td><td>4s</td><td>×2.7</td></tr>
     </table>
-    <p>Comet sits at 45 seconds. Gravitation Field at 30. These are decisions you make once per fight, not buttons you hold.</p>
-    <h3>Ranger — the skirmisher</h3>
-    <p><strong>Ranged pressure with traps used in combat, not as area denial.</strong> Hunter and Sniper skills are all kept.</p>
+    <p><strong>The longer cooldown is paid back in damage per cast.</strong> That is the trade across the whole class: fewer casts, each one worth committing to. Comet at 45 seconds is a decision you make once or twice per fight.</p>
+    <h3>Ranger &mdash; the skirmisher</h3>
+    <p><strong>Ranged pressure with traps used in combat, not as area denial.</strong> Hunter and Sniper skills are all kept, and single-target damage is untouched &mdash; Aimed Bolt, Double Strafe, Falcon Assault and Blitz Beat all stay stock.</p>
     <table class="wtbl">
-      <tr><th></th><th>Detail</th></tr>
-      <tr><td>Wins by</td><td>Never being where the fight is, and never letting up</td></tr>
-      <tr><td>Group hook</td><td>Traps shape where the enemy is able to go</td></tr>
-      <tr><td>Dies to</td><td>Being closed on. Steady damage, never decisive alone.</td></tr>
-      <tr><td>Notable</td><td>Three traps at a time — placing a fourth destroys the oldest. Friendly fire on traps stays on in guild versus guild.</td></tr>
+      <tr><th>Skill</th><th>Stock</th><th>Here</th></tr>
+      <tr><td>Arrow Storm</td><td>3.2s</td><td>10s, and hits nearly three times as hard</td></tr>
+      <tr><td>Sharp Shooting</td><td>0.15s</td><td>4s</td></tr>
+      <tr><td>Arrow Shower</td><td>No cooldown</td><td>1.5s</td></tr>
+      <tr><td>Warg Strike</td><td>No cast, no cooldown</td><td>3s — instant skills need one</td></tr>
+      <tr><td><strong>Ankle Snare</strong></td><td>20 second root</td><td><strong>4s</strong></td></tr>
+      <tr><td>Electric Shocker</td><td>28s</td><td>5s</td></tr>
+      <tr><td>Warg Bite</td><td>5s root</td><td>3s</td></tr>
+      <tr><td>Detonator</td><td>No cooldown</td><td>10s</td></tr>
+      <tr><td>Unlimit</td><td>150s duration</td><td>60s duration, same cooldown</td></tr>
+      <tr><td>Wind Walk, True Sight, Concentration</td><td>Short</td><td>30 minutes</td></tr>
+      <tr><td><strong>Traps</strong></td><td>Per-type caps</td><td><strong>Three total.</strong> Placing a fourth destroys the oldest</td></tr>
     </table>
-    <h3>Mechanic — the engineer</h3>
+    <p>Friendly fire on traps stays on in guild versus guild, so a careless trap line hurts your own side too.</p>
+    <h3>Mechanic &mdash; the engineer</h3>
     <p><strong>Two builds: Mado Gear artillery and axe brawler.</strong> A prepared position with turrets has to pose a real threat, because setting one up costs time.</p>
     <table class="wtbl">
-      <tr><th></th><th>Detail</th></tr>
-      <tr><td>Wins by</td><td>Holding a position it had time to prepare</td></tr>
-      <tr><td>Group hook</td><td>Its deployments become terrain the enemy has to deal with</td></tr>
-      <tr><td>Dies to</td><td>Being caught before setup. Ambushed, it is a person with an axe.</td></tr>
-      <tr><td>Notable</td><td>Two Silver Snipers and two Magic Decoys, and they fire at whatever the Mechanic is attacking. Self-Destruction is rebuilt on attack power.</td></tr>
+      <tr><th>Skill</th><th>Stock</th><th>Here</th></tr>
+      <tr><td><strong>Self-Destruction</strong></td><td>Scales off your SP, VIT and current HP</td><td><strong>Rebuilt on attack power</strong>, 300s cooldown</td></tr>
+      <tr><td>Arm Cannon</td><td>0.15s</td><td>3s, five times the damage</td></tr>
+      <tr><td>Vulcan Arm</td><td>No cooldown</td><td>1.5s</td></tr>
+      <tr><td>Flame Launcher</td><td>No cooldown</td><td>4s</td></tr>
+      <tr><td>Knuckle Boost</td><td>No cooldown</td><td>2s — bread and butter</td></tr>
+      <tr><td>Cold Slower</td><td>No cooldown</td><td>15s</td></tr>
+      <tr><td>Axe Boomerang</td><td>3s</td><td>2s — bread and butter for axe</td></tr>
+      <tr><td>Axe Tornado</td><td>2s</td><td>8s</td></tr>
+      <tr><td>Magma Eruption</td><td>6s</td><td>15s</td></tr>
+      <tr><td><strong>Stealth Field</strong></td><td>25s duration, 10s cooldown</td><td>15s duration, <strong>60s cooldown</strong></td></tr>
+      <tr><td><strong>Neutral Barrier</strong></td><td>60s duration, 10s cooldown</td><td>10s duration, <strong>30s cooldown</strong></td></tr>
+      <tr><td>Magnetic Field</td><td>8s root, 10s cooldown</td><td>3s root, 20s cooldown</td></tr>
+      <tr><td>Silver Sniper, Magic Decoy</td><td>Cost Iron, Steel or Brigan per cast</td><td><strong>Free</strong>. Two of each, and they fire at whatever you are attacking</td></tr>
+      <tr><td>Mobility skills</td><td>Cost Magic Gear Fuel</td><td><strong>Free</strong> — Side Slide, Acceleration, Hovering, Emergency Cool, Analyze</td></tr>
     </table>
-    <p>Mechanic structures are the one exception to the summon budget — together they reach 80 to 100% of the Mechanic's own output, because they are stationary and the class is built around them.</p>
+    <p><strong>Mechanic structures are the one exception to the summon budget.</strong> Together they reach 80 to 100% of the Mechanic's own output, because they are stationary and the class is built around them. Everybody else's summons cap at 50 to 60%.</p>
+    <p>Stealth Field and Neutral Barrier were the camping tools &mdash; both had longer durations than cooldowns, which meant permanent uptime. Both now have real gaps.</p>
     <h2 id="support">Support</h2>
-    <h3>Arch Bishop — the pillar</h3>
-    <p><strong>A healing machine, not a deleter.</strong> Spot heals are spammable and limited by SP; percentage heals sit on long cooldowns for the moments that matter.</p>
+    <h3>Arch Bishop &mdash; the pillar</h3>
+    <p><strong>A healing machine, not a deleter.</strong> Spot heals are spammable and limited by SP; percentage heals sit on long cooldowns for the moments that matter. <strong>Heal priest and battle priest are separate specs</strong> &mdash; an Arch Bishop cannot learn everything.</p>
     <table class="wtbl">
-      <tr><th></th><th>Detail</th></tr>
-      <tr><td>Wins by</td><td>Making somebody impossible to kill for long enough</td></tr>
-      <tr><td>Group hook</td><td>Everything. The party functions because they are there.</td></tr>
-      <tr><td>Dies to</td><td>Being focused. Zero pressure — they cannot threaten anybody.</td></tr>
-      <tr><td>Notable</td><td>Heal priest and battle priest are separate specs. An Arch Bishop cannot learn everything.</td></tr>
+      <tr><th>Skill</th><th>Stock</th><th>Here</th></tr>
+      <tr><td>Heal</td><td>0.5s after-cast delay</td><td><strong>0.3s</strong>, no cooldown. Every dispel or Lex is a heal not cast, so the delay matters</td></tr>
+      <tr><td>Highness Heal</td><td>1s delay, 3s cooldown</td><td>0.3s delay, <strong>no cooldown</strong></td></tr>
+      <tr><td>Coluceo Heal</td><td>2s cooldown, 31×31</td><td>6s cooldown, 15×15 — healers position with their party</td></tr>
+      <tr><td><strong>Renovatio</strong></td><td>8% per 5s for 180s, 1s cooldown</td><td>Same rate for 30s, <strong>240s cooldown</strong>. A 48% party burst you time</td></tr>
+      <tr><td>Epiclesis</td><td>Revives the dead, 60s cooldown</td><td><strong>Revive removed</strong>, 120s cooldown</td></tr>
+      <tr><td>Redemptio</td><td>Mass revive</td><td>30 minute cooldown</td></tr>
+      <tr><td>Resurrection</td><td>—</td><td>2 minutes, per caster</td></tr>
+      <tr><td><strong>Silentium</strong></td><td>Up to 60s silence, 15s cooldown</td><td><strong>6s silence, 120s cooldown</strong></td></tr>
+      <tr><td>Lex Divina</td><td>60s, no cooldown</td><td>3s</td></tr>
+      <tr><td>Adoramus</td><td>2.5s</td><td>12s — so battle priests do not replace Warlocks</td></tr>
+      <tr><td>Magnus Exorcismus</td><td>6s</td><td>15s</td></tr>
+      <tr><td>Clearance</td><td>Range 11</td><td>Range 5. Stripping buffs means walking into the enemy</td></tr>
     </table>
-    <p><strong>Healers are meant to be the prime target.</strong> Two Arch Bishops out-heal a single big hit in about a second, so killing through them takes two or three finishers landed inside a one to two second window. That is the intended shape of a fight.</p>
-    <p>Adoramus and Magnus Exorcismus are deliberately held back so a battle priest never replaces a Warlock.</p>
-    <h3>Sorcerer — the controller</h3>
-    <p><strong>Shapes where fighting is possible.</strong> Control and area damage are one build; Spell Fist and the elementalist are the real forks. The kit stays multi-dimensional on purpose.</p>
+    <p><strong>Healers are meant to be the prime target.</strong> One Heal restores about 4&ndash;5% of a geared character's health. Two Arch Bishops out-heal a single big hit in about a second &mdash; so killing through them takes two or three finishers landed inside a one to two second window. That is the intended shape of a fight, and it is why the answers exist: silence, Death Hurt, dispel, and a Guillotine Cross diving the healer.</p>
+    <h3>Sorcerer &mdash; the controller</h3>
+    <p><strong>Shapes where fighting is possible.</strong> Control and area damage are one build &mdash; together they cost about 50 of 69 skill points &mdash; with Spell Fist and the elementalist as the real forks. The kit stays multi-dimensional on purpose.</p>
     <table class="wtbl">
-      <tr><th></th><th>Detail</th></tr>
-      <tr><td>Wins by</td><td>Deciding where the enemy is allowed to stand</td></tr>
-      <tr><td>Group hook</td><td>Denies ground, and Dispel is the answer to buffs nobody else can remove</td></tr>
-      <tr><td>Dies to</td><td>Being rushed. Little damage, no healing.</td></tr>
-      <tr><td>Notable</td><td>Land Protector is a 20 second window, not a permanent zone. Warmer is a push tool, not a camp.</td></tr>
+      <tr><th>Skill</th><th>Stock</th><th>Here</th></tr>
+      <tr><td><strong>Diamond Dust</strong></td><td>Crystallize up to 20s</td><td><strong>4s</strong>, 15s cooldown</td></tr>
+      <tr><td>Arrullo</td><td>16s sleep, 9s cooldown</td><td>5s, 30s cooldown</td></tr>
+      <tr><td>Vacuum Extreme</td><td>12s hold, 5s cooldown</td><td>3s, 20s cooldown</td></tr>
+      <tr><td>Spider Web</td><td>8s root, no cooldown, costs Cobweb</td><td>4s root, 8s cooldown, <strong>free</strong></td></tr>
+      <tr><td>Spell Breaker</td><td>No cooldown</td><td>3s</td></tr>
+      <tr><td>Psychic Wave</td><td>5s</td><td>15s</td></tr>
+      <tr><td>Varetyr Spear, Earth Grave, Cloud Kill, Poison Buster</td><td>2&ndash;5s</td><td>10s</td></tr>
+      <tr><td><strong>Dispel</strong></td><td>Range 9, no cooldown</td><td><strong>Range 5</strong>, 5s cooldown</td></tr>
+      <tr><td><strong>Warmer</strong></td><td>60s duration, 55s cooldown</td><td>15s duration, 30s cooldown — a push tool, not a camp zone</td></tr>
+      <tr><td>Land Protector</td><td>—</td><td>20s window, 45s cooldown</td></tr>
+      <tr><td>Autospell</td><td>390s</td><td>30 minutes, and now dispellable</td></tr>
+      <tr><td>Elemental spirits</td><td>Autonomous in offensive mode</td><td>Assist your target. One at a time</td></tr>
+      <tr><td>Insignias and endows</td><td>1&ndash;3 Elemental Points by level</td><td>1 Point</td></tr>
     </table>
-    <p>Elemental spirits assist the Sorcerer's target rather than acting on their own. One at a time.</p>
-    <h3>Minstrel and Wanderer — the performer</h3>
-    <p><strong>Reads the fight and picks the right song or dance; gets it wrong and dies.</strong> Screen-wide buffs and debuffs make the performer the first target on the field.</p>
+    <p>The pull-and-hold combo &mdash; Vacuum Extreme into Psychic Wave &mdash; is kept deliberately. The shared crowd control counter is what stops two Sorcerers chaining it indefinitely.</p>
+    <h3>Minstrel and Wanderer &mdash; the performer</h3>
+    <p><strong>Reads the fight and picks the right song or dance; gets it wrong and dies.</strong> Screen-wide buffs and debuffs make the performer the first target on the field. Gender-locked &mdash; male becomes Minstrel, female becomes Wanderer, and about 90% of the kit is shared.</p>
     <table class="wtbl">
-      <tr><th></th><th>Detail</th></tr>
-      <tr><td>Wins by</td><td>Picking correctly, over and over, while being hunted</td></tr>
-      <tr><td>Group hook</td><td>One performer, whole raid. A second adds nothing.</td></tr>
-      <tr><td>Dies to</td><td>Being found. Everything they provide ends when they do.</td></tr>
-      <tr><td>Notable</td><td>Gender-locked — male becomes Minstrel, female becomes Wanderer. About 90% of the kit is shared between them.</td></tr>
+      <tr><th>Rule</th><th>Stock</th><th>Here</th></tr>
+      <tr><td>Area</td><td>A circle you stand in</td><td><strong>Screen-wide aura centred on the performer</strong>, moving with them</td></tr>
+      <tr><td>Lifetime</td><td>Fixed duration</td><td>Up to 30 minutes, <strong>but only while the performer lives</strong></td></tr>
+      <tr><td>Performer dies</td><td>Song continues</td><td><strong>Every buff and debuff they provide ends immediately</strong></td></tr>
+      <tr><td>Recipient dies</td><td>Persists</td><td>Removed. The exception to the maintenance buff rule</td></tr>
+      <tr><td>Stacking</td><td>Multiple</td><td>One song and one dance per target, from any source</td></tr>
+      <tr><td>Chorus</td><td>Scales with performers</td><td>Counts two at most</td></tr>
+      <tr><td>Dance with Warg</td><td>−70% fixed cast</td><td>−30%</td></tr>
     </table>
-    <table class="wtbl">
-      <tr><th>Rule</th><th>Detail</th></tr>
-      <tr><td>Area</td><td>Screen-wide auras centred on the performer</td></tr>
-      <tr><td>Lifetime</td><td>Up to 30 minutes, but only while the performer is alive</td></tr>
-      <tr><td>Performer dies</td><td>Every buff and debuff they provide ends immediately</td></tr>
-      <tr><td>Stacking</td><td>One song and one dance per target, from any source</td></tr>
-      <tr><td>Chorus</td><td>Counts two performers at most</td></tr>
-    </table>
-    <p>Both sexes can fill both slots, so the one-song-one-dance rule works either way round.</p>
+    <p>Both sexes can fill both slots, so the one-song-one-dance rule works either way round. The counters are straightforward: kill the performer, dispel them, or silence them.</p>
     <h2 id="comps">What this means for a group</h2>
     <p><strong>Stacking a class is fine if you spread it, wasteful if you concentrate it.</strong></p>
     <ul class="wl">
@@ -222,10 +324,10 @@
       <li><strong>Area effects thin out when they overlap.</strong> Sixteen plants in one doorway are not sixteen plants.</li>
       <li><strong>Burst overkills.</strong> Two executioners on the same target means the second one hit a corpse.</li>
     </ul>
-    <p>Which means a guild with six Suras is not wrong — they are a guild that has to attack six places at once. That is a strategy, and multiclassing means nobody is stuck with a composition that did not work.</p>
+    <p>Which means a guild with six Suras is not wrong &mdash; they are a guild that has to attack six places at once. That is a strategy, and multiclassing means nobody is stuck with a composition that did not work.</p>
     <div class="pending">
       <span class="tag">Not built yet</span>
-      <p>Skill-by-skill numbers, and the per-class pages that will replace these summaries once the server is tuned.</p>
+      <p>Per-skill damage numbers. The cooldowns and formulas above are settled; the values they produce are still being tuned.</p>
     </div>
   </main>
 </div>
