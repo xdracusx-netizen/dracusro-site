@@ -1,3 +1,9 @@
 .wrangler
 node_modules
 README.md
+
+.git/**
+
+.git
+
+package-lock.json
